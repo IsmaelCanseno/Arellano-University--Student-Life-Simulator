@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxkxohbmfog2o"]
 
-[ext_resource type="Texture2D" uid="uid://ft3vn666s7ow" path="res://Scenes/backdrop.jpg" id="1_lfiwo"]
+[ext_resource type="Texture2D" uid="uid://bopor4fcrbxrh" path="res://background.png" id="1_fjwcq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bo1gv"]
-texture = ExtResource("1_lfiwo")
+texture = ExtResource("1_fjwcq")
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
