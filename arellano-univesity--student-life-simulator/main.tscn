@@ -73,6 +73,10 @@ border_width_right = 1
 border_width_bottom = 3
 border_color = Color(0.103979, 0.279426, 0.464818, 1)
 border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k78su"]
 texture = ExtResource("2_7ord5")
