@@ -1,8 +1,10 @@
-[gd_scene load_steps=120 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=123 format=3 uid="uid://bv3fn2q421g7r"]
 
-[ext_resource type="Texture2D" uid="uid://ft3vn666s7ow" path="res://Scenes/backdrop.jpg" id="1_nl8d3"]
+[ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Scenes/main.png" id="1_pud1f"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://tilesets/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://font/RasterForgeRegular-JpBgm.ttf" id="2_whgy5"]
 [ext_resource type="Texture2D" uid="uid://ocqfalijtyqa" path="res://tilesets/Cherry/Neighbor/CP_V1.1.0_nyknck/CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/Cherry_Neighbor_CP_V1.png" id="3_8on6w"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://font/PressStart2P.ttf" id="3_sje84"]
 [ext_resource type="Texture2D" uid="uid://dnj8gp0m0a1si" path="res://tilesets/Cherry/Neighbor/GuttyKreum_JapaneseCity_Freev1/Free_Version/Cherry_Neighbor_Gutty2.png" id="4_oc33x"]
 [ext_resource type="Texture2D" uid="uid://cg71p3a88xboe" path="res://tilesets/Cherry/Neighbor/GuttyKreum_JapaneseCity_Freev1/Free_Version/Cherry_Neighbor_Gutty.png" id="5_6g4g8"]
 [ext_resource type="Texture2D" uid="uid://brgeqaj3u1f11" path="res://tilesets/Cherry/Neighbor/Pixel Lands Village Demo/Pixel Lands Village Demo/Cherry_Neighbor_Pixel2.png" id="6_np6ia"]
@@ -61,7 +63,16 @@
 [ext_resource type="Texture2D" uid="uid://b4ur3fiaakfjy" path="res://tilesets/Rachel/galletcity/Rachel_GalletCity2.png" id="59_6h7g2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_my2jd"]
-texture = ExtResource("1_nl8d3")
+texture = ExtResource("1_pud1f")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drsdi"]
+bg_color = Color(0.129412, 0.329412, 0.541176, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.103979, 0.279426, 0.464818, 1)
+border_blend = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k78su"]
 texture = ExtResource("2_7ord5")
@@ -18139,10 +18150,53 @@ sources/60 = SubResource("TileSetAtlasSource_gv51e")
 [node name="Main" type="Node"]
 
 [node name="Panel" type="Panel" parent="."]
-self_modulate = Color(0.8, 0.8, 0.8, 1)
 offset_right = 1155.0
 offset_bottom = 654.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_my2jd")
+
+[node name="Game Title" type="Label" parent="."]
+offset_left = 42.0
+offset_top = 69.0
+offset_right = 1105.0
+offset_bottom = 209.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0.372549, 1)
+theme_override_constants/line_spacing = 20
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("2_whgy5")
+theme_override_font_sizes/font_size = 68
+text = "Arellano University:
+Student Life Simulator"
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="."]
+offset_left = 449.0
+offset_top = 499.0
+offset_right = 716.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
+text = "PLAY"
+
+[node name="About" type="Button" parent="."]
+offset_left = 449.0
+offset_top = 550.0
+offset_right = 716.0
+offset_bottom = 593.0
+theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
+text = "ABOUT
+"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 449.0
+offset_top = 601.0
+offset_right = 716.0
+offset_bottom = 644.0
+theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
+text = "EXIT"
 
 [node name="Thea_House_Houses_png" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -18195,7 +18249,6 @@ scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_xbv7r")
 
 [node name="Cherry_Neighbor_Gutty2" type="TileMapLayer" parent="."]
-visible = false
 texture_filter = 1
 scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_xbv7r")
