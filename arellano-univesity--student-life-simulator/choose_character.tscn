@@ -1,37 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://y7vk0ulco2qg"]
+[gd_scene load_steps=2 format=3 uid="uid://y7vk0ulco2qg"]
 
 [ext_resource type="PackedScene" uid="uid://d2eml3716vdwo" path="res://chooseCharacter.tscn" id="1_sofhd"]
-[ext_resource type="Texture2D" uid="uid://dok56rbwic4qv" path="res://Character/characters.png" id="3_6nvea"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7otrt"]
-atlas = ExtResource("3_6nvea")
-region = Rect2(0, 64, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6spid"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7otrt")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l3n1f"]
-atlas = ExtResource("3_6nvea")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_hbp3r"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l3n1f")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="ChooseCharacter" instance=ExtResource("1_sofhd")]
 
@@ -39,12 +8,4 @@ animations = [{
 texture_filter = 1
 position = Vector2(3, 3)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel/Fem" index="0"]
-position = Vector2(43, 18)
-sprite_frames = SubResource("SpriteFrames_6spid")
-
 [node name="Male" type="CharacterBody2D" parent="." index="1"]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Male" index="0"]
-position = Vector2(24, 18)
-sprite_frames = SubResource("SpriteFrames_hbp3r")
