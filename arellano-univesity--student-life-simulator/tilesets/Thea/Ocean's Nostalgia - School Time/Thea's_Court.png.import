@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfsut5b5hvs73"
-path="res://.godot/imported/School01RM.png-bb2850616c31b6700801ef5eb7e21804.ctex"
+uid="uid://cjm6dwjfsgw7"
+path="res://.godot/imported/Thea's_Court.png-58b6123a07d81872d8caf99bab7f4b18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Thea/Ocean's Nostalgia - School Time/2k3/Characters/Color/School01RM.png"
-dest_files=["res://.godot/imported/School01RM.png-bb2850616c31b6700801ef5eb7e21804.ctex"]
+source_file="res://tilesets/Thea/Ocean's Nostalgia - School Time/Thea's_Court.png"
+dest_files=["res://.godot/imported/Thea's_Court.png-58b6123a07d81872d8caf99bab7f4b18.ctex"]
 
 [params]
 
