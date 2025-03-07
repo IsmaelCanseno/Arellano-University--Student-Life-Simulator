@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g4is88wgdwym"
-path="res://.godot/imported/Interior without swadows.png-be702348ade7c08d6a97dcaf7a0cb44d.ctex"
+uid="uid://bl2a8abiq3nw5"
+path="res://.godot/imported/Cherry_Room_Office_Julia_walk_Left.png-e5bcbaba17e7fcdc3a766bfd640b10b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Thea/House/Interior without swadows.png"
-dest_files=["res://.godot/imported/Interior without swadows.png-be702348ade7c08d6a97dcaf7a0cb44d.ctex"]
+source_file="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_walk_Left.png"
+dest_files=["res://.godot/imported/Cherry_Room_Office_Julia_walk_Left.png-e5bcbaba17e7fcdc3a766bfd640b10b0.ctex"]
 
 [params]
 

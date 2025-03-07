@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdqvlswjd0ntf"
-path="res://.godot/imported/Houses.png-5786d9d796dd5d58d55cc6cbfbba49bc.ctex"
+uid="uid://doe4hnq8yalh1"
+path="res://.godot/imported/Cherry_Room_MijanistyleStiefel.png-c6ab9471b94235b71c03a29ad581d6bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Thea/House/Houses.png"
-dest_files=["res://.godot/imported/Houses.png-5786d9d796dd5d58d55cc6cbfbba49bc.ctex"]
+source_file="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleStiefel.png"
+dest_files=["res://.godot/imported/Cherry_Room_MijanistyleStiefel.png-c6ab9471b94235b71c03a29ad581d6bb.ctex"]
 
 [params]
 
