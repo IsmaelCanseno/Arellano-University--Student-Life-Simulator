@@ -1,17 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://g6jcy1ajx2yo"]
+[gd_scene load_steps=3 format=3 uid="uid://d2eml3716vdwo"]
 
 [ext_resource type="Texture2D" uid="uid://u6t0m2n2qwoi" path="res://ChooseCharacter/Arellano University Student Life Simulator.png" id="1_to2mh"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vse3x"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3p8qr"]
 texture = ExtResource("1_to2mh")
 
-[node name="ChooseCharacter" type="Node2D"]
-position = Vector2(50, 64)
+[node name="ChooseCharacter" type="Node"]
 
 [node name="Panel" type="Panel" parent="."]
 self_modulate = Color(0.99, 0.99, 0.99, 1)
-offset_left = -52.0
-offset_top = -64.0
-offset_right = 1103.0
-offset_bottom = 590.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_vse3x")
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 1152.0
+offset_bottom = 651.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_3p8qr")
