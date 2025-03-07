@@ -1,4 +1,4 @@
-[gd_scene load_steps=123 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=120 format=3 uid="uid://bv3fn2q421g7r"]
 
 [ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Scenes/main.png" id="1_pud1f"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://tilesets/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
@@ -23,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://celbenboqq6al" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleSchuhe.png" id="19_u7vri"]
 [ext_resource type="Texture2D" uid="uid://baalwnf101tmy" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleSchülerinnen_sheet_200p.png" id="20_uwp05"]
 [ext_resource type="Texture2D" uid="uid://doe4hnq8yalh1" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleStiefel.png" id="21_pky4e"]
-[ext_resource type="Texture2D" uid="uid://bo541cmwkweo1" path="res://tilesets/Thea/Ocean's Nostalgia - School Time/2k3/Tilesets/Color/Thea_Ocean's_Color_RM2.png" id="22_pfy8f"]
 [ext_resource type="Texture2D" uid="uid://c7h72kruxewrv" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleStrumpfhose.png" id="23_yypnd"]
 [ext_resource type="Texture2D" uid="uid://brcsrofde7ioa" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleZöpfe.png" id="24_17b13"]
 [ext_resource type="Texture2D" uid="uid://bjqg1hhtyl5ls" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleÜberwurf.png" id="25_emiky"]
@@ -34,7 +33,6 @@
 [ext_resource type="Texture2D" uid="uid://cd0bkj0eh5g0j" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_desk-with-pc.png" id="30_ae74w"]
 [ext_resource type="Texture2D" uid="uid://kt7etpxhegne" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_desk.png" id="31_dyv4g"]
 [ext_resource type="Texture2D" uid="uid://u2htkp5rku3n" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia-Idle.png" id="32_j4tdf"]
-[ext_resource type="Texture2D" uid="uid://be34i8hwoyc6t" path="res://tilesets/Thea/Ocean's Nostalgia - School Time/2k3/Tilesets/Color/Thea_Ocean's_Color_RM3.png" id="33_t0ef1"]
 [ext_resource type="Texture2D" uid="uid://bdb7r0g6rtiqj" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia.png" id="34_2g2lp"]
 [ext_resource type="Texture2D" uid="uid://bq3fbnu24jvgk" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_Drinking_Coffee.png" id="35_84ran"]
 [ext_resource type="Texture2D" uid="uid://bqapxo6lja5q7" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_PC.png" id="36_i5yi3"]
@@ -45,7 +43,6 @@
 [ext_resource type="Texture2D" uid="uid://b7b77xer5sdkp" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_office-partitions-1.png" id="41_2nw6r"]
 [ext_resource type="Texture2D" uid="uid://cymfx1fhmn2n4" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_office-partitions-2.png" id="42_llh0c"]
 [ext_resource type="Texture2D" uid="uid://cla5g2lxjpvdu" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_PC1.png" id="43_fbc57"]
-[ext_resource type="Texture2D" uid="uid://badi2k46y2ufk" path="res://tilesets/Thea/Ocean's Nostalgia - School Time/2k3/Tilesets/Color/Thea_Ocean's_Color_RM4.png" id="44_kcbo6"]
 [ext_resource type="Texture2D" uid="uid://cjpwjm4li16mx" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_PC2.png" id="45_lar4t"]
 [ext_resource type="Texture2D" uid="uid://d111xm11mii1e" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_plant.png" id="46_r1pb7"]
 [ext_resource type="Texture2D" uid="uid://bxwd8wc2m8dwx" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_printer.png" id="47_8rxxp"]
@@ -11768,7 +11765,6 @@ texture = ExtResource("21_pky4e")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0jnwl"]
-texture = ExtResource("22_pfy8f")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -12414,7 +12410,6 @@ texture = ExtResource("32_j4tdf")
 7:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o5a2d"]
-texture = ExtResource("33_t0ef1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -13129,7 +13124,6 @@ texture = ExtResource("43_fbc57")
 1:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c1k73"]
-texture = ExtResource("44_kcbo6")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

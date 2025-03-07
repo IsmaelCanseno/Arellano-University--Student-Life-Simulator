@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd8vonfepjykt"
-path="res://.godot/imported/Thea's_Classroom.png-f5fb747041ab4edbdfbea76c142beaf6.ctex"
+uid="uid://vvi3teynycu1"
+path="res://.godot/imported/Cafeteria.png-8ed774ea56b176347eddd290d0c1a8b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Thea/Ocean's Nostalgia - School Time/Thea's_Classroom.png"
-dest_files=["res://.godot/imported/Thea's_Classroom.png-f5fb747041ab4edbdfbea76c142beaf6.ctex"]
+source_file="res://tilesets/Thea/Ocean's Nostalgia - School Time/Cafeteria.png"
+dest_files=["res://.godot/imported/Cafeteria.png-8ed774ea56b176347eddd290d0c1a8b6.ctex"]
 
 [params]
 
