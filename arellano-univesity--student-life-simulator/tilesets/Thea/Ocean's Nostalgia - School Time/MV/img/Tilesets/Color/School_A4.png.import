@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://badi2k46y2ufk"
-path="res://.godot/imported/Thea_Ocean's_Color_RM4.png-061871859115556637e524ee0a27a8ae.ctex"
+uid="uid://chy85kcb4rkdp"
+path="res://.godot/imported/School_A4.png-1b6ceffdd48fcb4c6188fb6cda4f2d4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Thea/Ocean's Nostalgia - School Time/Ocean's Nostalgia - School Time/2k3/Tilesets/Color/Thea_Ocean's_Color_RM4.png"
-dest_files=["res://.godot/imported/Thea_Ocean's_Color_RM4.png-061871859115556637e524ee0a27a8ae.ctex"]
+source_file="res://tilesets/Thea/Ocean's Nostalgia - School Time/MV/img/Tilesets/Color/School_A4.png"
+dest_files=["res://.godot/imported/School_A4.png-1b6ceffdd48fcb4c6188fb6cda4f2d4f.ctex"]
 
 [params]
 
