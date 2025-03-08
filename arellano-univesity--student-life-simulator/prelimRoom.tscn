@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bhibpgy8nijlc"]
 
-[ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://tilesets/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_3qgki"]
-[ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://tilesets/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_funp3"]
+[ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_3qgki"]
+[ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_funp3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7eq3x"]
 texture = ExtResource("1_3qgki")

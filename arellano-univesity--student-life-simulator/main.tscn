@@ -1,63 +1,37 @@
-[gd_scene load_steps=120 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=94 format=3 uid="uid://bv3fn2q421g7r"]
 
-[ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Scenes/main.png" id="1_pud1f"]
-[ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://tilesets/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
-[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://font/RasterForgeRegular-JpBgm.ttf" id="2_whgy5"]
-[ext_resource type="Texture2D" uid="uid://ocqfalijtyqa" path="res://tilesets/Cherry/Neighbor/CP_V1.1.0_nyknck/CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/Cherry_Neighbor_CP_V1.png" id="3_8on6w"]
-[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://font/PressStart2P.ttf" id="3_sje84"]
-[ext_resource type="Texture2D" uid="uid://dnj8gp0m0a1si" path="res://tilesets/Cherry/Neighbor/GuttyKreum_JapaneseCity_Freev1/Free_Version/Cherry_Neighbor_Gutty2.png" id="4_oc33x"]
-[ext_resource type="Texture2D" uid="uid://cg71p3a88xboe" path="res://tilesets/Cherry/Neighbor/GuttyKreum_JapaneseCity_Freev1/Free_Version/Cherry_Neighbor_Gutty.png" id="5_6g4g8"]
-[ext_resource type="Texture2D" uid="uid://brgeqaj3u1f11" path="res://tilesets/Cherry/Neighbor/Pixel Lands Village Demo/Pixel Lands Village Demo/Cherry_Neighbor_Pixel2.png" id="6_np6ia"]
-[ext_resource type="Texture2D" uid="uid://dou8gwjpmuiwa" path="res://tilesets/Cherry/Neighbor/Pixel Lands Village Demo/Pixel Lands Village Demo/Cherry_Neighbor_Pixel3.png" id="7_yl8ub"]
-[ext_resource type="Texture2D" uid="uid://jmuwyuvhv4da" path="res://tilesets/Cherry/Neighbor/Pixel Lands Village Demo/Pixel Lands Village Demo/Cherry_Neighbor_Pixel4.png" id="8_cjteq"]
-[ext_resource type="Texture2D" uid="uid://dimcbo3jevy04" path="res://tilesets/Cherry/Neighbor/Pixel Lands Village Demo/Pixel Lands Village Demo/Cherry_Neighbor_Pixel.png" id="9_5j6e3"]
-[ext_resource type="Texture2D" uid="uid://bc3x7xrgp418s" path="res://tilesets/Cherry/Room/PixelOffice/Cherry_Room_PixelOffice_LargePixelOffice.png" id="10_p3g0d"]
-[ext_resource type="Texture2D" uid="uid://dh0cdus8jya51" path="res://tilesets/Cherry/Room/PixelOffice/Cherry_Room_PixelOffice_PixelOffice.png" id="11_rp4dt"]
-[ext_resource type="Texture2D" uid="uid://drircl4mw3sxa" path="res://tilesets/Cherry/Room/PixelOffice/Cherry_Room_PixelOffice_PixelOfficeAssets.png" id="12_xinot"]
-[ext_resource type="Texture2D" uid="uid://be3e3xb3fr424" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_Mijanistylebob.png" id="13_buu7q"]
-[ext_resource type="Texture2D" uid="uid://dldikl3nhbdg3" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_Mijanistylehaar_kurz.png" id="14_wo67y"]
-[ext_resource type="Texture2D" uid="uid://dwgnr00i461gg" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_Mijanistylekurz_offen.png" id="15_msshi"]
-[ext_resource type="Texture2D" uid="uid://u5abg184y15f" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_Mijanistylelanges_haar.png" id="16_kji13"]
-[ext_resource type="Texture2D" uid="uid://qfr74nqiarh2" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistylePferdeschwanz.png" id="17_5k2ba"]
-[ext_resource type="Texture2D" uid="uid://bnabjsq2x83e2" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_Mijanistylerock.png" id="18_i0cxi"]
-[ext_resource type="Texture2D" uid="uid://celbenboqq6al" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleSchuhe.png" id="19_u7vri"]
-[ext_resource type="Texture2D" uid="uid://baalwnf101tmy" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleSchülerinnen_sheet_200p.png" id="20_uwp05"]
-[ext_resource type="Texture2D" uid="uid://doe4hnq8yalh1" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleStiefel.png" id="21_pky4e"]
-[ext_resource type="Texture2D" uid="uid://c7h72kruxewrv" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleStrumpfhose.png" id="23_yypnd"]
-[ext_resource type="Texture2D" uid="uid://brcsrofde7ioa" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleZöpfe.png" id="24_17b13"]
-[ext_resource type="Texture2D" uid="uid://bjqg1hhtyl5ls" path="res://tilesets/Cherry/Room/Mijanistyle_pupils/Cherry_Room_MijanistyleÜberwurf.png" id="25_emiky"]
-[ext_resource type="Texture2D" uid="uid://b0qm28eehbm6r" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Boss.png" id="26_fynun"]
-[ext_resource type="Texture2D" uid="uid://dkk64t5so8wa3" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_cabinet.png" id="27_ai8sx"]
-[ext_resource type="Texture2D" uid="uid://qxymc6oga6na" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Chair.png" id="28_tenmq"]
-[ext_resource type="Texture2D" uid="uid://buq84k8adgepg" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_coffee-maker.png" id="29_b3fe8"]
-[ext_resource type="Texture2D" uid="uid://cd0bkj0eh5g0j" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_desk-with-pc.png" id="30_ae74w"]
-[ext_resource type="Texture2D" uid="uid://kt7etpxhegne" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_desk.png" id="31_dyv4g"]
-[ext_resource type="Texture2D" uid="uid://u2htkp5rku3n" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia-Idle.png" id="32_j4tdf"]
-[ext_resource type="Texture2D" uid="uid://bdb7r0g6rtiqj" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia.png" id="34_2g2lp"]
-[ext_resource type="Texture2D" uid="uid://bq3fbnu24jvgk" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_Drinking_Coffee.png" id="35_84ran"]
-[ext_resource type="Texture2D" uid="uid://bqapxo6lja5q7" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_PC.png" id="36_i5yi3"]
-[ext_resource type="Texture2D" uid="uid://d38h236alyo3s" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_walk_Foward.png" id="37_wvxa4"]
-[ext_resource type="Texture2D" uid="uid://bl2a8abiq3nw5" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_walk_Left.png" id="38_gobn2"]
-[ext_resource type="Texture2D" uid="uid://bddvbth2qgw60" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_walk_Rigth.png" id="39_nlb08"]
-[ext_resource type="Texture2D" uid="uid://10erqxirmq2g" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Julia_walk_Up.png" id="40_m6ycv"]
-[ext_resource type="Texture2D" uid="uid://b7b77xer5sdkp" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_office-partitions-1.png" id="41_2nw6r"]
-[ext_resource type="Texture2D" uid="uid://cymfx1fhmn2n4" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_office-partitions-2.png" id="42_llh0c"]
-[ext_resource type="Texture2D" uid="uid://cla5g2lxjpvdu" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_PC1.png" id="43_fbc57"]
-[ext_resource type="Texture2D" uid="uid://cjpwjm4li16mx" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_PC2.png" id="45_lar4t"]
-[ext_resource type="Texture2D" uid="uid://d111xm11mii1e" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_plant.png" id="46_r1pb7"]
-[ext_resource type="Texture2D" uid="uid://bxwd8wc2m8dwx" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_printer.png" id="47_8rxxp"]
-[ext_resource type="Texture2D" uid="uid://dr22d1a1mxlwr" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_sink.png" id="48_t1rpn"]
-[ext_resource type="Texture2D" uid="uid://bkltdiggodiri" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_stamping-table.png" id="49_iv0bc"]
-[ext_resource type="Texture2D" uid="uid://bvemvgcl8en83" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_Trash.png" id="50_3lo55"]
-[ext_resource type="Texture2D" uid="uid://b5w4hswl8nkiw" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_water-cooler.png" id="51_0w1ln"]
-[ext_resource type="Texture2D" uid="uid://de83u4uc8fae7" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_worker1.png" id="52_oume1"]
-[ext_resource type="Texture2D" uid="uid://cc3sswyen2poq" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_worker2.png" id="53_75vju"]
-[ext_resource type="Texture2D" uid="uid://cunv2y8ww5pld" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_worker4.png" id="54_xvs8i"]
-[ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://tilesets/Thea/House/Thea_House_Houses_png.png" id="55_t1o4b"]
-[ext_resource type="Texture2D" uid="uid://dilbct6m0v6j" path="res://tilesets/Cherry/Room/free-office-pixel-art/free-office-pixel-art/Cherry_Room_Office_writing-table.png" id="56_2xtgv"]
-[ext_resource type="Texture2D" uid="uid://g4is88wgdwym" path="res://tilesets/Thea/House/Thea_House_Interior.png" id="57_eyt06"]
-[ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://tilesets/Thea/House/Thea_House_Walls_png.png" id="58_g3hbi"]
-[ext_resource type="Texture2D" uid="uid://b4ur3fiaakfjy" path="res://tilesets/Rachel/galletcity/Rachel_GalletCity2.png" id="59_6h7g2"]
+[ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Background/main.png" id="1_pud1f"]
+[ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="2_whgy5"]
+[ext_resource type="Texture2D" uid="uid://1seh13gsu2u4" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_CP_V1.png" id="3_8on6w"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="3_sje84"]
+[ext_resource type="Texture2D" uid="uid://df7s7yud37b4l" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_Pixel2.png" id="6_np6ia"]
+[ext_resource type="Texture2D" uid="uid://dj3cyjegrbr5d" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_Pixel3.png" id="7_yl8ub"]
+[ext_resource type="Texture2D" uid="uid://coj306wjlq0ee" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Boss.png" id="26_fynun"]
+[ext_resource type="Texture2D" uid="uid://cvt016g518ii4" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_cabinet.png" id="27_ai8sx"]
+[ext_resource type="Texture2D" uid="uid://c03hhdeaae5mn" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Chair.png" id="28_tenmq"]
+[ext_resource type="Texture2D" uid="uid://c71mobvwsnudh" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_coffee-maker.png" id="29_b3fe8"]
+[ext_resource type="Texture2D" uid="uid://ykxs4i2qodkl" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk-with-pc.png" id="30_ae74w"]
+[ext_resource type="Texture2D" uid="uid://uvggky7muwuv" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk.png" id="31_dyv4g"]
+[ext_resource type="Texture2D" uid="uid://dcnmpoqmwl81i" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Julia_PC.png" id="36_i5yi3"]
+[ext_resource type="Texture2D" uid="uid://bfgdxfrqsnj0g" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-1.png" id="41_2nw6r"]
+[ext_resource type="Texture2D" uid="uid://hhd27wapt2gr" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-2.png" id="42_llh0c"]
+[ext_resource type="Texture2D" uid="uid://bhn6imhw7rnqd" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_PC1.png" id="43_fbc57"]
+[ext_resource type="Texture2D" uid="uid://gv3tjmnmxiih" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_PC2.png" id="45_lar4t"]
+[ext_resource type="Texture2D" uid="uid://ml6pgh7gp5s2" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_plant.png" id="46_r1pb7"]
+[ext_resource type="Texture2D" uid="uid://c730xue86dqj4" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_printer.png" id="47_8rxxp"]
+[ext_resource type="Texture2D" uid="uid://duolrdpl5gsx1" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_sink.png" id="48_t1rpn"]
+[ext_resource type="Texture2D" uid="uid://dc44t6iwcfb08" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_stamping-table.png" id="49_iv0bc"]
+[ext_resource type="Texture2D" uid="uid://bmsef4t6d2wgf" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Trash.png" id="50_3lo55"]
+[ext_resource type="Texture2D" uid="uid://di0l8e5pxqjo5" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_water-cooler.png" id="51_0w1ln"]
+[ext_resource type="Texture2D" uid="uid://dksj2hg6elm5i" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_worker1.png" id="52_oume1"]
+[ext_resource type="Texture2D" uid="uid://dsrx8vkagpk31" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_worker2.png" id="53_75vju"]
+[ext_resource type="Texture2D" uid="uid://brcsmf8v43at" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_worker4.png" id="54_xvs8i"]
+[ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://Tileset/Thea/House/Thea_House_Houses_png.png" id="55_t1o4b"]
+[ext_resource type="Texture2D" uid="uid://ciuqjcbf6ahul" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_writing-table.png" id="56_2xtgv"]
+[ext_resource type="Texture2D" uid="uid://g4is88wgdwym" path="res://Tileset/Thea/House/Thea_House_Interior.png" id="57_eyt06"]
+[ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://Tileset/Thea/House/Thea_House_Walls_png.png" id="58_g3hbi"]
+[ext_resource type="Texture2D" uid="uid://b4ur3fiaakfjy" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity2.png" id="59_6h7g2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_my2jd"]
 texture = ExtResource("1_pud1f")
@@ -1801,7 +1775,6 @@ texture = ExtResource("3_8on6w")
 9:56/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rg4w"]
-texture = ExtResource("4_oc33x")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -5340,7 +5313,6 @@ texture = ExtResource("4_oc33x")
 67:51/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hccbc"]
-texture = ExtResource("5_6g4g8")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6386,7 +6358,6 @@ texture = ExtResource("7_yl8ub")
 12:18/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_be3j7"]
-texture = ExtResource("8_cjteq")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -6640,7 +6611,6 @@ texture = ExtResource("8_cjteq")
 17:18/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_otngx"]
-texture = ExtResource("9_5j6e3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6671,7 +6641,6 @@ texture = ExtResource("9_5j6e3")
 9:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tsix5"]
-texture = ExtResource("10_p3g0d")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10258,7 +10227,6 @@ texture = ExtResource("10_p3g0d")
 63:55/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pr0v1"]
-texture = ExtResource("11_rp4dt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10485,7 +10453,6 @@ texture = ExtResource("11_rp4dt")
 15:13/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dibxe"]
-texture = ExtResource("12_xinot")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10646,7 +10613,6 @@ texture = ExtResource("12_xinot")
 15:9/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hxj6u"]
-texture = ExtResource("13_buu7q")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10677,7 +10643,6 @@ texture = ExtResource("13_buu7q")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wcbby"]
-texture = ExtResource("14_wo67y")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10703,7 +10668,6 @@ texture = ExtResource("14_wo67y")
 3:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nhys4"]
-texture = ExtResource("15_msshi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10737,7 +10701,6 @@ texture = ExtResource("15_msshi")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gve6s"]
-texture = ExtResource("16_kji13")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10776,7 +10739,6 @@ texture = ExtResource("16_kji13")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4qwgx"]
-texture = ExtResource("17_5k2ba")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10808,7 +10770,6 @@ texture = ExtResource("17_5k2ba")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2qsj"]
-texture = ExtResource("18_i0cxi")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -10830,7 +10791,6 @@ texture = ExtResource("18_i0cxi")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0g3of"]
-texture = ExtResource("19_u7vri")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
@@ -10845,7 +10805,6 @@ texture = ExtResource("19_u7vri")
 3:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8835b"]
-texture = ExtResource("20_uwp05")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -11742,7 +11701,6 @@ texture = ExtResource("20_uwp05")
 17:36/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ionpb"]
-texture = ExtResource("21_pky4e")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -11765,489 +11723,8 @@ texture = ExtResource("21_pky4e")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0jnwl"]
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-8:0/0 = 0
-9:0/0 = 0
-10:0/0 = 0
-11:0/0 = 0
-12:0/0 = 0
-13:0/0 = 0
-14:0/0 = 0
-15:0/0 = 0
-16:0/0 = 0
-17:0/0 = 0
-18:0/0 = 0
-19:0/0 = 0
-20:0/0 = 0
-21:0/0 = 0
-22:0/0 = 0
-23:0/0 = 0
-24:0/0 = 0
-25:0/0 = 0
-26:0/0 = 0
-27:0/0 = 0
-28:0/0 = 0
-29:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-8:1/0 = 0
-9:1/0 = 0
-10:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-16:1/0 = 0
-17:1/0 = 0
-18:1/0 = 0
-19:1/0 = 0
-20:1/0 = 0
-21:1/0 = 0
-22:1/0 = 0
-23:1/0 = 0
-24:1/0 = 0
-25:1/0 = 0
-26:1/0 = 0
-27:1/0 = 0
-28:1/0 = 0
-29:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-7:2/0 = 0
-8:2/0 = 0
-9:2/0 = 0
-10:2/0 = 0
-11:2/0 = 0
-12:2/0 = 0
-13:2/0 = 0
-14:2/0 = 0
-15:2/0 = 0
-16:2/0 = 0
-17:2/0 = 0
-18:2/0 = 0
-19:2/0 = 0
-20:2/0 = 0
-21:2/0 = 0
-22:2/0 = 0
-23:2/0 = 0
-24:2/0 = 0
-25:2/0 = 0
-26:2/0 = 0
-27:2/0 = 0
-28:2/0 = 0
-29:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-7:3/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-11:3/0 = 0
-12:3/0 = 0
-13:3/0 = 0
-14:3/0 = 0
-15:3/0 = 0
-16:3/0 = 0
-17:3/0 = 0
-18:3/0 = 0
-19:3/0 = 0
-20:3/0 = 0
-21:3/0 = 0
-22:3/0 = 0
-23:3/0 = 0
-24:3/0 = 0
-25:3/0 = 0
-26:3/0 = 0
-27:3/0 = 0
-28:3/0 = 0
-29:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-7:4/0 = 0
-8:4/0 = 0
-9:4/0 = 0
-10:4/0 = 0
-11:4/0 = 0
-12:4/0 = 0
-13:4/0 = 0
-14:4/0 = 0
-15:4/0 = 0
-16:4/0 = 0
-17:4/0 = 0
-18:4/0 = 0
-19:4/0 = 0
-20:4/0 = 0
-21:4/0 = 0
-22:4/0 = 0
-23:4/0 = 0
-24:4/0 = 0
-25:4/0 = 0
-26:4/0 = 0
-27:4/0 = 0
-28:4/0 = 0
-29:4/0 = 0
-0:5/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-6:5/0 = 0
-7:5/0 = 0
-8:5/0 = 0
-9:5/0 = 0
-10:5/0 = 0
-11:5/0 = 0
-12:5/0 = 0
-13:5/0 = 0
-14:5/0 = 0
-15:5/0 = 0
-16:5/0 = 0
-17:5/0 = 0
-18:5/0 = 0
-19:5/0 = 0
-20:5/0 = 0
-21:5/0 = 0
-22:5/0 = 0
-23:5/0 = 0
-24:5/0 = 0
-25:5/0 = 0
-26:5/0 = 0
-27:5/0 = 0
-28:5/0 = 0
-29:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-3:6/0 = 0
-4:6/0 = 0
-5:6/0 = 0
-6:6/0 = 0
-7:6/0 = 0
-8:6/0 = 0
-9:6/0 = 0
-10:6/0 = 0
-11:6/0 = 0
-12:6/0 = 0
-13:6/0 = 0
-14:6/0 = 0
-15:6/0 = 0
-16:6/0 = 0
-17:6/0 = 0
-18:6/0 = 0
-19:6/0 = 0
-20:6/0 = 0
-21:6/0 = 0
-22:6/0 = 0
-23:6/0 = 0
-24:6/0 = 0
-25:6/0 = 0
-26:6/0 = 0
-27:6/0 = 0
-28:6/0 = 0
-29:6/0 = 0
-0:7/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
-4:7/0 = 0
-5:7/0 = 0
-6:7/0 = 0
-7:7/0 = 0
-8:7/0 = 0
-9:7/0 = 0
-10:7/0 = 0
-11:7/0 = 0
-12:7/0 = 0
-13:7/0 = 0
-14:7/0 = 0
-15:7/0 = 0
-16:7/0 = 0
-17:7/0 = 0
-18:7/0 = 0
-19:7/0 = 0
-20:7/0 = 0
-21:7/0 = 0
-22:7/0 = 0
-23:7/0 = 0
-24:7/0 = 0
-25:7/0 = 0
-26:7/0 = 0
-27:7/0 = 0
-28:7/0 = 0
-29:7/0 = 0
-0:8/0 = 0
-1:8/0 = 0
-2:8/0 = 0
-3:8/0 = 0
-4:8/0 = 0
-5:8/0 = 0
-6:8/0 = 0
-7:8/0 = 0
-8:8/0 = 0
-9:8/0 = 0
-10:8/0 = 0
-11:8/0 = 0
-12:8/0 = 0
-13:8/0 = 0
-14:8/0 = 0
-15:8/0 = 0
-16:8/0 = 0
-17:8/0 = 0
-18:8/0 = 0
-19:8/0 = 0
-20:8/0 = 0
-21:8/0 = 0
-22:8/0 = 0
-23:8/0 = 0
-24:8/0 = 0
-25:8/0 = 0
-26:8/0 = 0
-27:8/0 = 0
-28:8/0 = 0
-29:8/0 = 0
-0:9/0 = 0
-1:9/0 = 0
-2:9/0 = 0
-3:9/0 = 0
-4:9/0 = 0
-5:9/0 = 0
-6:9/0 = 0
-7:9/0 = 0
-8:9/0 = 0
-9:9/0 = 0
-10:9/0 = 0
-11:9/0 = 0
-12:9/0 = 0
-13:9/0 = 0
-14:9/0 = 0
-15:9/0 = 0
-16:9/0 = 0
-17:9/0 = 0
-18:9/0 = 0
-19:9/0 = 0
-20:9/0 = 0
-21:9/0 = 0
-22:9/0 = 0
-23:9/0 = 0
-24:9/0 = 0
-25:9/0 = 0
-26:9/0 = 0
-27:9/0 = 0
-28:9/0 = 0
-29:9/0 = 0
-0:10/0 = 0
-1:10/0 = 0
-2:10/0 = 0
-3:10/0 = 0
-4:10/0 = 0
-5:10/0 = 0
-6:10/0 = 0
-7:10/0 = 0
-8:10/0 = 0
-9:10/0 = 0
-10:10/0 = 0
-11:10/0 = 0
-12:10/0 = 0
-13:10/0 = 0
-14:10/0 = 0
-15:10/0 = 0
-16:10/0 = 0
-17:10/0 = 0
-18:10/0 = 0
-19:10/0 = 0
-20:10/0 = 0
-21:10/0 = 0
-22:10/0 = 0
-23:10/0 = 0
-24:10/0 = 0
-25:10/0 = 0
-26:10/0 = 0
-27:10/0 = 0
-28:10/0 = 0
-29:10/0 = 0
-0:11/0 = 0
-1:11/0 = 0
-2:11/0 = 0
-3:11/0 = 0
-4:11/0 = 0
-5:11/0 = 0
-6:11/0 = 0
-7:11/0 = 0
-8:11/0 = 0
-9:11/0 = 0
-10:11/0 = 0
-11:11/0 = 0
-12:11/0 = 0
-13:11/0 = 0
-14:11/0 = 0
-15:11/0 = 0
-16:11/0 = 0
-17:11/0 = 0
-18:11/0 = 0
-19:11/0 = 0
-20:11/0 = 0
-21:11/0 = 0
-22:11/0 = 0
-23:11/0 = 0
-24:11/0 = 0
-25:11/0 = 0
-26:11/0 = 0
-27:11/0 = 0
-28:11/0 = 0
-29:11/0 = 0
-0:12/0 = 0
-1:12/0 = 0
-2:12/0 = 0
-3:12/0 = 0
-4:12/0 = 0
-5:12/0 = 0
-6:12/0 = 0
-7:12/0 = 0
-8:12/0 = 0
-9:12/0 = 0
-10:12/0 = 0
-11:12/0 = 0
-12:12/0 = 0
-13:12/0 = 0
-14:12/0 = 0
-15:12/0 = 0
-16:12/0 = 0
-17:12/0 = 0
-18:12/0 = 0
-19:12/0 = 0
-20:12/0 = 0
-21:12/0 = 0
-22:12/0 = 0
-23:12/0 = 0
-24:12/0 = 0
-25:12/0 = 0
-26:12/0 = 0
-27:12/0 = 0
-28:12/0 = 0
-29:12/0 = 0
-0:13/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-3:13/0 = 0
-4:13/0 = 0
-5:13/0 = 0
-6:13/0 = 0
-7:13/0 = 0
-8:13/0 = 0
-9:13/0 = 0
-10:13/0 = 0
-11:13/0 = 0
-12:13/0 = 0
-13:13/0 = 0
-14:13/0 = 0
-15:13/0 = 0
-16:13/0 = 0
-17:13/0 = 0
-18:13/0 = 0
-19:13/0 = 0
-20:13/0 = 0
-21:13/0 = 0
-22:13/0 = 0
-23:13/0 = 0
-24:13/0 = 0
-25:13/0 = 0
-26:13/0 = 0
-27:13/0 = 0
-28:13/0 = 0
-29:13/0 = 0
-0:14/0 = 0
-1:14/0 = 0
-2:14/0 = 0
-3:14/0 = 0
-4:14/0 = 0
-5:14/0 = 0
-6:14/0 = 0
-7:14/0 = 0
-8:14/0 = 0
-9:14/0 = 0
-10:14/0 = 0
-11:14/0 = 0
-12:14/0 = 0
-13:14/0 = 0
-14:14/0 = 0
-15:14/0 = 0
-16:14/0 = 0
-17:14/0 = 0
-18:14/0 = 0
-19:14/0 = 0
-20:14/0 = 0
-21:14/0 = 0
-22:14/0 = 0
-23:14/0 = 0
-24:14/0 = 0
-25:14/0 = 0
-26:14/0 = 0
-27:14/0 = 0
-28:14/0 = 0
-29:14/0 = 0
-0:15/0 = 0
-1:15/0 = 0
-2:15/0 = 0
-3:15/0 = 0
-4:15/0 = 0
-5:15/0 = 0
-6:15/0 = 0
-7:15/0 = 0
-8:15/0 = 0
-9:15/0 = 0
-10:15/0 = 0
-11:15/0 = 0
-12:15/0 = 0
-13:15/0 = 0
-14:15/0 = 0
-15:15/0 = 0
-16:15/0 = 0
-17:15/0 = 0
-18:15/0 = 0
-19:15/0 = 0
-20:15/0 = 0
-21:15/0 = 0
-22:15/0 = 0
-23:15/0 = 0
-24:15/0 = 0
-25:15/0 = 0
-26:15/0 = 0
-27:15/0 = 0
-28:15/0 = 0
-29:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1vsxk"]
-texture = ExtResource("23_yypnd")
 0:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -12265,7 +11742,6 @@ texture = ExtResource("23_yypnd")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0cgyl"]
-texture = ExtResource("24_17b13")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -12299,7 +11775,6 @@ texture = ExtResource("24_17b13")
 3:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e8b8b"]
-texture = ExtResource("25_emiky")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -12391,7 +11866,6 @@ texture = ExtResource("31_dyv4g")
 3:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qoxw7"]
-texture = ExtResource("32_j4tdf")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -12892,7 +12366,6 @@ texture = ExtResource("32_j4tdf")
 29:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tk228"]
-texture = ExtResource("34_2g2lp")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -12911,7 +12384,6 @@ texture = ExtResource("34_2g2lp")
 7:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6jf5d"]
-texture = ExtResource("35_84ran")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -13001,7 +12473,6 @@ texture = ExtResource("36_i5yi3")
 22:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rc50h"]
-texture = ExtResource("37_wvxa4")
 5:0/0 = 0
 6:0/0 = 0
 13:0/0 = 0
@@ -13024,7 +12495,6 @@ texture = ExtResource("37_wvxa4")
 14:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8pdqw"]
-texture = ExtResource("38_gobn2")
 5:0/0 = 0
 6:0/0 = 0
 13:0/0 = 0
@@ -13047,7 +12517,6 @@ texture = ExtResource("38_gobn2")
 14:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p8po4"]
-texture = ExtResource("39_nlb08")
 5:0/0 = 0
 6:0/0 = 0
 13:0/0 = 0
@@ -13070,7 +12539,6 @@ texture = ExtResource("39_nlb08")
 14:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hxkp7"]
-texture = ExtResource("40_m6ycv")
 5:0/0 = 0
 6:0/0 = 0
 13:0/0 = 0
@@ -18753,9 +18221,9 @@ offset_bottom = 654.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_my2jd")
 
 [node name="Game Title" type="Label" parent="."]
-offset_left = 42.0
+offset_left = 44.0
 offset_top = 69.0
-offset_right = 1105.0
+offset_right = 1107.0
 offset_bottom = 209.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0.372549, 1)
 theme_override_constants/line_spacing = 20
