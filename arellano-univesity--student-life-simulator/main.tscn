@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=95 format=3 uid="uid://bv3fn2q421g7r"]
 
 [ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Background/main.png" id="1_pud1f"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://c71mobvwsnudh" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_coffee-maker.png" id="29_b3fe8"]
 [ext_resource type="Texture2D" uid="uid://ykxs4i2qodkl" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk-with-pc.png" id="30_ae74w"]
 [ext_resource type="Texture2D" uid="uid://uvggky7muwuv" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk.png" id="31_dyv4g"]
+[ext_resource type="AudioStream" uid="uid://cuxoug3c1q531" path="res://SoundEffects/8bit-music-for-game-68698.mp3" id="33_k4kyj"]
 [ext_resource type="Texture2D" uid="uid://dcnmpoqmwl81i" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Julia_PC.png" id="36_i5yi3"]
 [ext_resource type="Texture2D" uid="uid://bfgdxfrqsnj0g" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-1.png" id="41_2nw6r"]
 [ext_resource type="Texture2D" uid="uid://hhd27wapt2gr" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-2.png" id="42_llh0c"]
@@ -18221,10 +18222,10 @@ offset_bottom = 654.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_my2jd")
 
 [node name="Game Title" type="Label" parent="."]
-offset_left = 44.0
-offset_top = 69.0
-offset_right = 1107.0
-offset_bottom = 209.0
+offset_left = 78.0
+offset_top = 60.0
+offset_right = 1098.0
+offset_bottom = 200.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0.372549, 1)
 theme_override_constants/line_spacing = 20
 theme_override_constants/shadow_offset_x = 3
@@ -18353,3 +18354,9 @@ tile_set = SubResource("TileSet_xbv7r")
 texture_filter = 1
 scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_xbv7r")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("33_k4kyj")
+volume_db = 10.0
+autoplay = true
+parameters/looping = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://ceynq20ff2bvw"]
+[gd_scene load_steps=48 format=3 uid="uid://b3kpdttvv5ltj"]
 
 [ext_resource type="Texture2D" uid="uid://coj306wjlq0ee" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Boss.png" id="1_7wtk2"]
 [ext_resource type="Texture2D" uid="uid://cvt016g518ii4" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_cabinet.png" id="2_mtnkf"]
