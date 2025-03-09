@@ -99,9 +99,9 @@ offset_bottom = 563.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_fba4b")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 156.0
+offset_left = 158.0
 offset_top = 139.0
-offset_right = 1002.0
+offset_right = 1004.0
 offset_bottom = 201.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.490196)
 theme_override_constants/line_spacing = 20
