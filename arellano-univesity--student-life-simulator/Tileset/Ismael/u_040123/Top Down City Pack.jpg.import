@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmivovr3snp7"
-path="res://.godot/imported/pngegg (1).png-16c22ede7fbd917093d7f240c0a39e3f.ctex"
+uid="uid://dy3eyifcb3int"
+path="res://.godot/imported/Top Down City Pack.jpg-ed30a519d502e3aca5f75a666eec1e61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pngegg (1).png"
-dest_files=["res://.godot/imported/pngegg (1).png-16c22ede7fbd917093d7f240c0a39e3f.ctex"]
+source_file="res://Tileset/Ismael/u_040123/Top Down City Pack.jpg"
+dest_files=["res://.godot/imported/Top Down City Pack.jpg-ed30a519d502e3aca5f75a666eec1e61.ctex"]
 
 [params]
 
