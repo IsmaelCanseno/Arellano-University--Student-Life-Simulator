@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnia1xd0mc7lv"
-path="res://.godot/imported/Gold.png-086d18654b3fffddfd00e5bdba5f4dca.ctex"
+uid="uid://eikkfsxlb3ad"
+path="res://.godot/imported/fence_2.png-b78691f731887035ed0e79c6840289f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tileset/Ismael/Arellano School Building/Logos/Gold.png"
-dest_files=["res://.godot/imported/Gold.png-086d18654b3fffddfd00e5bdba5f4dca.ctex"]
+source_file="res://Tileset/Ismael/oak_woods_v1.0/decorations/fence_2.png"
+dest_files=["res://.godot/imported/fence_2.png-b78691f731887035ed0e79c6840289f5.ctex"]
 
 [params]
 

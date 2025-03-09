@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf3j2nnp1k4ba"
-path="res://.godot/imported/Ikkki.png-420515b29bdba606f4d15304fff502a5.ctex"
+uid="uid://bithfsqypo5vx"
+path="res://.godot/imported/shop.png-b4168a90327533258367a0276b6dc3f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tileset/Ismael/Arellano School Building/Logos/Ikkki.png"
-dest_files=["res://.godot/imported/Ikkki.png-420515b29bdba606f4d15304fff502a5.ctex"]
+source_file="res://Tileset/Ismael/oak_woods_v1.0/decorations/shop.png"
+dest_files=["res://.godot/imported/shop.png-b4168a90327533258367a0276b6dc3f0.ctex"]
 
 [params]
 

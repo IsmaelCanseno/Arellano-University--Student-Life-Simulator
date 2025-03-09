@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgl0mpxrg0iij"
-path="res://.godot/imported/test-ao.png-96230725f7b9960c45dfae53a679b220.ctex"
+uid="uid://bhwgaevc3pqwm"
+path="res://.godot/imported/background_layer_1.png-42be2462ca26e7f9eaf47ebff862dcc9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tileset/Ismael/Arellano School Building/Logos/test-ao.png"
-dest_files=["res://.godot/imported/test-ao.png-96230725f7b9960c45dfae53a679b220.ctex"]
+source_file="res://Tileset/Ismael/oak_woods_v1.0/background/background_layer_1.png"
+dest_files=["res://.godot/imported/background_layer_1.png-42be2462ca26e7f9eaf47ebff862dcc9.ctex"]
 
 [params]
 

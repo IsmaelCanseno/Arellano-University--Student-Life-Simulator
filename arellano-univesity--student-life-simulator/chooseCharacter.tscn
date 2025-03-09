@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://d2eml3716vdwo"]
 
-[ext_resource type="Texture2D" uid="uid://lyaagwl5y1yi" path="res://Scenes/chooseCharacter.png" id="1_3g1qu"]
+[ext_resource type="Texture2D" uid="uid://lyaagwl5y1yi" path="res://Background/chooseCharacter.png" id="1_3g1qu"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://font/PressStart2P.ttf" id="2_0l2n3"]
 [ext_resource type="Texture2D" uid="uid://dok56rbwic4qv" path="res://Character/characters.png" id="3_2ld7q"]
 
