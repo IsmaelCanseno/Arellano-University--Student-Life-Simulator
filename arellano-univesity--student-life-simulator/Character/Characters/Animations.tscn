@@ -297,7 +297,8 @@ texture_filter = 1
 position = Vector2(54, 54)
 scale = Vector2(6.625, 6.75)
 sprite_frames = SubResource("SpriteFrames_yuqi6")
-frame_progress = 0.241127
+animation = &"walking down"
+frame_progress = 0.225971
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
 texture_filter = 1
