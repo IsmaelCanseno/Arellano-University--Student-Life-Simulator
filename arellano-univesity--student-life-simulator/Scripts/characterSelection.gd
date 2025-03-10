@@ -23,7 +23,10 @@ func _set_char_selected(charNode):
 		var isSelected = charNode == node
 		node.set_selected(isSelected)
 
-func _on_start_button_pressed():
+func _on_start_pressed() -> void:
 	if not GlobalData.playerCharPath: return
 	
 	get_tree().change_scene_to_file("res://Scenes/house.tscn")
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/main.tscn")

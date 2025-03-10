@@ -1,3 +1,106 @@
-[gd_scene format=3 uid="uid://bqcug81y2jlu8"]
+[gd_scene load_steps=10 format=3 uid="uid://bqcug81y2jlu8"]
+
+[ext_resource type="Script" path="res://Scenes/about.gd" id="1_cqorl"]
+[ext_resource type="Texture2D" uid="uid://tm5neg7viqak" path="res://Background/about.png" id="1_jswwd"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="2_atjft"]
+[ext_resource type="FontFile" uid="uid://dsjqy00nvj81k" path="res://Font/Poppins-SemiBold.ttf" id="3_ugxwc"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="5_427s0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1s1i6"]
+texture = ExtResource("1_jswwd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o4gd7"]
+bg_color = Color(0.674455, 0.435445, 0.0153799, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ue1nn"]
+bg_color = Color(0.674455, 0.435445, 0.0153799, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.674455, 0.435445, 0.0153799, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irioe"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.758714, 0.492166, 0.0207804, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
 
 [node name="About" type="Node2D"]
+script = ExtResource("1_cqorl")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1155.0
+offset_bottom = 651.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_1s1i6")
+
+[node name="About the Game" type="Label" parent="."]
+offset_left = 96.0
+offset_top = 89.0
+offset_right = 1057.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0.986752, 0.986752, 0.986752, 1)
+theme_override_colors/font_shadow_color = Color(0.0702484, 0.156072, 2.40654e-08, 1)
+theme_override_constants/line_spacing = 20
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("2_atjft")
+theme_override_font_sizes/font_size = 80
+text = "About The Game"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+offset_left = 51.0
+offset_top = 214.0
+offset_right = 1108.0
+offset_bottom = 525.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0702484, 0.156072, 2.40654e-08, 1)
+theme_override_constants/line_spacing = 6
+theme_override_fonts/font = ExtResource("3_ugxwc")
+theme_override_font_sizes/font_size = 20
+text = "Arellano University: Student Life Simulator is a roleplaying simulation game inspired by GTA that 
+challenges players to balance academic, social, and self-care while completing tasks like attending 
+classes and passing assignments.
+
+The Group 3 \"CTRL+ALT+BURGER,\" which consists of Bacanto Rachel, Boncales Cherry, Caloing Kristhel, 
+Canseno Ismael, and Fernando Thea, are third-year BSIT students at Arellano University Jose Abad 
+Santos Campus and were the team behind developing this game. The game was developed specifically 
+to fulfill a requirement for the subject course \"Elective 4: Platform Technologies.\" This game started 
+out in March. 6, 2025, and it was last updated in March. 12, 2025."
+
+[node name="Back" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 550.0
+offset_right = 317.0
+offset_bottom = 593.0
+theme_override_fonts/font = ExtResource("5_427s0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o4gd7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ue1nn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_irioe")
+text = "BACK"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

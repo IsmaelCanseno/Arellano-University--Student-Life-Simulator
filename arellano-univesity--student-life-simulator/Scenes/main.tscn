@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=100 format=3 uid="uid://bv3fn2q421g7r"]
 
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_bersc"]
 [ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Background/main.png" id="1_pud1f"]
@@ -49,6 +49,19 @@ corner_radius_top_right = 18
 corner_radius_bottom_right = 18
 corner_radius_bottom_left = 18
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hsswa"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drsdi"]
 bg_color = Color(0.129412, 0.329412, 0.541176, 1)
 border_width_left = 2
@@ -75,6 +88,19 @@ corner_radius_top_right = 18
 corner_radius_bottom_right = 18
 corner_radius_bottom_left = 18
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdv3o"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5j5t"]
 bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
 border_width_left = 2
@@ -82,6 +108,19 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
 border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h4caf"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.0941176, 0.258824, 0.431373, 1)
 border_blend = true
 corner_radius_top_left = 18
 corner_radius_top_right = 18
@@ -18282,6 +18321,7 @@ offset_right = 716.0
 offset_bottom = 542.0
 theme_override_fonts/font = ExtResource("3_sje84")
 theme_override_styles/hover = SubResource("StyleBoxFlat_h8ks1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hsswa")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
 text = "PLAY"
 
@@ -18292,6 +18332,7 @@ offset_right = 716.0
 offset_bottom = 593.0
 theme_override_fonts/font = ExtResource("3_sje84")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5wxkl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vdv3o")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
 text = "ABOUT
 "
@@ -18303,6 +18344,7 @@ offset_right = 716.0
 offset_bottom = 644.0
 theme_override_fonts/font = ExtResource("3_sje84")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o5j5t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h4caf")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
 text = "EXIT"
 
