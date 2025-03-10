@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7rqd357mnp2n"
-path="res://.godot/imported/School01RM.png-cf817832667e786bb14bd84ee85c1d41.ctex"
+uid="uid://dweyy0e7oheb"
+path="res://.godot/imported/female.png-223c42afba65cacdaa17b5c049fd1333.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Character/Characters/Color/School01RM.png"
-dest_files=["res://.godot/imported/School01RM.png-cf817832667e786bb14bd84ee85c1d41.ctex"]
+source_file="res://Character/female.png"
+dest_files=["res://.godot/imported/female.png-223c42afba65cacdaa17b5c049fd1333.ctex"]
 
 [params]
 
