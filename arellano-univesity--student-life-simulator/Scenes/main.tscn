@@ -1,12 +1,10 @@
-[gd_scene load_steps=95 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=93 format=3 uid="uid://bv3fn2q421g7r"]
 
 [ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Background/main.png" id="1_pud1f"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="2_whgy5"]
 [ext_resource type="Texture2D" uid="uid://1seh13gsu2u4" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_CP_V1.png" id="3_8on6w"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="3_sje84"]
-[ext_resource type="Texture2D" uid="uid://df7s7yud37b4l" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_Pixel2.png" id="6_np6ia"]
-[ext_resource type="Texture2D" uid="uid://dj3cyjegrbr5d" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_Pixel3.png" id="7_yl8ub"]
 [ext_resource type="Texture2D" uid="uid://coj306wjlq0ee" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Boss.png" id="26_fynun"]
 [ext_resource type="Texture2D" uid="uid://cvt016g518ii4" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_cabinet.png" id="27_ai8sx"]
 [ext_resource type="Texture2D" uid="uid://c03hhdeaae5mn" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Chair.png" id="28_tenmq"]
@@ -6064,7 +6062,6 @@ texture = ExtResource("3_8on6w")
 33:21/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nsrjv"]
-texture = ExtResource("6_np6ia")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6158,7 +6155,6 @@ texture = ExtResource("6_np6ia")
 9:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vb84t"]
-texture = ExtResource("7_yl8ub")
 10:1/0 = 0
 11:1/0 = 0
 12:1/0 = 0
