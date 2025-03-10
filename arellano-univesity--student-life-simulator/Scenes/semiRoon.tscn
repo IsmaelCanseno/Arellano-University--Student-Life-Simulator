@@ -1,0 +1,26 @@
+[gd_scene load_steps=8 format=3 uid="uid://dj5r8mxxadp5h"]
+
+[ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_ppxto"]
+[ext_resource type="Texture2D" uid="uid://bgi8cjo2fuqce" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Floors.png" id="2_wtgcd"]
+[ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://Tileset/Thea/House/Thea_House_Walls_png.png" id="3_rgma1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xkf0n"]
+texture = ExtResource("1_ppxto")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2shr3"]
+texture = ExtResource("2_wtgcd")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mkymw"]
+texture = ExtResource("3_rgma1")
+
+[sub_resource type="TileSet" id="TileSet_ah1dc"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_xkf0n")
+sources/2 = SubResource("TileSetAtlasSource_2shr3")
+sources/3 = SubResource("TileSetAtlasSource_mkymw")
+
+[node name="SemiRoon" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ah1dc")
+format = 2
