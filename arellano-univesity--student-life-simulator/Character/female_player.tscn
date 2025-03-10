@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dok56rbwic4qv" path="res://Character/characters.png" id="1_xj04g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ayrj3"]
-size = Vector2(3.01887, 3.48148)
+size = Vector2(1.66038, 2)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m4s4j"]
 atlas = ExtResource("1_xj04g")
@@ -114,7 +114,6 @@ script = ExtResource("1_qrg1n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1
-position = Vector2(0, -0.75)
 scale = Vector2(6.625, 6.75)
 shape = SubResource("RectangleShape2D_ayrj3")
 
