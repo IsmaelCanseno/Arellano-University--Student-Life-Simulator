@@ -1,5 +1,6 @@
-[gd_scene load_steps=93 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=97 format=3 uid="uid://bv3fn2q421g7r"]
 
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_bersc"]
 [ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Background/main.png" id="1_pud1f"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="2_whgy5"]
@@ -35,6 +36,19 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_my2jd"]
 texture = ExtResource("1_pud1f")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8ks1"]
+bg_color = Color(0.0930021, 0.257193, 0.430585, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drsdi"]
 bg_color = Color(0.129412, 0.329412, 0.541176, 1)
 border_width_left = 2
@@ -42,6 +56,32 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
 border_color = Color(0.103979, 0.279426, 0.464818, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wxkl"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5j5t"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
 border_blend = true
 corner_radius_top_left = 18
 corner_radius_top_right = 18
@@ -18210,7 +18250,8 @@ sources/58 = SubResource("TileSetAtlasSource_aep2r")
 sources/59 = SubResource("TileSetAtlasSource_faf5u")
 sources/60 = SubResource("TileSetAtlasSource_gv51e")
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node2D"]
+script = ExtResource("1_bersc")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 1155.0
@@ -18227,7 +18268,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0.372549, 1)
 theme_override_constants/line_spacing = 20
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 4
-theme_override_constants/shadow_outline_size = 4
+theme_override_constants/shadow_outline_size = 5
 theme_override_fonts/font = ExtResource("2_whgy5")
 theme_override_font_sizes/font_size = 68
 text = "Arellano University:
@@ -18240,6 +18281,7 @@ offset_top = 499.0
 offset_right = 716.0
 offset_bottom = 542.0
 theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h8ks1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
 text = "PLAY"
 
@@ -18249,6 +18291,7 @@ offset_top = 550.0
 offset_right = 716.0
 offset_bottom = 593.0
 theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5wxkl")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
 text = "ABOUT
 "
@@ -18259,6 +18302,7 @@ offset_top = 601.0
 offset_right = 716.0
 offset_bottom = 644.0
 theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5j5t")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drsdi")
 text = "EXIT"
 
@@ -18357,3 +18401,7 @@ stream = ExtResource("33_k4kyj")
 volume_db = 10.0
 autoplay = true
 parameters/looping = true
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="About" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
