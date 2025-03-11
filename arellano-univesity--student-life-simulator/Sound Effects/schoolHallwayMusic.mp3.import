@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh04fmbgt30h7"
+path="res://.godot/imported/schoolHallwayMusic.mp3-0fc753144d75f9a5e352422d1a4d3a99.mp3str"
+
+[deps]
+
+source_file="res://Sound Effects/schoolHallwayMusic.mp3"
+dest_files=["res://.godot/imported/schoolHallwayMusic.mp3-0fc753144d75f9a5e352422d1a4d3a99.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
