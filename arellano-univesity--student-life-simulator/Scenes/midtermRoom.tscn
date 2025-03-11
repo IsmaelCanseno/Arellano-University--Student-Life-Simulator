@@ -1026,3 +1026,5 @@ layer_2/tile_data = PackedInt32Array(65546, 1769472, 2, 131082, 1769472, 3, 1966
 layer_3/name = "patong"
 layer_3/y_sort_enabled = true
 layer_3/tile_data = PackedInt32Array(851982, 1507328, 13, 851983, 1179648, 13)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
