@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dgexv3w661kh2"]
+[gd_scene load_steps=15 format=3 uid="uid://b5m3dvnhm7e40"]
 
 [ext_resource type="Script" path="res://Scripts/male_player.gd" id="1_dnv02"]
 [ext_resource type="Texture2D" uid="uid://dok56rbwic4qv" path="res://Character/characters.png" id="2_eknl4"]
@@ -121,4 +121,4 @@ shape = SubResource("RectangleShape2D_jfcqw")
 texture_filter = 1
 scale = Vector2(1.344, 1.369)
 sprite_frames = SubResource("SpriteFrames_ntn1f")
-animation = &"side_idle"
+animation = &"front_idle"
