@@ -123,3 +123,7 @@ position = Vector2(-2.38419e-07, -1)
 scale = Vector2(1.34375, 1.3691)
 sprite_frames = SubResource("SpriteFrames_ceca0")
 animation = &"front_idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+limit_smoothed = true
