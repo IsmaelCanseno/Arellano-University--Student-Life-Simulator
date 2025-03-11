@@ -18,11 +18,12 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pc3lg"]
-radius = 9.0
+radius = 11.0454
 
 [node name="female_cutting" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.25, 1.25)
 sprite_frames = SubResource("SpriteFrames_k4veq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
