@@ -1,6 +1,6 @@
 [gd_scene load_steps=100 format=3 uid="uid://bv3fn2q421g7r"]
 
-[ext_resource type="Script" path="res://Scenes/main.gd" id="1_bersc"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_bersc"]
 [ext_resource type="Texture2D" uid="uid://dakyeeydkvur7" path="res://Background/main.png" id="1_pud1f"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="2_whgy5"]

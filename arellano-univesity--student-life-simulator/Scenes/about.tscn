@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://bqcug81y2jlu8"]
 
-[ext_resource type="Script" path="res://Scenes/about.gd" id="1_cqorl"]
+[ext_resource type="Script" path="res://Scripts/about.gd" id="1_cqorl"]
 [ext_resource type="Texture2D" uid="uid://tm5neg7viqak" path="res://Background/about.png" id="1_jswwd"]
-[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://font/RasterForgeRegular-JpBgm.ttf" id="2_atjft"]
-[ext_resource type="FontFile" uid="uid://dsjqy00nvj81k" path="res://font/Poppins-SemiBold.ttf" id="3_ugxwc"]
-[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://font/PressStart2P.ttf" id="5_427s0"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="2_atjft"]
+[ext_resource type="FontFile" uid="uid://dsjqy00nvj81k" path="res://Font/Poppins-SemiBold.ttf" id="3_ugxwc"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="5_427s0"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1s1i6"]
 texture = ExtResource("1_jswwd")

@@ -1,9 +1,27 @@
-extends Node2D
+extends Node2D  # Ensure the script extends Node2D or another relevant Node class
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	var playerCharPath = GlobalData.playerCharPath
-	var playerNode = load(playerCharPath).instantiate()
-	add_child(playerNode)
-	playerNode.global_position = $Marker2D.global_position
+	
+	# Check if path exists
+	if not ResourceLoader.exists(playerCharPath):
+		print("Error: Invalid player character path!", playerCharPath)
+		return
+
+	var playerScene = load(playerCharPath)
+	
+	# Ensure scene is loaded properly
+	if playerScene == null:
+		print("Error: Failed to load player scene!")
+		return
+
+	var playerNode = playerScene.instantiate()
+	add_child(playerNode)  # Ensure script extends Node to use this
+
+	# Ensure Marker2D exists
+	var marker = $Marker2D
+	if marker == null:
+		print("Error: Marker2D node not found!")
+		return
+
+	playerNode.global_position = marker.global_position

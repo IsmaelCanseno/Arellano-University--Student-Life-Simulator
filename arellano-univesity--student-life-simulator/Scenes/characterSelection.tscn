@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/characterSelection.gd" id="1_iosxp"]
 [ext_resource type="PackedScene" uid="uid://jo702td1q0uk" path="res://Scenes/characterSlot.tscn" id="2_hcspj"]
 [ext_resource type="Texture2D" uid="uid://lyaagwl5y1yi" path="res://Background/chooseCharacter.png" id="2_sugp7"]
-[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://font/PressStart2P.ttf" id="3_mndx8"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="3_mndx8"]
 [ext_resource type="Texture2D" uid="uid://dweyy0e7oheb" path="res://Character/female.png" id="4_si5by"]
 [ext_resource type="Texture2D" uid="uid://b2yi1deonwxyh" path="res://Character/male.png" id="5_qqesj"]
 

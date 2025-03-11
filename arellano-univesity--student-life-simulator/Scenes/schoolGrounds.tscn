@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=17 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_nvysa"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://dkcu456pqynrx" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Interior.png" id="4_quk07"]
 [ext_resource type="Texture2D" uid="uid://dmgyg0lgv36q1" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Autotiles.png" id="5_146lm"]
 [ext_resource type="PackedScene" uid="uid://crc8enq33sae4" path="res://Character/female_secu.tscn" id="6_w4cv6"]
+[ext_resource type="Script" path="res://Scripts/area_2d_Hallway (2).gd" id="7_pxvsn"]
+[ext_resource type="Script" path="res://Scripts/area_2d_neighbor.gd" id="8_fsvmq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4481,6 +4483,12 @@ sources/2 = SubResource("TileSetAtlasSource_0wl8f")
 sources/3 = SubResource("TileSetAtlasSource_jg0m7")
 sources/6 = SubResource("TileSetAtlasSource_rewxi")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pc6dh"]
+size = Vector2(161, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a00du"]
+size = Vector2(57, 83)
+
 [node name="schoolGrounds" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -4496,3 +4504,17 @@ layer_2/tile_data = PackedInt32Array(655361, 1703939, 3, 720897, 1703939, 4, 786
 
 [node name="CharacterBody2D" parent="TileMap" instance=ExtResource("6_w4cv6")]
 position = Vector2(55.21, 198.678)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("7_pxvsn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(245.5, 82)
+shape = SubResource("RectangleShape2D_pc6dh")
+
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("8_fsvmq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(68.5, 576.5)
+shape = SubResource("RectangleShape2D_a00du")
