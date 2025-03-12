@@ -4504,13 +4504,11 @@ layer_2/name = "Layer2"
 layer_2/tile_data = PackedInt32Array(655361, 1703939, 3, 720897, 1703939, 4, 786433, 1703939, 5, 655362, 1769475, 3, 720898, 1769475, 4, 786434, 1769475, 5)
 
 [node name="CharacterBody2D2" parent="TileMap" instance=ExtResource("6_ltyri")]
-position = Vector2(55.21, 198.678)
-scale = Vector2(1, 1)
+position = Vector2(58.7092, 67.2628)
 up_direction = Vector2(0, 1)
 
 [node name="CharacterBody2D" parent="TileMap" instance=ExtResource("6_w4cv6")]
-position = Vector2(55.21, 198.678)
-scale = Vector2(1, 1)
+position = Vector2(50.9331, 199.067)
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("7_pxvsn")

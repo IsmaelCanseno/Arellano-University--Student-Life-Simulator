@@ -1997,6 +1997,8 @@ position = Vector2(113.002, 220.062)
 shape = SubResource("RectangleShape2D_u6kma")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("10_xk8vu")]
+position = Vector2(87.8694, 162.131)
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("11_k32hd")]
+position = Vector2(289.658, 97.5894)
 scale = Vector2(0.993022, 1)
