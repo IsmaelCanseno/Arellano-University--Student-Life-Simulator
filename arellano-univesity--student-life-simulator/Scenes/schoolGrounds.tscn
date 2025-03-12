@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=18 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_nvysa"]
 [ext_resource type="Texture2D" uid="uid://dvs33bq41g287" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Highschool_1.png" id="3_kudk4"]
 [ext_resource type="Texture2D" uid="uid://dkcu456pqynrx" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Interior.png" id="4_quk07"]
 [ext_resource type="Texture2D" uid="uid://dmgyg0lgv36q1" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Autotiles.png" id="5_146lm"]
+[ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="6_ltyri"]
 [ext_resource type="PackedScene" uid="uid://crc8enq33sae4" path="res://Character/female_secu.tscn" id="6_w4cv6"]
 [ext_resource type="Script" path="res://Scripts/area_2d_Hallway (2).gd" id="7_pxvsn"]
 [ext_resource type="Script" path="res://Scripts/area_2d_neighbor.gd" id="8_fsvmq"]
@@ -4502,8 +4503,14 @@ layer_1/tile_data = PackedInt32Array(131081, 917506, 45, 196617, 917506, 46, 262
 layer_2/name = "Layer2"
 layer_2/tile_data = PackedInt32Array(655361, 1703939, 3, 720897, 1703939, 4, 786433, 1703939, 5, 655362, 1769475, 3, 720898, 1769475, 4, 786434, 1769475, 5)
 
+[node name="CharacterBody2D2" parent="TileMap" instance=ExtResource("6_ltyri")]
+position = Vector2(55.21, 198.678)
+scale = Vector2(1, 1)
+up_direction = Vector2(0, 1)
+
 [node name="CharacterBody2D" parent="TileMap" instance=ExtResource("6_w4cv6")]
 position = Vector2(55.21, 198.678)
+scale = Vector2(1, 1)
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("7_pxvsn")
