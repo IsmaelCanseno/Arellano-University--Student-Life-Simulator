@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ce05x1qvhueh6"
-path="res://.godot/imported/RasterForgeRegular-JpBgm.ttf-5b5c10600720a2935c147eca961656bb.fontdata"
+path="res://.godot/imported/RasterForgeRegular-JpBgm.ttf-6c1efb8a07f02263a62b13583c8be05e.fontdata"
 
 [deps]
 
-source_file="res://font/RasterForgeRegular-JpBgm.ttf"
-dest_files=["res://.godot/imported/RasterForgeRegular-JpBgm.ttf-5b5c10600720a2935c147eca961656bb.fontdata"]
+source_file="res://Font/RasterForgeRegular-JpBgm.ttf"
+dest_files=["res://.godot/imported/RasterForgeRegular-JpBgm.ttf-6c1efb8a07f02263a62b13583c8be05e.fontdata"]
 
 [params]
 
