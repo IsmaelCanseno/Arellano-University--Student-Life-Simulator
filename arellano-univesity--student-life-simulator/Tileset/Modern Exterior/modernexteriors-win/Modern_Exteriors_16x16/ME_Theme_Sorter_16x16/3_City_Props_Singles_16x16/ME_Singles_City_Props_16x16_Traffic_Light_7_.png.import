@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://10f0pv6imcyi"
+path="res://.godot/imported/ME_Singles_City_Props_16x16_Traffic_Light_7_.png-14a5accfa81a409039b03048e61d1f56.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Tileset/Modern Exterior/modernexteriors-win/Modern_Exteriors_16x16/ME_Theme_Sorter_16x16/3_City_Props_Singles_16x16/ME_Singles_City_Props_16x16_Traffic_Light_7_.png"
+dest_files=["res://.godot/imported/ME_Singles_City_Props_16x16_Traffic_Light_7_.png-14a5accfa81a409039b03048e61d1f56.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
