@@ -18444,6 +18444,8 @@ volume_db = 10.0
 autoplay = true
 parameters/looping = true
 
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="About" to="." method="_on_about_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
