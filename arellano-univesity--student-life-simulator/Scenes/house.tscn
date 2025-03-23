@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://c5et5ml8k7rck"]
+[gd_scene load_steps=19 format=3 uid="uid://c5et5ml8k7rck"]
 
 [ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://Tileset/Thea/House/Thea_House_Houses_png.png" id="1_fkvtn"]
 [ext_resource type="Script" path="res://Scripts/house.gd" id="1_i214v"]
@@ -9329,12 +9329,76 @@ sources/3 = SubResource("TileSetAtlasSource_54yma")
 
 [sub_resource type="LabelSettings" id="LabelSettings_yb8gp"]
 
-[sub_resource type="Animation" id="Animation_n6y8x"]
-resource_name = "new_animation"
+[sub_resource type="Animation" id="Animation_xfixk"]
+resource_name = "SHOW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.049, 1.0]
+}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wsbg8"]
+[sub_resource type="Animation" id="Animation_gukhk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.049]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_avsoc"]
 _data = {
-"new_animation": SubResource("Animation_n6y8x")
+"RESET": SubResource("Animation_gukhk"),
+"SHOW": SubResource("Animation_xfixk")
+}
+
+[sub_resource type="Animation" id="Animation_8judk"]
+resource_name = "SHOW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/Node2D2/Node2D2/Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_utmuj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/Node2D2/Node2D2/Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_20i1b"]
+_data = {
+"RESET": SubResource("Animation_utmuj"),
+"SHOW": SubResource("Animation_8judk")
 }
 
 [node name="House" type="Node2D"]
@@ -9359,21 +9423,56 @@ position = Vector2(100.33, 106.675)
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="Node2D"]
-offset_left = -27.0627
-offset_top = 65.445
-offset_right = 302.937
-offset_bottom = 96.445
+offset_left = 17.1617
+offset_top = 64.7906
+offset_right = 189.162
+offset_bottom = 95.7906
 theme_override_fonts/font = ExtResource("6_w06c2")
 text = "To move around 
 use arrow Keys"
 label_settings = SubResource("LabelSettings_yb8gp")
-horizontal_alignment = 2
+horizontal_alignment = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
+[node name="Node2D2" type="Node2D" parent="Node2D"]
+scale = Vector2(1, 1)
+
+[node name="Label" type="Label" parent="Node2D/Node2D2"]
+offset_left = 172.277
+offset_top = 191.754
+offset_right = 299.277
+offset_bottom = 222.754
+theme_override_fonts/font = ExtResource("6_w06c2")
+text = "Explore the 
+house"
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.049
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Node2D2/Label"]
 libraries = {
-"": SubResource("AnimationLibrary_wsbg8")
+"": SubResource("AnimationLibrary_avsoc")
 }
-speed_scale = -1.126
+
+[node name="Node2D2" type="Node2D" parent="Node2D/Node2D2"]
+scale = Vector2(1, 1)
+
+[node name="Label" type="Label" parent="Node2D/Node2D2/Node2D2"]
+offset_left = 563.036
+offset_top = 116.492
+offset_right = 635.036
+offset_bottom = 147.492
+theme_override_fonts/font = ExtResource("6_w06c2")
+text = "gO TO 
+SCHOOL"
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Node2D2/Node2D2/Label"]
+root_node = NodePath("../../../../..")
+libraries = {
+"": SubResource("AnimationLibrary_20i1b")
+}
 
 [node name="Door" type="Node" parent="."]
 
