@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bhv1s6o0lc44"]
+[gd_scene load_steps=14 format=3 uid="uid://bhv1s6o0lc44"]
 
 [ext_resource type="Texture2D" uid="uid://bcp2d1ix08q6u" path="res://Tileset/Cherry/Neighbor/BD001.png" id="1_8g0cq"]
 [ext_resource type="Texture2D" uid="uid://dons7o2s84pqy" path="res://Tileset/Cherry/Neighbor/BL001.png" id="2_bm3d1"]
@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://67bo324na884" path="res://Tileset/Cherry/Neighbor/SL001.png" id="4_l4212"]
 [ext_resource type="PackedScene" uid="uid://cbtlv3srfth3o" path="res://Character/male_cutting.tscn" id="5_ethiy"]
 [ext_resource type="PackedScene" uid="uid://qfurqd2nwkit" path="res://Character/female_cutting.tscn" id="6_sfad1"]
-[ext_resource type="PackedScene" uid="uid://dled21l7yutwk" path="res://Character/female_player.tscn" id="7_k6jqh"]
-[ext_resource type="Script" path="res://Scripts/area_2d_to_school.gd" id="8_v1hnw"]
-[ext_resource type="Script" path="res://Scripts/area_2d_Home.gd" id="9_gpmgg"]
+[ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="7_k6jqh"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="8_ydinj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vf8nj"]
 texture = ExtResource("1_8g0cq")
@@ -2413,7 +2412,6 @@ texture = ExtResource("3_py3y3")
 20:32/0 = 0
 20:32/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 24:32/0 = 0
-24:32/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 26:32/0 = 0
 26:32/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 24:33/0 = 0
@@ -2422,6 +2420,7 @@ texture = ExtResource("3_py3y3")
 26:33/0 = 0
 26:33/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 27:33/0 = 0
+27:33/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:38/0 = 0
 3:38/0 = 0
 5:38/0 = 0
@@ -2821,12 +2820,6 @@ sources/1 = SubResource("TileSetAtlasSource_lr1m7")
 sources/2 = SubResource("TileSetAtlasSource_50xuq")
 sources/3 = SubResource("TileSetAtlasSource_ngmt1")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_myb0m"]
-size = Vector2(58, 80)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjyyy"]
-size = Vector2(40, 80)
-
 [node name="neighborhood" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -2846,24 +2839,35 @@ position = Vector2(407.465, 200.622)
 [node name="female_cutting" parent="TileMap" instance=ExtResource("6_sfad1")]
 position = Vector2(82.8149, 112.364)
 
-[node name="Female Player" parent="TileMap" instance=ExtResource("7_k6jqh")]
-position = Vector2(56.3764, 31.493)
+[node name="Door" type="Node" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("8_v1hnw")
+[node name="Door_W" parent="Door" instance=ExtResource("8_ydinj")]
+position = Vector2(34, 96)
+scale = Vector2(3.27575, 5.525)
+destination_level_tag = "house "
+destination_door_tag = "E"
+spawn_direction = "right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2498, 551)
-shape = SubResource("RectangleShape2D_myb0m")
+[node name="Spawn" parent="Door/Door_W" index="1"]
+position = Vector2(21.3692, 0)
 
-[node name="Area2D2" type="Area2D" parent="."]
-script = ExtResource("9_gpmgg")
+[node name="Door_E" parent="Door" instance=ExtResource("8_ydinj")]
+position = Vector2(2484, 556)
+scale = Vector2(3.8, 4.66667)
+destination_level_tag = "schoolGrounds"
+destination_door_tag = "W"
+spawn_direction = "left"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(146, 78)
-shape = SubResource("RectangleShape2D_qjyyy")
+[node name="Spawn" parent="Door/Door_E" index="1"]
+position = Vector2(-18.9474, -0.214299)
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
-[connection signal="body_entered" from="Area2D2" to="Area2D" method="_on_area_2d_2_body_entered"]
-[connection signal="body_exited" from="Area2D2" to="Area2D" method="_on_area_2d_2_body_exited"]
+[node name="Female Player" parent="." instance=ExtResource("7_k6jqh")]
+position = Vector2(158, 99.9999)
+scale = Vector2(2.572, 2.572)
+
+[node name="Camera2D" parent="Female Player" index="2"]
+zoom = Vector2(1.5, 1.5)
+
+[editable path="Door/Door_W"]
+[editable path="Door/Door_E"]
+[editable path="Female Player"]

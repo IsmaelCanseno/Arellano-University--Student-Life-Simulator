@@ -1,14 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://cv1doq74hmvw8"]
+[gd_scene load_steps=15 format=3 uid="uid://cv1doq74hmvw8"]
 
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="1_kxv4a"]
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="3_836kr"]
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="3_ghhja"]
-[ext_resource type="Script" path="res://Scripts/area_2d_prelim.gd" id="5_36xia"]
 [ext_resource type="Texture2D" uid="uid://dkcu456pqynrx" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Interior.png" id="5_k5qgp"]
-[ext_resource type="Script" path="res://Scripts/area_2d_midterm.gd" id="6_inrmh"]
-[ext_resource type="Script" path="res://Scripts/area_2d_semi.gd" id="7_jf4cl"]
-[ext_resource type="Script" path="res://Scripts/area_2d_final.gd" id="8_n8v6m"]
-[ext_resource type="Script" path="res://Scripts/area_2d_schoolground.gd" id="9_8uxtn"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="8_v5lah"]
+[ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="9_332nc"]
 [ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="10_xk8vu"]
 [ext_resource type="PackedScene" uid="uid://d3o4vupw11m4o" path="res://Character/female_student3.tscn" id="11_60e5l"]
 [ext_resource type="PackedScene" uid="uid://b71cja3aiuysd" path="res://Character/male_student.tscn" id="11_k32hd"]
@@ -16,13 +13,9 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8hh8j"]
 texture = ExtResource("1_kxv4a")
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
-3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:0/0 = 0
 5:0/0 = 0
 6:0/0 = 0
@@ -48,13 +41,9 @@ texture = ExtResource("1_kxv4a")
 10:1/0 = 0
 11:1/0 = 0
 0:2/0 = 0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:2/0 = 0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
-3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:2/0 = 0
 5:2/0 = 0
 6:2/0 = 0
@@ -1956,13 +1945,7 @@ sources/2 = SubResource("TileSetAtlasSource_8hh8j")
 sources/6 = SubResource("TileSetAtlasSource_7odle")
 sources/5 = SubResource("TileSetAtlasSource_hi7xs")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6kma"]
-size = Vector2(111.073, 35.661)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ff5yq"]
-size = Vector2(35.5482, 36.493)
-
-[node name="Node2D" type="Node2D"]
+[node name="School Hallway" type="Node2D"]
 position = Vector2(-1, 1)
 scale = Vector2(2.572, 2.572)
 
@@ -1980,41 +1963,6 @@ layer_2/tile_data = PackedInt32Array(917526, 196610, 11, 917527, 65538, 11, 9175
 layer_3/name = "Layer3"
 layer_3/tile_data = PackedInt32Array(655375, 262146, 3, 655370, 262146, 3, 655371, 262146, 3, 655366, 262146, 3, 655367, 327682, 3, 524295, 327682, 3, 524298, 327682, 3, 524302, 262146, 3, 524294, 262146, 3, 196621, 655362, 9, 262157, 655362, 10, 196622, 720898, 9, 262158, 720898, 10, 917506, 2, 11, 917507, 2, 11, 917508, 2, 11, 917509, 65538, 11, 917510, 131074, 11, 917511, 196610, 11, 917530, 2, 11, 262184, 196610, 7, 327720, 196610, 8, 262175, 196610, 7, 327711, 196610, 8, 262163, 196610, 7, 327699, 196610, 8, 262153, 196610, 7, 327689, 196610, 8, 655374, 1572868, 1, 524299, 1572868, 0, 524303, 1572868, 0, 786467, 1572868, 0, 852003, 1572868, 0, 655395, 1703940, 1, 589859, 1703940, 0, 852011, 1572868, 0, 655403, 1638404, 1, 589867, 1638404, 0, 327727, 1245189, 12, 393263, 1245189, 13, 262149, 1245189, 12, 327685, 1245189, 13, 131081, 1179653, 12, 131103, 1179653, 12)
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("5_36xia")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(150.467, 79.7045)
-shape = SubResource("RectangleShape2D_u6kma")
-
-[node name="Area2D2" type="Area2D" parent="."]
-script = ExtResource("6_inrmh")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(295.49, 79.3157)
-shape = SubResource("RectangleShape2D_u6kma")
-
-[node name="Area2D3" type="Area2D" parent="."]
-script = ExtResource("7_jf4cl")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2(480.047, 78.1493)
-shape = SubResource("RectangleShape2D_u6kma")
-
-[node name="Area2D4" type="Area2D" parent="."]
-script = ExtResource("8_n8v6m")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
-position = Vector2(646.857, 77.3445)
-shape = SubResource("RectangleShape2D_ff5yq")
-
-[node name="Area2D5" type="Area2D" parent="."]
-script = ExtResource("9_8uxtn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
-position = Vector2(488.725, 232.893)
-shape = SubResource("RectangleShape2D_u6kma")
-
 [node name="CharacterBody2D" parent="." instance=ExtResource("10_xk8vu")]
 position = Vector2(569.207, 135.303)
 
@@ -2024,3 +1972,62 @@ position = Vector2(-414.463, -2.72161)
 [node name="CharacterBody2D2" parent="." instance=ExtResource("11_k32hd")]
 position = Vector2(379.86, 95.2566)
 scale = Vector2(0.993022, 1)
+
+[node name="Door" type="Node" parent="."]
+
+[node name="Door_S" parent="Door" instance=ExtResource("8_v5lah")]
+position = Vector2(1270, 596)
+scale = Vector2(15.6262, 4.29792)
+spawn_direction = ""
+
+[node name="Spawn" parent="Door/Door_S" index="1"]
+position = Vector2(-0.0639952, -13.9603)
+
+[node name="Door_N" parent="Door" instance=ExtResource("8_v5lah")]
+position = Vector2(391, 221)
+scale = Vector2(2.7489, 3.97139)
+destination_level_tag = "prelimRoom"
+destination_door_tag = "A"
+
+[node name="Spawn" parent="Door/Door_N" index="1"]
+position = Vector2(-1.11018e-05, 12.3382)
+
+[node name="Door_N2" parent="Door" instance=ExtResource("8_v5lah")]
+position = Vector2(804, 228)
+scale = Vector2(2.749, 3.971)
+destination_level_tag = "midtermRoom"
+destination_door_tag = "B"
+
+[node name="Spawn" parent="Door/Door_N2" index="1"]
+position = Vector2(0.727537, 8.56208)
+
+[node name="Door_N3" parent="Door" instance=ExtResource("8_v5lah")]
+position = Vector2(1299, 223)
+scale = Vector2(2.749, 3.971)
+destination_level_tag = "semiRoom"
+destination_door_tag = "C"
+
+[node name="Spawn" parent="Door/Door_N3" index="1"]
+position = Vector2(0.727537, 10.8285)
+
+[node name="Door_N4" parent="Door" instance=ExtResource("8_v5lah")]
+position = Vector2(1668, 224)
+scale = Vector2(2.749, 3.971)
+destination_level_tag = "finalsRoom"
+destination_door_tag = "D"
+
+[node name="Spawn" parent="Door/Door_N4" index="1"]
+position = Vector2(0.363813, 10.3249)
+
+[node name="Female Player" parent="." instance=ExtResource("9_332nc")]
+position = Vector2(493.39, 196.345)
+
+[node name="Camera2D" parent="Female Player" index="2"]
+zoom = Vector2(1.5, 1.5)
+
+[editable path="Door/Door_S"]
+[editable path="Door/Door_N"]
+[editable path="Door/Door_N2"]
+[editable path="Door/Door_N3"]
+[editable path="Door/Door_N4"]
+[editable path="Female Player"]

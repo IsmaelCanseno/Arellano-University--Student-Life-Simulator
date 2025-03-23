@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=21 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_nvysa"]
@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="6_ltyri"]
 [ext_resource type="Texture2D" uid="uid://cbaf2x7pjqd38" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Walls.png" id="6_rbhh1"]
 [ext_resource type="PackedScene" uid="uid://crc8enq33sae4" path="res://Character/female_secu.tscn" id="6_w4cv6"]
-[ext_resource type="Script" path="res://Scripts/area_2d_Hallway (2).gd" id="7_pxvsn"]
-[ext_resource type="Script" path="res://Scripts/area_2d_neighbor.gd" id="8_fsvmq"]
 [ext_resource type="PackedScene" uid="uid://tdx2vnr1h78i" path="res://Character/female_student2.tscn" id="10_x1ieq"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="11_v1nj3"]
+[ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="12_26i1t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4780,12 +4780,6 @@ sources/6 = SubResource("TileSetAtlasSource_rewxi")
 sources/4 = SubResource("TileSetAtlasSource_o1weg")
 sources/5 = SubResource("TileSetAtlasSource_fe507")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pc6dh"]
-size = Vector2(286.5, 119)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a00du"]
-size = Vector2(57, 83)
-
 [node name="schoolGrounds" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -4809,16 +4803,31 @@ position = Vector2(26.4386, 198.289)
 [node name="CharacterBody2D3" parent="TileMap" instance=ExtResource("10_x1ieq")]
 position = Vector2(328.927, 178.072)
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("7_pxvsn")
+[node name="Door" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1254, 183)
-shape = SubResource("RectangleShape2D_pc6dh")
+[node name="Door_W" parent="Door" instance=ExtResource("11_v1nj3")]
+position = Vector2(50, 570)
+scale = Vector2(2.74856, 3.40282)
 
-[node name="Area2D2" type="Area2D" parent="."]
-script = ExtResource("8_fsvmq")
+[node name="Spawn" parent="Door/Door_W" index="1"]
+position = Vector2(21.4658, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(68.5, 576.5)
-shape = SubResource("RectangleShape2D_a00du")
+[node name="Door_N" parent="Door" instance=ExtResource("11_v1nj3")]
+position = Vector2(1254, 169)
+scale = Vector2(13.9357, 4.75861)
+destination_level_tag = "schoolHallway"
+destination_door_tag = "S"
+
+[node name="Spawn" parent="Door/Door_N" index="1"]
+position = Vector2(0.287033, 18.0725)
+
+[node name="Female Player" parent="." instance=ExtResource("12_26i1t")]
+position = Vector2(123, 568)
+scale = Vector2(2, 2)
+
+[node name="Camera2D" parent="Female Player" index="2"]
+zoom = Vector2(1.5, 1.5)
+
+[editable path="Door/Door_W"]
+[editable path="Door/Door_N"]
+[editable path="Female Player"]

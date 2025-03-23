@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://dled21l7yutwk"]
+[gd_scene load_steps=15 format=3 uid="uid://c34ondc50m6r6"]
 
-[ext_resource type="Script" path="res://Scripts/female_player.gd" id="1_qrg1n"]
+[ext_resource type="Script" path="res://Scripts/female_player.gd" id="1_6r44f"]
 [ext_resource type="Texture2D" uid="uid://dok56rbwic4qv" path="res://Character/characters.png" id="1_xj04g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ayrj3"]
@@ -110,7 +110,7 @@ animations = [{
 }]
 
 [node name="Female Player" type="CharacterBody2D"]
-script = ExtResource("1_qrg1n")
+script = ExtResource("1_6r44f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1
@@ -122,8 +122,9 @@ texture_filter = 1
 position = Vector2(-2.38419e-07, -1)
 scale = Vector2(1.34375, 1.3691)
 sprite_frames = SubResource("SpriteFrames_ceca0")
-animation = &"front_idle"
+animation = &"side_walk"
+frame_progress = 0.333598
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+zoom = Vector2(2, 2)
 limit_smoothed = true

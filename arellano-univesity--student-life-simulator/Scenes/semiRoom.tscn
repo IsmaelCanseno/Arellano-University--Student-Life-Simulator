@@ -7,7 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cbaf2x7pjqd38" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Walls.png" id="5_saf2r"]
 [ext_resource type="Texture2D" uid="uid://dc44t6iwcfb08" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_stamping-table.png" id="6_25vue"]
 [ext_resource type="Texture2D" uid="uid://uvggky7muwuv" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk.png" id="7_eru5b"]
-[ext_resource type="Script" path="res://Scripts/area_2d_hallsway.gd" id="8_uk5ai"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="8_583hf"]
+[ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="9_p8abb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ya6x"]
 texture = ExtResource("1_staao")
@@ -823,10 +824,7 @@ sources/4 = SubResource("TileSetAtlasSource_l2p5j")
 sources/5 = SubResource("TileSetAtlasSource_mqyxp")
 sources/6 = SubResource("TileSetAtlasSource_6xrcm")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6r1h"]
-size = Vector2(75.5171, 38.1705)
-
-[node name="SemiRoon" type="Node2D"]
+[node name="Semis" type="Node2D"]
 scale = Vector2(2.572, 2.572)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -841,12 +839,21 @@ layer_2/tile_data = PackedInt32Array(917509, 1572865, 7, 917514, 1572865, 9, 917
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("8_uk5ai")
+[node name="Door" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(311.582, 409.184)
-shape = SubResource("RectangleShape2D_o6r1h")
+[node name="Door_C" parent="Door" instance=ExtResource("8_583hf")]
+position = Vector2(804, 1108)
+scale = Vector2(9.78125, 5.09524)
+spawn_direction = ""
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[node name="Spawn" parent="Door/Door_C" index="1"]
+position = Vector2(0.204473, -13.5421)
+
+[node name="Female Player" parent="." instance=ExtResource("9_p8abb")]
+position = Vector2(312.597, 396.19)
+
+[node name="Camera2D" parent="Female Player" index="2"]
+zoom = Vector2(1.5, 1.5)
+
+[editable path="Door/Door_C"]
+[editable path="Female Player"]

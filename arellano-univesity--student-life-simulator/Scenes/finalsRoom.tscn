@@ -25,7 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://hhd27wapt2gr" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-2.png" id="22_1reg1"]
 [ext_resource type="Texture2D" uid="uid://bhn6imhw7rnqd" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_PC1.png" id="23_ncmqg"]
 [ext_resource type="AudioStream" uid="uid://c453uv2e880a5" path="res://Sound Effects/finalsBackgroundMusic.mp3" id="25_mhag2"]
-[ext_resource type="Script" path="res://Scripts/area_2d_hallway.gd" id="26_ifbnt"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="26_egj6x"]
+[ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="27_kqmxb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1goeh"]
 texture = ExtResource("1_7wtk2")
@@ -1490,10 +1491,7 @@ sources/24 = SubResource("TileSetAtlasSource_cv5yd")
 sources/25 = SubResource("TileSetAtlasSource_2duuk")
 sources/21 = SubResource("TileSetAtlasSource_hs854")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_luvit"]
-size = Vector2(81, 60)
-
-[node name="FinalsRoom" type="Node2D"]
+[node name="Finals" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(2.572, 2.572)
@@ -1515,12 +1513,22 @@ volume_db = 5.0
 autoplay = true
 parameters/looping = true
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("26_ifbnt")
+[node name="Door" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1069.5, 625)
-shape = SubResource("RectangleShape2D_luvit")
+[node name="Door_D" parent="Door" instance=ExtResource("26_egj6x")]
+position = Vector2(1071, 633)
+scale = Vector2(4.57477, 3.92238)
+spawn_direction = ""
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[node name="Spawn" parent="Door/Door_D" index="1"]
+position = Vector2(0.43718, -14.532)
+
+[node name="Female Player" parent="." instance=ExtResource("27_kqmxb")]
+position = Vector2(1069, 559)
+scale = Vector2(3, 3)
+
+[node name="Camera2D" parent="Female Player" index="2"]
+zoom = Vector2(1.5, 1.5)
+
+[editable path="Door/Door_D"]
+[editable path="Female Player"]

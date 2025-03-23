@@ -2,7 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_3qgki"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_funp3"]
-[ext_resource type="Script" path="res://Scripts/area_2d_hallsway.gd" id="3_rtkmw"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="3_0k0sa"]
+[ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="4_y638s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7eq3x"]
 texture = ExtResource("1_3qgki")
@@ -436,9 +437,6 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7eq3x")
 sources/1 = SubResource("TileSetAtlasSource_chr16")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwof4"]
-size = Vector2(31.7729, 27.4961)
-
 [node name="Prelim" type="Node2D"]
 scale = Vector2(2.572, 2.572)
 
@@ -454,12 +452,21 @@ layer_2/tile_data = PackedInt32Array(589825, 1179648, 9, 655361, 1179648, 10, 72
 layer_3/name = "patong"
 layer_3/tile_data = PackedInt32Array(589825, 1441792, 15, 655361, 1441792, 15, 393230, 1900544, 12)
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("3_rtkmw")
+[node name="Door" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(240.334, 242.364)
-shape = SubResource("RectangleShape2D_dwof4")
+[node name="Door_A" parent="Door" instance=ExtResource("3_0k0sa")]
+position = Vector2(616, 631)
+scale = Vector2(3.54545, 3)
+spawn_direction = ""
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[node name="Spawn" parent="Door/Door_A" index="1"]
+position = Vector2(-0.282051, -14)
+
+[node name="Female Player" parent="." instance=ExtResource("4_y638s")]
+position = Vector2(239.891, 219.673)
+
+[node name="Camera2D" parent="Female Player" index="2"]
+zoom = Vector2(1.5, 1.5)
+
+[editable path="Door/Door_A"]
+[editable path="Female Player"]

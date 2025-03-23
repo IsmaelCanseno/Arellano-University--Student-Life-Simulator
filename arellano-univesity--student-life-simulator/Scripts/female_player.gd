@@ -1,10 +1,15 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 const speed = 100
 var current_dir = "none"
 
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
+	
+	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
+	
+func _on_spawn(position: Vector2, direction: String):
+	global_position = position
 
 func _physics_process(delta):
 	player_movement(delta)

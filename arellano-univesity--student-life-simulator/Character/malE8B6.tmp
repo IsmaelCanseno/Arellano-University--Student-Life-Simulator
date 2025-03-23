@@ -121,7 +121,7 @@ shape = SubResource("RectangleShape2D_jfcqw")
 texture_filter = 1
 scale = Vector2(1.344, 1.369)
 sprite_frames = SubResource("SpriteFrames_ntn1f")
-animation = &"side_walk"
+animation = &"front_idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)

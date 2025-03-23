@@ -1,10 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://c5et5ml8k7rck"]
+[gd_scene load_steps=15 format=3 uid="uid://c5et5ml8k7rck"]
 
 [ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://Tileset/Thea/House/Thea_House_Houses_png.png" id="1_fkvtn"]
 [ext_resource type="Script" path="res://Scripts/house.gd" id="1_i214v"]
 [ext_resource type="Texture2D" uid="uid://g4is88wgdwym" path="res://Tileset/Thea/House/Thea_House_Interior.png" id="2_5gjr7"]
 [ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://Tileset/Thea/House/Thea_House_Walls_png.png" id="3_03q8p"]
-[ext_resource type="Script" path="res://Scripts/area_2d.gd" id="5_fyeuw"]
+[ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="6_13bv2"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="6_w06c2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66guk"]
@@ -9328,9 +9328,6 @@ sources/1 = SubResource("TileSetAtlasSource_oy3y4")
 sources/2 = SubResource("TileSetAtlasSource_7nn0t")
 sources/3 = SubResource("TileSetAtlasSource_54yma")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_li1ib"]
-size = Vector2(45.6436, 79.9346)
-
 [sub_resource type="LabelSettings" id="LabelSettings_yb8gp"]
 
 [sub_resource type="Animation" id="Animation_n6y8x"]
@@ -9360,14 +9357,6 @@ layer_2/tile_data = PackedInt32Array(29, 1310721, 25, 65565, 1310721, 26, 131101
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(79.868, 79.8429)
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(474.587, 168.194)
-script = ExtResource("5_fyeuw")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(205.561, 32.0222)
-shape = SubResource("RectangleShape2D_li1ib")
-
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="Node2D"]
@@ -9386,5 +9375,16 @@ libraries = {
 }
 speed_scale = -1.126
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[node name="Door" type="Node" parent="."]
+
+[node name="Door_E" parent="Door" instance=ExtResource("6_13bv2")]
+position = Vector2(1080, 302)
+scale = Vector2(3.71429, 7)
+destination_level_tag = "neighborhood"
+destination_door_tag = "W"
+spawn_direction = "left"
+
+[node name="Spawn" parent="Door/Door_E" index="1"]
+position = Vector2(-18.5769, 0.28571)
+
+[editable path="Door/Door_E"]
