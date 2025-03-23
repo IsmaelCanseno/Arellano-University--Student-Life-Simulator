@@ -9354,17 +9354,18 @@ layer_2/name = "patongd"
 layer_2/tile_data = PackedInt32Array(29, 1310721, 25, 65565, 1310721, 26, 131101, 1310721, 27, 30, 1310721, 25, 65566, 1310721, 26, 131102, 1310721, 27, 1048585, 1507329, 32, 1048586, 1572865, 32, 1048587, 1638401, 32, 196625, 458753, 25, 1376274, 1376257, 35, 1441810, 1376257, 36, 1048612, 1441793, 35, 1114148, 1441793, 36, 131081, 524289, 25, 131083, 524289, 25)
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(79.868, 79.8429)
+position = Vector2(100.33, 106.675)
 
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="Node2D"]
-offset_left = 4.0
-offset_top = 69.0
-offset_right = 334.0
-offset_bottom = 83.0
+offset_left = -27.0627
+offset_top = 65.445
+offset_right = 302.937
+offset_bottom = 96.445
 theme_override_fonts/font = ExtResource("6_w06c2")
-text = "To move around use arrow Keys"
+text = "To move around 
+use arrow Keys"
 label_settings = SubResource("LabelSettings_yb8gp")
 horizontal_alignment = 2
 
