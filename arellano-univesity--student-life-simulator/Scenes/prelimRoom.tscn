@@ -1,11 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://c5limy4ieqms8"]
+[gd_scene load_steps=17 format=3 uid="uid://c5limy4ieqms8"]
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_3qgki"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_funp3"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="3_0k0sa"]
 [ext_resource type="PackedScene" uid="uid://b71cja3aiuysd" path="res://Character/male_student.tscn" id="3_ncwgd"]
+[ext_resource type="PackedScene" uid="uid://ds7w4gavv5675" path="res://Character/female_student4.tscn" id="3_yrpjg"]
+[ext_resource type="PackedScene" uid="uid://geunu4qbweuv" path="res://Character/male_prof1.tscn" id="4_nalvh"]
+[ext_resource type="PackedScene" uid="uid://cyv8h6c1eyelm" path="res://Character/male_student2.tscn" id="4_sfw2k"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="4_y638s"]
 [ext_resource type="AudioStream" uid="uid://cnyr6euftky5j" path="res://Sound Effects/prelimBackgroundMusic.mp3" id="5_onen3"]
+[ext_resource type="PackedScene" uid="uid://d1scgtfw0it54" path="res://Character/male_student3.tscn" id="6_prkrb"]
+[ext_resource type="PackedScene" uid="uid://d3o4vupw11m4o" path="res://Character/female_student3.tscn" id="8_1h6nw"]
+[ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="9_lrtm6"]
+[ext_resource type="PackedScene" uid="uid://tdx2vnr1h78i" path="res://Character/female_student2.tscn" id="13_a08cu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7eq3x"]
 texture = ExtResource("1_3qgki")
@@ -454,9 +461,33 @@ layer_2/tile_data = PackedInt32Array(589825, 1179648, 9, 655361, 1179648, 10, 72
 layer_3/name = "patong"
 layer_3/tile_data = PackedInt32Array(589825, 1441792, 15, 655361, 1441792, 15, 393230, 1900544, 12)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_ncwgd")]
-position = Vector2(153.577, 200.622)
-scale = Vector2(1, 1)
+[node name="CharacterBody2D7" parent="TileMap" instance=ExtResource("3_yrpjg")]
+position = Vector2(117.807, 193.624)
+scale = Vector2(1.44, 1.44)
+
+[node name="CharacterBody2D6" parent="TileMap" instance=ExtResource("4_sfw2k")]
+position = Vector2(152.799, 147.356)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D3" parent="TileMap" instance=ExtResource("4_nalvh")]
+position = Vector2(247.667, 86.7029)
+scale = Vector2(1.2, 1.2)
+
+[node name="CharacterBody2D" parent="TileMap" instance=ExtResource("6_prkrb")]
+position = Vector2(410.187, 148.523)
+scale = Vector2(1.2, 1.2)
+
+[node name="CharacterBody2D2" parent="TileMap" instance=ExtResource("3_ncwgd")]
+position = Vector2(166.019, 195.568)
+scale = Vector2(1.2, 1.2)
+
+[node name="CharacterBody2D4" parent="TileMap" instance=ExtResource("8_1h6nw")]
+position = Vector2(297.045, 147.745)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D5" parent="TileMap" instance=ExtResource("9_lrtm6")]
+position = Vector2(204.121, 148.134)
+scale = Vector2(1.5, 1.5)
 
 [node name="Door" type="Node" parent="."]
 
@@ -479,6 +510,10 @@ stream = ExtResource("5_onen3")
 volume_db = 10.0
 autoplay = true
 parameters/looping = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("13_a08cu")]
+position = Vector2(346.423, 197.123)
+scale = Vector2(1.3, 1.3)
 
 [editable path="Door/Door_A"]
 [editable path="Female Player"]

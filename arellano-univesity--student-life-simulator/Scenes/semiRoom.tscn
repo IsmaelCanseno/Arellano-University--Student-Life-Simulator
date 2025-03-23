@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dj5r8mxxadp5h"]
+[gd_scene load_steps=20 format=3 uid="uid://dj5r8mxxadp5h"]
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_ppxto"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="1_staao"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dc44t6iwcfb08" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_stamping-table.png" id="6_25vue"]
 [ext_resource type="Texture2D" uid="uid://uvggky7muwuv" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk.png" id="7_eru5b"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="8_583hf"]
+[ext_resource type="PackedScene" uid="uid://btesygvp4rnc4" path="res://Character/female_prof2.tscn" id="8_e6rc8"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="9_p8abb"]
 [ext_resource type="AudioStream" uid="uid://cfp4s6jd7vvu6" path="res://Sound Effects/semiBackgroundMusic.mp3" id="10_d2v3c"]
 
@@ -838,6 +839,10 @@ layer_1/tile_data = PackedInt32Array(917509, 131078, 0, 1245194, 131078, 0, 1245
 layer_2/name = "objects2"
 layer_2/tile_data = PackedInt32Array(917509, 1572865, 7, 917514, 1572865, 9, 917519, 1572865, 8, 1245199, 1835009, 14, 1245194, 1572865, 7, 1245189, 1900545, 12, 917527, 1835009, 13, 917532, 1572865, 9, 917538, 1835009, 14, 1245207, 1572865, 9, 1245213, 1572865, 8, 1245218, 1900545, 14, 393218, 1179649, 14, 458754, 1179649, 15, 393219, 1245185, 14, 458755, 1245185, 15, 393220, 1179649, 14, 458756, 1179649, 15, 393221, 1245185, 14, 458757, 1245185, 15, 393222, 1179649, 14, 458758, 1179649, 15, 393223, 1245185, 14, 458759, 1245185, 15, 1572865, 1245185, 12, 1638401, 1245185, 13, 1048586, 1245185, 8, 1048581, 1245185, 8, 1048591, 1245185, 8, 1376271, 1245185, 8, 1376266, 1245185, 8, 1376261, 1245185, 8, 196637, 1572865, 10, 262173, 1572865, 11, 196638, 1638401, 10, 262174, 1638401, 11, 196639, 1703937, 10, 262175, 1703937, 11, 196640, 1769473, 10, 262176, 1769473, 11, 196613, 1572865, 10, 262149, 1572865, 11, 196614, 1638401, 10, 262150, 1638401, 11, 196615, 1703937, 10, 262151, 1703937, 11, 196616, 1769473, 10, 262152, 1769473, 11, 655378, 5, 0, 720914, 5, 1, 655379, 65541, 0, 720915, 65541, 1, 655380, 131077, 0, 720916, 131077, 1, 655381, 196613, 0, 720917, 196613, 1, 1048600, 1245185, 8, 1048605, 1245185, 8, 1048610, 1245185, 8, 1376280, 1245185, 8, 1376285, 1245185, 8, 1376290, 1245185, 8, 393248, 524288, 9, 458784, 524288, 10, 393249, 589824, 9, 458785, 589824, 10, 393250, 524288, 9, 458786, 524288, 10, 393251, 589824, 9, 458787, 589824, 10, 458779, 1638401, 12, 524315, 1638401, 13, 458780, 1703937, 12, 524316, 1703937, 13, 458781, 1769473, 12, 524317, 1769473, 13, 458782, 1310721, 14, 524318, 1310721, 15, 458783, 1376257, 14, 524319, 1376257, 15)
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_e6rc8")]
+position = Vector2(305.599, 191.68)
+scale = Vector2(1.7, 1.732)
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [node name="Door" type="Node" parent="."]
@@ -852,6 +857,10 @@ position = Vector2(0.204473, -13.5421)
 
 [node name="Female Player" parent="." instance=ExtResource("9_p8abb")]
 position = Vector2(312.597, 396.19)
+
+[node name="AnimatedSprite2D" parent="Female Player" index="1"]
+position = Vector2(0.777819, -3.11067)
+scale = Vector2(1.5, 1.528)
 
 [node name="Camera2D" parent="Female Player" index="2"]
 zoom = Vector2(1.5, 1.5)
