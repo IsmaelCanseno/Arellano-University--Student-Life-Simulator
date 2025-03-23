@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://ds7w4gavv5675"]
+
+[ext_resource type="Texture2D" uid="uid://ndlkrbq7mtpx" path="res://Character/UPDATED Characters.png" id="1_ci3k3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13h0r"]
+atlas = ExtResource("1_ci3k3")
+region = Rect2(16, 128, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kbbo"]
+atlas = ExtResource("1_ci3k3")
+region = Rect2(0, 128, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v41nw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13h0r")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kbbo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6fop"]
+size = Vector2(12.4444, 16)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.125, 1.125)
+sprite_frames = SubResource("SpriteFrames_v41nw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+position = Vector2(-2.38419e-07, 0)
+shape = SubResource("RectangleShape2D_p6fop")
