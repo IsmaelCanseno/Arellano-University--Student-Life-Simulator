@@ -1,0 +1,239 @@
+[gd_scene load_steps=21 format=3 uid="uid://vgi4h88sq7dg"]
+
+[ext_resource type="Script" path="res://Scenes/developer.gd" id="1_qski7"]
+[ext_resource type="Texture2D" uid="uid://tm5neg7viqak" path="res://Background/about.png" id="2_podrd"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="3_amnhm"]
+[ext_resource type="FontFile" uid="uid://dsjqy00nvj81k" path="res://Font/Poppins-SemiBold.ttf" id="4_b4k7k"]
+[ext_resource type="Texture2D" uid="uid://cvrmw5aip5hh8" path="res://Background/bacanto.png" id="4_leju4"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="5_01mfl"]
+[ext_resource type="Texture2D" uid="uid://dr8ex8uq1gdp4" path="res://Background/boncales.png" id="5_fdm7v"]
+[ext_resource type="AudioStream" uid="uid://cuxoug3c1q531" path="res://Sound Effects/8bit-music-for-game-68698.mp3" id="6_rt010"]
+[ext_resource type="Texture2D" uid="uid://cbiy2ft7xyg7" path="res://Background/caloing.png" id="6_xsbx5"]
+[ext_resource type="Texture2D" uid="uid://6cb3nti4v57q" path="res://Background/canseno.png" id="7_mid87"]
+[ext_resource type="Texture2D" uid="uid://dj6xj26kjh1bl" path="res://Background/fernando.png" id="8_nj2g3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1s1i6"]
+texture = ExtResource("2_podrd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_grmcb"]
+texture = ExtResource("4_leju4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_68ja3"]
+texture = ExtResource("5_fdm7v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rx7qm"]
+texture = ExtResource("6_xsbx5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s47rn"]
+texture = ExtResource("7_mid87")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kiq6y"]
+texture = ExtResource("8_nj2g3")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o4gd7"]
+bg_color = Color(0.674455, 0.435445, 0.0153799, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ue1nn"]
+bg_color = Color(0.674455, 0.435445, 0.0153799, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.674455, 0.435445, 0.0153799, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irioe"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.758714, 0.492166, 0.0207804, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[node name="Developer" type="Node2D"]
+script = ExtResource("1_qski7")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1155.0
+offset_bottom = 651.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_1s1i6")
+
+[node name="Developer" type="Label" parent="."]
+offset_left = 96.0
+offset_top = 89.0
+offset_right = 1057.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0.986752, 0.986752, 0.986752, 1)
+theme_override_colors/font_shadow_color = Color(0.0702484, 0.156072, 2.40654e-08, 1)
+theme_override_constants/line_spacing = 20
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("3_amnhm")
+theme_override_font_sizes/font_size = 80
+text = "THE DEVELOPERS"
+horizontal_alignment = 1
+
+[node name="Bacanto" type="Panel" parent="Developer"]
+offset_left = -126.0
+offset_top = 114.0
+offset_right = 210.0
+offset_bottom = 281.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_grmcb")
+
+[node name="Boncales" type="Panel" parent="Developer"]
+offset_left = -124.0
+offset_top = 319.0
+offset_right = 212.0
+offset_bottom = 488.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_68ja3")
+
+[node name="Caloing" type="Panel" parent="Developer"]
+offset_left = 229.0
+offset_top = 119.0
+offset_right = 568.0
+offset_bottom = 292.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_rx7qm")
+
+[node name="Canseno" type="Panel" parent="Developer"]
+offset_left = 230.0
+offset_top = 321.0
+offset_right = 567.0
+offset_bottom = 491.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_s47rn")
+
+[node name="Fernando" type="Panel" parent="Developer"]
+offset_left = 582.0
+offset_top = 208.0
+offset_right = 918.0
+offset_bottom = 375.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_kiq6y")
+
+[node name="Developer 1" type="Label" parent="."]
+offset_left = 227.0
+offset_top = 231.0
+offset_right = 413.0
+offset_bottom = 253.0
+theme_override_fonts/font = ExtResource("5_01mfl")
+theme_override_font_sizes/font_size = 14
+text = "Developer 1"
+
+[node name="Developer 2" type="Label" parent="Developer 1"]
+offset_left = 4.0
+offset_top = 205.0
+offset_right = 190.0
+offset_bottom = 227.0
+theme_override_fonts/font = ExtResource("5_01mfl")
+theme_override_font_sizes/font_size = 14
+text = "Developer 2"
+
+[node name="Developer 3" type="Label" parent="Developer 1"]
+offset_left = 359.0
+offset_right = 545.0
+offset_bottom = 22.0
+theme_override_fonts/font = ExtResource("5_01mfl")
+theme_override_font_sizes/font_size = 14
+text = "Developer 3
+"
+
+[node name="Developer 4" type="Label" parent="Developer 1"]
+offset_left = 361.0
+offset_top = 205.0
+offset_right = 547.0
+offset_bottom = 227.0
+theme_override_fonts/font = ExtResource("5_01mfl")
+theme_override_font_sizes/font_size = 14
+text = "Developer 4
+"
+
+[node name="Developer 5" type="Label" parent="Developer 1"]
+offset_left = 707.0
+offset_top = 96.0
+offset_right = 861.0
+offset_bottom = 118.0
+theme_override_fonts/font = ExtResource("5_01mfl")
+theme_override_font_sizes/font_size = 14
+text = "Developer 5
+"
+
+[node name="Description 1" type="Label" parent="."]
+offset_left = 226.0
+offset_top = 258.0
+offset_right = 394.0
+offset_bottom = 311.0
+theme_override_fonts/font = ExtResource("4_b4k7k")
+text = "Bacanto, Rachel 
+3rd- BSIT"
+
+[node name="Description 2" type="Label" parent="Description 1"]
+offset_left = 5.0
+offset_top = 209.0
+offset_right = 173.0
+offset_bottom = 262.0
+theme_override_fonts/font = ExtResource("4_b4k7k")
+text = "Boncales, Cherry 
+3rd- BSIT"
+
+[node name="Description 3" type="Label" parent="Description 1"]
+offset_left = 360.0
+offset_top = 2.0
+offset_right = 528.0
+offset_bottom = 55.0
+theme_override_fonts/font = ExtResource("4_b4k7k")
+text = "Caloing, Kristhel
+3rd- BSIT"
+
+[node name="Description 4" type="Label" parent="Description 1"]
+offset_left = 362.0
+offset_top = 209.0
+offset_right = 530.0
+offset_bottom = 262.0
+theme_override_fonts/font = ExtResource("4_b4k7k")
+text = "Canseno, Ismael
+3rd- BSIT"
+
+[node name="Description 5" type="Label" parent="Description 1"]
+offset_left = 708.0
+offset_top = 99.0
+offset_right = 876.0
+offset_bottom = 152.0
+theme_override_fonts/font = ExtResource("4_b4k7k")
+text = "Fernando, Thea
+3rd- BSIT"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 829.0
+offset_top = 559.0
+offset_right = 1096.0
+offset_bottom = 602.0
+theme_override_fonts/font = ExtResource("5_01mfl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o4gd7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ue1nn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_irioe")
+text = "BACK TO MAIN"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_rt010")
+volume_db = 10.0
+autoplay = true
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
