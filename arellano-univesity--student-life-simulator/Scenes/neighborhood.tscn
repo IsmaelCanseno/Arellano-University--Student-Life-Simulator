@@ -2868,6 +2868,8 @@ scale = Vector2(2.572, 2.572)
 [node name="Camera2D" parent="Female Player" index="2"]
 zoom = Vector2(1.5, 1.5)
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Female Player/Camera2D" index="0"]
+
 [editable path="Door/Door_W"]
 [editable path="Door/Door_E"]
 [editable path="Female Player"]

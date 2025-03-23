@@ -4242,7 +4242,6 @@ texture = ExtResource("2_5gjr7")
 6:25/0 = 0
 6:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:25/0 = 0
-7:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:25/0 = 0
 8:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:25/0 = 0
@@ -9362,7 +9361,7 @@ position = Vector2(79.868, 79.8429)
 [node name="Label" type="Label" parent="Node2D"]
 offset_left = 4.0
 offset_top = 69.0
-offset_right = 341.0
+offset_right = 334.0
 offset_bottom = 83.0
 theme_override_fonts/font = ExtResource("6_w06c2")
 text = "To move around use arrow Keys"
@@ -9386,5 +9385,7 @@ spawn_direction = "left"
 
 [node name="Spawn" parent="Door/Door_E" index="1"]
 position = Vector2(-18.5769, 0.28571)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [editable path="Door/Door_E"]

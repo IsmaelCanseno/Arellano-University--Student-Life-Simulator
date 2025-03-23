@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://c5limy4ieqms8"]
+[gd_scene load_steps=9 format=3 uid="uid://c5limy4ieqms8"]
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_3qgki"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_funp3"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="3_0k0sa"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="4_y638s"]
+[ext_resource type="AudioStream" uid="uid://cnyr6euftky5j" path="res://Sound Effects/prelimBackgroundMusic.mp3" id="5_onen3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7eq3x"]
 texture = ExtResource("1_3qgki")
@@ -467,6 +468,12 @@ position = Vector2(239.891, 219.673)
 
 [node name="Camera2D" parent="Female Player" index="2"]
 zoom = Vector2(1.5, 1.5)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_onen3")
+volume_db = 10.0
+autoplay = true
+parameters/looping = true
 
 [editable path="Door/Door_A"]
 [editable path="Female Player"]
