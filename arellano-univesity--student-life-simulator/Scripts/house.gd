@@ -1,7 +1,7 @@
 extends Node2D  # Ensure the script extends Node2D or another relevant Node class
 
 func _ready():
-	var playerCharPath = GlobalData.playerCharPath
+	var playerCharPath = Global.playerCharPath
 	
 	if NavigationManager.spawn_door_tag != null:	
 		_on_level_spawn(NavigationManager.spawn_door_tag)
