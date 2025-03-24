@@ -2036,6 +2036,7 @@ zoom = Vector2(1.5, 1.5)
 stream = ExtResource("11_unisv")
 volume_db = 10.0
 autoplay = true
+parameters/looping = true
 
 [editable path="Door/Door_S"]
 [editable path="Door/Door_N"]

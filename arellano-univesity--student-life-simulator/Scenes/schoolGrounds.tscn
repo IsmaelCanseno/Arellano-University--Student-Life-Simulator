@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=23 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_nvysa"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cyv8h6c1eyelm" path="res://Character/male_student2.tscn" id="11_ibw8w"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="11_v1nj3"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="12_26i1t"]
+[ext_resource type="AudioStream" uid="uid://bh04fmbgt30h7" path="res://Sound Effects/schoolHallwayMusic.mp3" id="14_w3nkw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4836,6 +4837,12 @@ scale = Vector2(2, 2)
 
 [node name="Camera2D" parent="Female Player" index="2"]
 zoom = Vector2(1.5, 1.5)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_w3nkw")
+volume_db = 10.0
+autoplay = true
+parameters/looping = true
 
 [editable path="Door/Door_W"]
 [editable path="Door/Door_N"]
