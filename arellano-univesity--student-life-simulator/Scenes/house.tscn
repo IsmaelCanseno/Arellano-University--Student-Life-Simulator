@@ -9329,21 +9329,6 @@ sources/3 = SubResource("TileSetAtlasSource_54yma")
 
 [sub_resource type="LabelSettings" id="LabelSettings_yb8gp"]
 
-[sub_resource type="Animation" id="Animation_xfixk"]
-resource_name = "SHOW"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.049, 1.0]
-}
-
 [sub_resource type="Animation" id="Animation_gukhk"]
 length = 0.001
 tracks/0/type = "value"
@@ -9359,25 +9344,25 @@ tracks/0/keys = {
 "values": [0.049]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_avsoc"]
-_data = {
-"RESET": SubResource("Animation_gukhk"),
-"SHOW": SubResource("Animation_xfixk")
-}
-
-[sub_resource type="Animation" id="Animation_8judk"]
+[sub_resource type="Animation" id="Animation_xfixk"]
 resource_name = "SHOW"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D/Node2D2/Node2D2/Label:visible_ratio")
+tracks/0/path = NodePath(".:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.633333),
+"times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [0.049, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_avsoc"]
+_data = {
+"RESET": SubResource("Animation_gukhk"),
+"SHOW": SubResource("Animation_xfixk")
 }
 
 [sub_resource type="Animation" id="Animation_utmuj"]
@@ -9393,6 +9378,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_8judk"]
+resource_name = "SHOW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/Node2D2/Node2D2/Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_20i1b"]
@@ -9434,7 +9434,6 @@ label_settings = SubResource("LabelSettings_yb8gp")
 horizontal_alignment = 1
 
 [node name="Node2D2" type="Node2D" parent="Node2D"]
-scale = Vector2(1, 1)
 
 [node name="Label" type="Label" parent="Node2D/Node2D2"]
 offset_left = 172.277
@@ -9454,7 +9453,6 @@ libraries = {
 }
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Node2D2"]
-scale = Vector2(1, 1)
 
 [node name="Label" type="Label" parent="Node2D/Node2D2/Node2D2"]
 offset_left = 563.036
