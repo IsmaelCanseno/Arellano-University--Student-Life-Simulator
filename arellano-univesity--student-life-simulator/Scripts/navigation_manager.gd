@@ -9,6 +9,8 @@ const scene_midtermRoom = preload("res://Scenes/midtermRoom.tscn")
 const scene_semiRoom = preload("res://Scenes/semiRoom.tscn")
 const scene_finalsRoom = preload("res://Scenes/finalsRoom.tscn")
 
+const scene_prelimTask = preload("res://Game Tasks/prelim.tscn")
+
 signal on_trigger_player_spawn
 
 var spawn_door_tag
@@ -33,6 +35,8 @@ func go_to_level(Level_tag, destination_tag):
 			scene_to_load = scene_semiRoom
 		"finalsRoom":
 			scene_to_load = scene_finalsRoom
+		"prelim":
+			scene_to_load = scene_prelimTask
 
 	if scene_to_load != null:
 		spawn_door_tag = destination_tag
