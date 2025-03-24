@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c5et5ml8k7rck"]
+[gd_scene load_steps=22 format=3 uid="uid://c5et5ml8k7rck"]
 
 [ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://Tileset/Thea/House/Thea_House_Houses_png.png" id="1_fkvtn"]
 [ext_resource type="Script" path="res://Scripts/house.gd" id="1_i214v"]
@@ -9329,6 +9329,42 @@ sources/3 = SubResource("TileSetAtlasSource_54yma")
 
 [sub_resource type="LabelSettings" id="LabelSettings_yb8gp"]
 
+[sub_resource type="Animation" id="Animation_nn2ty"]
+resource_name = "SHOW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_apy4j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_edot2"]
+_data = {
+"RESET": SubResource("Animation_apy4j"),
+"SHOW": SubResource("Animation_nn2ty")
+}
+
 [sub_resource type="Animation" id="Animation_gukhk"]
 length = 0.001
 tracks/0/type = "value"
@@ -9432,14 +9468,22 @@ text = "To move around
 use arrow Keys"
 label_settings = SubResource("LabelSettings_yb8gp")
 horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
+libraries = {
+"": SubResource("AnimationLibrary_edot2")
+}
+autoplay = "SHOW"
 
 [node name="Node2D2" type="Node2D" parent="Node2D"]
 
 [node name="Label" type="Label" parent="Node2D/Node2D2"]
-offset_left = 172.277
-offset_top = 191.754
-offset_right = 299.277
-offset_bottom = 222.754
+offset_left = 171.617
+offset_top = 193.717
+offset_right = 298.617
+offset_bottom = 224.717
 theme_override_fonts/font = ExtResource("6_w06c2")
 text = "Explore the 
 house"
@@ -9451,6 +9495,7 @@ visible_ratio = 0.049
 libraries = {
 "": SubResource("AnimationLibrary_avsoc")
 }
+autoplay = "SHOW"
 
 [node name="Node2D2" type="Node2D" parent="Node2D/Node2D2"]
 
@@ -9471,6 +9516,7 @@ root_node = NodePath("../../../../..")
 libraries = {
 "": SubResource("AnimationLibrary_20i1b")
 }
+autoplay = "SHOW"
 
 [node name="Door" type="Node" parent="."]
 

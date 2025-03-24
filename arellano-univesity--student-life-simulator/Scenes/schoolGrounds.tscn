@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=27 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_nvysa"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="11_v1nj3"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="12_26i1t"]
 [ext_resource type="AudioStream" uid="uid://bh04fmbgt30h7" path="res://Sound Effects/schoolHallwayMusic.mp3" id="14_w3nkw"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="15_0k6ij"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4782,6 +4783,42 @@ sources/6 = SubResource("TileSetAtlasSource_rewxi")
 sources/4 = SubResource("TileSetAtlasSource_o1weg")
 sources/5 = SubResource("TileSetAtlasSource_fe507")
 
+[sub_resource type="Animation" id="Animation_335w2"]
+resource_name = "SHOW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_bke7e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u7cbr"]
+_data = {
+"RESET": SubResource("Animation_bke7e"),
+"SHOW": SubResource("Animation_335w2")
+}
+
 [node name="schoolGrounds" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -4843,6 +4880,24 @@ stream = ExtResource("14_w3nkw")
 volume_db = 10.0
 autoplay = true
 parameters/looping = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Node2D"]
+offset_left = 121.0
+offset_top = 660.0
+offset_right = 417.0
+offset_bottom = 683.0
+theme_override_fonts/font = ExtResource("15_0k6ij")
+text = "go inside of school hallway"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
+libraries = {
+"": SubResource("AnimationLibrary_u7cbr")
+}
+autoplay = "SHOW"
 
 [editable path="Door/Door_W"]
 [editable path="Door/Door_N"]
