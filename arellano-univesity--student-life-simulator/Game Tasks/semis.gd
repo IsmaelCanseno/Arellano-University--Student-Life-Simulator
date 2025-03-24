@@ -18,7 +18,7 @@ var correct: float = 0
 var updatedCorrectAnswerIndex: int
 
 func _ready():
-	items = read_json_file("res://Questions/prelim.json")
+	items = read_json_file("res://Questions/semis.json")
 	items.shuffle()
 	show_questions()
 	displayScore()

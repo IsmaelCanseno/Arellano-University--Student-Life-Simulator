@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bb7jbbuaq8ich"]
+[gd_scene load_steps=3 format=3 uid="uid://cf7f7ehisiu7u"]
 
-[ext_resource type="Script" path="res://Game Tasks/prelim.gd" id="1_p1a3t"]
-[ext_resource type="Texture2D" uid="uid://cq6e2dxyrmtrp" path="res://testBackground.jpg" id="2_wq0i4"]
+[ext_resource type="Script" path="res://Game Tasks/semis.gd" id="1_pyfdb"]
+[ext_resource type="Texture2D" uid="uid://cq6e2dxyrmtrp" path="res://testBackground.jpg" id="2_ds4pm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_p1a3t")
+script = ExtResource("1_pyfdb")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -19,7 +19,7 @@ offset_top = -4.99999
 offset_right = 2264.0
 offset_bottom = 1095.0
 scale = Vector2(0.507011, 0.591173)
-texture = ExtResource("2_wq0i4")
+texture = ExtResource("2_ds4pm")
 
 [node name="AnswersList" type="ItemList" parent="."]
 visible = false
@@ -46,6 +46,23 @@ item_1/text = "2000000000000000000000000000000000000"
 item_2/text = "30000000000000000000000000000000"
 item_3/text = "40000000000000000000000000000"
 
+[node name="DoneButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = -211.0
+offset_right = 161.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "Done
+"
+
 [node name="RestartButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
@@ -61,22 +78,6 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 50
 text = "Restart"
-
-[node name="DoneButton" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -168.0
-offset_top = -205.0
-offset_right = 162.0
-offset_bottom = -128.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 50
-text = "Done"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(1280, 120)
@@ -184,7 +185,7 @@ theme_override_font_sizes/font_size = 30
 text = "Congratulations! You're correct."
 
 [connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
-[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="DoneButton" to="." method="_on_done_button_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="OK" to="." method="_on_ok_pressed"]
 [connection signal="pressed" from="Correct" to="." method="_on_correct_pressed"]

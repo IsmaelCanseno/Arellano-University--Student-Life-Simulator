@@ -855,6 +855,12 @@ spawn_direction = ""
 [node name="Spawn" parent="Door/Door_C" index="1"]
 position = Vector2(0.204473, -13.5421)
 
+[node name="Task" parent="Door" instance=ExtResource("8_583hf")]
+position = Vector2(807, 319)
+scale = Vector2(11.2, 6.55556)
+destination_level_tag = "semis"
+destination_door_tag = "S"
+
 [node name="Female Player" parent="." instance=ExtResource("9_p8abb")]
 position = Vector2(312.597, 396.19)
 

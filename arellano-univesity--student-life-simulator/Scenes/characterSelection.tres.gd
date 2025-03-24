@@ -13,6 +13,7 @@ func _ready():
 	# Ensure text changes update global variables
 	name_input_p1.text_changed.connect(_on_name_changed_p1)
 	name_input_p2.text_changed.connect(_on_name_changed_p2)
+	
 func _on_name_changed_p1(new_text):
 	Global.player1_name = new_text.strip_edges()
 
@@ -33,19 +34,19 @@ func _get_char_node():
 			return node
 
 func _set_char_selected(charNode):
-	Global.player1_name = charNode.characterPath  # Ensure correct variable usage
-	
+	Global.playerCharPath = charNode.characterPath  # Fix: Store the character's path instead
+
 	for node in character_selection_box.get_children():
-		var isSelected = charNode == node
+		var isSelected = (charNode == node)
 		node.set_selected(isSelected)
 
 func _on_start_pressed()-> void:
-	# Print to check if names are stored correctly
 	print("Player 1 Name:", Global.player1_name)
 	print("Player 2 Name:", Global.player2_name)
+	print("Player Character Path:", Global.playerCharPath)  # Debugging line
 
-	# Load the game scene (change path to your actual game scene)
+	# Load the game scene
 	get_tree().change_scene_to_file("res://Scenes/house.tscn")
-	
+
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
