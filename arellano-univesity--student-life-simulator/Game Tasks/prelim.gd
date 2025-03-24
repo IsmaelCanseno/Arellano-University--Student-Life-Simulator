@@ -3,7 +3,6 @@ extends Control
 @onready var QuestionItems = $VBoxContainer/QuestionTexts
 @onready var AnswersList = $AnswersList
 @onready var RestartButton = $RestartButton
-@onready var RestartButtonAlways = $RestartButtonAlways
 @onready var WrongNumber = $WrongNumber
 @onready var ScoreNumber = $ScoreNumber
 @onready var CorrectAnswer = $CorrectAnswer
@@ -55,7 +54,6 @@ func show_result():
 	CorrectAnswer.hide()
 	OKButton.hide()
 	RestartButton.show()
-	RestartButtonAlways.hide()
 	WrongNumber.show()
 	ScoreNumber.show()
 	

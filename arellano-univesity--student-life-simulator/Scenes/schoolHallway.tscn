@@ -1948,21 +1948,6 @@ sources/2 = SubResource("TileSetAtlasSource_8hh8j")
 sources/6 = SubResource("TileSetAtlasSource_7odle")
 sources/5 = SubResource("TileSetAtlasSource_hi7xs")
 
-[sub_resource type="Animation" id="Animation_klube"]
-resource_name = "show"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.022, 1.0]
-}
-
 [sub_resource type="Animation" id="Animation_ff5hy"]
 length = 0.001
 tracks/0/type = "value"
@@ -1976,6 +1961,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.022]
+}
+
+[sub_resource type="Animation" id="Animation_klube"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.022, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4akjf"]
