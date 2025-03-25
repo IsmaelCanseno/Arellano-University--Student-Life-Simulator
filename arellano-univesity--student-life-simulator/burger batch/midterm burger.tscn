@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn3wk0rkxbxne"]
+
+[ext_resource type="Script" path="res://burger batch/midtermburgertoneighbor.gd" id="1_bm20b"]
+[ext_resource type="Texture2D" uid="uid://tm5neg7viqak" path="res://Background/about.png" id="1_hsa1d"]
+[ext_resource type="FontFile" uid="uid://dl5gfcp8ohm0f" path="res://Font/MultiTypePixel-Display.otf" id="2_ypm1g"]
+[ext_resource type="Texture2D" uid="uid://b402eus7ubm0x" path="res://Dialogic/Art/484336756_1822779435243769_5722738089681110832_n-removebg-preview.png" id="3_he227"]
+
+[node name="midterm burger" type="Node"]
+script = ExtResource("1_bm20b")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_hsa1d")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Congratulations" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -257.5
+offset_top = 98.0
+offset_right = 257.5
+offset_bottom = 144.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_ypm1g")
+theme_override_font_sizes/font_size = 50
+text = "congratulations!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Message" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.0
+offset_top = -103.0
+offset_right = 308.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.219608, 0.713726, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ypm1g")
+theme_override_font_sizes/font_size = 40
+text = "GREAT JOB! A PIECE 
+OF SUCCESS JUST 
+FOR YOU!"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 488.0
+offset_top = 430.0
+offset_right = 640.0
+offset_bottom = 582.0
+texture = ExtResource("3_he227")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -303.0
+offset_top = -98.0
+offset_right = -170.0
+offset_bottom = -43.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_ypm1g")
+theme_override_font_sizes/font_size = 33
+text = "NEXT!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

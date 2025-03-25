@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyc22lo7thv55"]
+
+[ext_resource type="Script" path="res://burger batch/finalburgertoneighbor.gd" id="1_bfslb"]
+[ext_resource type="Texture2D" uid="uid://tm5neg7viqak" path="res://Background/about.png" id="1_l7lry"]
+[ext_resource type="FontFile" uid="uid://dl5gfcp8ohm0f" path="res://Font/MultiTypePixel-Display.otf" id="2_xlewx"]
+[ext_resource type="Texture2D" uid="uid://dnc6ij5pu3kid" path="res://Dialogic/Art/486542008_649541574461133_703959027479404461_n-removebg-preview (1).png" id="3_woau3"]
+
+[node name="FinalBurger" type="Node"]
+script = ExtResource("1_bfslb")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_l7lry")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Congratulations" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -257.5
+offset_top = 98.0
+offset_right = 257.5
+offset_bottom = 144.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_xlewx")
+theme_override_font_sizes/font_size = 50
+text = "congratulations!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Message" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.433642
+offset_left = -349.0
+offset_top = -79.0
+offset_right = 349.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.219608, 0.713726, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_xlewx")
+theme_override_font_sizes/font_size = 40
+text = "HERE’S THE LAST PIECE! 
+NOW COMBINE IT!"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 509.0
+offset_top = 430.0
+offset_right = 661.0
+offset_bottom = 582.0
+texture = ExtResource("3_woau3")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -303.0
+offset_top = -98.0
+offset_right = -170.0
+offset_bottom = -43.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.996885, 0.959957)
+theme_override_fonts/font = ExtResource("2_xlewx")
+theme_override_font_sizes/font_size = 18
+text = "COMBINE!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

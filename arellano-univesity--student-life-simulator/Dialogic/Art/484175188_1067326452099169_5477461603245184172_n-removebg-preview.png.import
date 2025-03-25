@@ -2,17 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3q86ma7r6l57"
-path="res://.godot/imported/popup_glossary_layer_icon.svg-4af96bdb70714a5289a4ffe42cf8f357.ctex"
+uid="uid://d0vo3q7ofyg7x"
+path="res://.godot/imported/484175188_1067326452099169_5477461603245184172_n-removebg-preview.png-f782b636e8df54c7718f20d0ce71b624.ctex"
 metadata={
-"has_editor_variant": true,
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/popup_glossary_layer_icon.svg"
-dest_files=["res://.godot/imported/popup_glossary_layer_icon.svg-4af96bdb70714a5289a4ffe42cf8f357.ctex"]
+source_file="res://Dialogic/Art/484175188_1067326452099169_5477461603245184172_n-removebg-preview.png"
+dest_files=["res://.godot/imported/484175188_1067326452099169_5477461603245184172_n-removebg-preview.png-f782b636e8df54c7718f20d0ce71b624.ctex"]
 
 [params]
 
@@ -33,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=0.3
-editor/scale_with_editor_scale=true
-editor/convert_colors_with_editor_theme=true
