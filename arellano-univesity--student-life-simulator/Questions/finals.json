@@ -1,72 +1,52 @@
 [
 	{
-		"question": "What is the name of the author?",
-		"options": ["Truong", "Troung", "Chau", "Trueng"],
+		"question": "What programming language is used in Godot?",
+		"options": ["GDScript", "SQL", "Python", "Visual Script"],
 		"correctOptionIndex": 0
 	},
 	{
-		"question": "What is the name of his big dog?",
-		"options": ["Lu", "Benzi", "Kiki", "Bush"],
-		"correctOptionIndex": 2
-	},
-	{
-		"question": "His top favorite movie creature?",
-		"options": ["Alien", "Spider", "Shark", "Dragon"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "What he's trying to be (now)?",
-		"options": ["Famous", "Loved", "Peaceful", "Happy"],
-		"correctOptionIndex": 2
-	},
-	{
-		"question": "What is his favourite topics to sculpt?",
-		"options": ["Nude women", "Animals/ Creatures", "Portraits", "All of above"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "His favourite singer?",
-		"options": ["Đen Vâu", "Lê Cát Trọng Lý", "tlinh", "Vũ Thanh Vân"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "Where he first learnt his anatomy knowledge (and truly understand it)?",
-		"options": ["Scott Eaton", "Dẫu Phải Giải Phẩu", "Ebooks", "By looking at Ecorches"],
+		"question": "A cross-platform, free, and open-source game engine released under the permissive MIT license.",
+		"options": ["Blender", "Godot Engine", "Unity", "Godot Engines"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What he use to SCULPT on his ipad mini?",
-		"options": ["Nomad", "Procreate", "Forger", "Sculptura"],
+		"question": "What is the correct code for the exit button?",
+		"options": ["get_tree().exit()", "get_tree().gotoexit()", "get_tree().quit()", "get_tree().gotoquit()"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "Why he draw a lot (the initial reason)?",
-		"options": ["To win the heart of someone","To improve his drawing skill", "To improve his observational skills", "To relax"],
+		"question": "What is the right stretch mode in TextureRect to make the moving picture loop smoothly?",
+		"options": ["Tile", "Scale", "Keep", "Keep Centered"],
 		"correctOptionIndex": 0
 	},
 	{
-		"question": "What he will do about AI wave?",
-		"options": ["Go traditional", "Do games/app", "Ignore it", "Give up"],
+		"question": "It includes position, rotation, and scale properties.",
+		"options": ["Node", "Node3D", "Node2D", "All of the above"],
+		"correctOptionIndex": 2
+	},
+	{
+		"question": "Which new function in Godot 4 simplifies JSON parsing?",
+		"options": ["JSON.get_data()", "JSON.decode()", "JSON.load_string()", "JSON.parse_string()"],
+		"correctOptionIndex": 3
+	},
+	{
+		"question": "Which UI node was removed in Godot 4?",
+		"options": ["PanelContainer", "GraphEdit", "HboxEdit", "MarginContainer"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What he think AI canNOT do?",
-		"options": ["Soul in art", "Customization", "Creativity", "Kill his passion for art"],
+		"question": "Which new language was added in Godot 4?",
+		"options": ["Python", "GDExpanded", "None of the above", "GDExtension"],
+		"correctOptionIndex": 3
+	},
+	{ 
+		"question": "Who is not one of the developers of the game?",
+		"options": ["Ismael Canseno", "Thea Fernando", "Kristhel Caloing", "Thea Fernandez"],
 		"correctOptionIndex": 3
 	},
 	{
-		"question": "To him, how NOT to beat AI?",
-		"options": ["Make end products (comic, ip, app...)", "Build personal brand", "Find your niche, go deep", "Sue /complain AI companies for stealing art"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "What he value the most (in theory)?",
-		"options": ["Health", "Wealth", "Happiness", "Love"],
+		"question": "In the previous version of Godot, it was called tween node but later on replaced by ___",
+		"options": ["create_tween()", "Tween.parse_string()", "insert.tween()", "Animation Player"],
 		"correctOptionIndex": 0
 	},
-	{
-		"question": "What should is he carrying?",
-		"options": ["What should have been", "The now", "Resentment", "Old relationships"],
-		"correctOptionIndex": 1
-	}
 ]
