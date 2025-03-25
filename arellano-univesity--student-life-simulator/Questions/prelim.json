@@ -1,72 +1,52 @@
 [
 	{
-		"question": "What is the name of the author?",
-		"options": ["Truong", "Troung", "Chau", "Trueng"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "What is the name of his big dog?",
-		"options": ["Lu", "Benzi", "Kiki", "Bush"],
+		"question": "What is a platform in computing?",
+		"options": ["A type of programming language", "A type of database system", "A hardware and software environment for running applications", "A social media website"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "His top favorite movie creature?",
-		"options": ["Alien", "Spider", "Shark", "Dragon"],
+		"question": "Which of the following is an example of a cloud computing platform?",
+		"options": ["Microsoft Word", "Google Drive", "Notepad++", "VLC Media Player"],
+		"correctOptionIndex": 1
+	},
+	{
+		"question": "What is an example of an operating system platform?",
+		"options": ["Windows", "Google Chrome", "Microsoft Excel", "Adobe Photoshop"],
+		"correctOptionIndex": 0
+	},
+	{
+		"question": "Which of these is a mobile platform?",
+		"options": ["Linux Mint", "Android", "Windows XP", "Ubuntu"],
+		"correctOptionIndex": 1
+	},
+	{
+		"question": "What does SaaS stand for in cloud computing?",
+		"options": ["System as a Solution", "Software as a Service", "Storage and Security", "Service and Application Software"],
+		"correctOptionIndex": 1
+	},
+	{
+		"question": "Which of these is NOT a cloud computing service model?",
+		"options": ["SaaS", "IaaS", "PaaS", "BIOS"],
 		"correctOptionIndex": 3
 	},
 	{
-		"question": "What he's trying to be (now)?",
-		"options": ["Famous", "Loved", "Peaceful", "Happy"],
+		"question": "What is the main function of a hypervisor in virtualization?",
+		"options": ["Managing web hosting", "Allowing multiple operating systems to run on a single physical machine", "Improving internet speed", "Creating databases"],
+		"correctOptionIndex": 1
+	},
+	{
+		"question": "What is the purpose of an API in platform technologies?",
+		"options": ["To clean a computer’s memory", "To create computer viruses", "To allow different software applications to communicate", "To store data in cloud storage"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "What is his favourite topics to sculpt?",
-		"options": ["Nude women", "Animals/ Creatures", "Portraits", "All of above"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "His favourite singer?",
-		"options": ["Đen Vâu", "Lê Cát Trọng Lý", "tlinh", "Vũ Thanh Vân"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "Where he first learnt his anatomy knowledge (and truly understand it)?",
-		"options": ["Scott Eaton", "Dẫu Phải Giải Phẩu", "Ebooks", "By looking at Ecorches"],
+		"question": "What is the main purpose of a database management system (DBMS)?",
+		"options": ["To browse the internet","To manage and organize data efficiently", "To edit images", "To write programming code"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What he use to SCULPT on his ipad mini?",
-		"options": ["Nomad", "Procreate", "Forger", "Sculptura"],
+		"question": "What is the main advantage of using cloud platforms?",
+		"options": ["They always work offline","They require expensive hardware", "They allow access from anywhere with an internet connection", "They do not require internet access"],
 		"correctOptionIndex": 2
-	},
-	{
-		"question": "Why he draw a lot (the initial reason)?",
-		"options": ["To win the heart of someone","To improve his drawing skill", "To improve his observational skills", "To relax"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "What he will do about AI wave?",
-		"options": ["Go traditional", "Do games/app", "Ignore it", "Give up"],
-		"correctOptionIndex": 1
-	},
-	{
-		"question": "What he think AI canNOT do?",
-		"options": ["Soul in art", "Customization", "Creativity", "Kill his passion for art"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "To him, how NOT to beat AI?",
-		"options": ["Make end products (comic, ip, app...)", "Build personal brand", "Find your niche, go deep", "Sue /complain AI companies for stealing art"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "What he value the most (in theory)?",
-		"options": ["Health", "Wealth", "Happiness", "Love"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "What should is he carrying?",
-		"options": ["What should have been", "The now", "Resentment", "Old relationships"],
-		"correctOptionIndex": 1
 	}
 ]

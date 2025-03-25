@@ -8,7 +8,7 @@ extends Control
 @onready var CorrectAnswer = $CorrectAnswer
 @onready var OKButton = $OK
 @onready var Congratulation = $Correct
-@onready var DoneButton = $DoneButton  # Make sure you add a Done/Exit button in the scene
+@onready var RewardButton = $RewardButton  # Make sure you add a Done/Exit button in the scene
 
 var items: Array
 var item: Dictionary
@@ -36,7 +36,7 @@ func show_questions():
 	RestartButton.hide()
 	AnswersList.clear()
 	WrongNumber.show()
-	DoneButton.hide()  # Hide Done button while answering questions
+	RewardButton.hide()  # Hide Done button while answering questions
 	item = items[index_item]
 	QuestionItems.text = item.question
 	var options = item.options
@@ -58,7 +58,7 @@ func show_result():
 	RestartButton.show()
 	WrongNumber.show()
 	ScoreNumber.show()
-	DoneButton.show()  # Show the Done button after the quiz ends
+	RewardButton.show()  # Show the Done button after the quiz ends
 	
 	var percentage = round(correct/items.size()*100)
 	var greet
@@ -120,6 +120,3 @@ func _on_answers_list_item_selected(index):
 		
 func _on_restart_button_pressed():
 	get_tree().reload_current_scene()
-
-func _on_done_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/house.tscn")  # Direct transition

@@ -22,7 +22,6 @@ scale = Vector2(0.507011, 0.591173)
 texture = ExtResource("2_wq0i4")
 
 [node name="AnswersList" type="ItemList" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -36,7 +35,7 @@ offset_bottom = -172.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 25
 allow_reselect = true
 item_count = 4
 same_column_width = true
@@ -62,7 +61,7 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 50
 text = "Restart"
 
-[node name="DoneButton" type="Button" parent="."]
+[node name="RewardButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -76,7 +75,7 @@ offset_bottom = -128.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 50
-text = "Done"
+text = "	GET YOU REWARD HERE"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(1280, 120)
@@ -140,14 +139,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -308.0
+offset_left = -510.0
 offset_top = -325.0
-offset_right = 307.0
+offset_right = 522.0
 offset_bottom = -280.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.133333, 0.133333, 0.133333, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "The correct answer is:"
 horizontal_alignment = 1
 
@@ -185,6 +184,6 @@ text = "Congratulations! You're correct."
 
 [connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
-[connection signal="pressed" from="DoneButton" to="." method="_on_done_button_pressed"]
+[connection signal="pressed" from="RewardButton" to="." method="_on_done_button_pressed"]
 [connection signal="pressed" from="OK" to="." method="_on_ok_pressed"]
 [connection signal="pressed" from="Correct" to="." method="_on_correct_pressed"]
