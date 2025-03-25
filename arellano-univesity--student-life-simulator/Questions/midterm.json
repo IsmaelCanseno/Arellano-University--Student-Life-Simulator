@@ -15,19 +15,9 @@
 	"correctOptionIndex": 1
   },
   {
-	"question": "Why is data analysis important in gamification?",
-	"options": ["Create graphics", "Develop algorithms", "Manage transactions", "Understand behavior",],
-	"correctOptionIndex": 3
-  },
-  {
 	"question": "What is Unreal Engine used for?",
 	"options": ["Web development", "Game development", "Data analysis", "Project management"],
 	"correctOptionIndex": 1
-  },
-  {
-	"question": "Which is an example of extrinsic motivation?",
-	"options": ["Personal satisfaction", "Enjoying learning", "Receiving reward", "Intrinsic curiosity"],
-	"correctOptionIndex": 2
   },
   {
 	"question": "What role does competition play in gamification?",
@@ -37,21 +27,6 @@
   {
 	"question": "How can gamification be a problem-solving tool?",
 	"options": ["Focus on rewards", "Engage in solutions", "Create impossible puzzles", "Use data analysis"],
-	"correctOptionIndex": 1
-  },
-  {
-	"question": "What is 'vertical alignment' in UX design?",
-	"options": ["Align user goals", "Horizontal alignment", "Aesthetic only", "Vertical scrolling"],
-	"correctOptionIndex": 0
-  },
-  {
-	"question": "Why is observation important in student behavior?",
-	"options": ["Accurate data", "Insight into interaction", "Eliminate assessment", "Teacher's perspective"],
-	"correctOptionIndex": 1
-  },
-  {
-	"question": "What is an 'open platform'?",
-	"options": ["Paid subscription", "Public and customizable", "Select group", "Closed-source"],
 	"correctOptionIndex": 1
   },
   {
@@ -65,16 +40,6 @@
 	"correctOptionIndex": 0
   },
   {
-	"question": "How can gamification be used in SMEs?",
-	"options": ["Reduce productivity", "Increase engagement", "Hostile work", "Eliminate training"],
-	"correctOptionIndex": 1
-  },
-  {
-	"question": "What is the significance of 'value of topic'?",
-	"options": ["Project complexity", "Relevance and impact", "Financial focus", "Technology use"],
-	"correctOptionIndex": 1
-  },
-  {
 	"question": "Which is NOT a benefit of gamification in education?",
 	"options": ["Increased engagement", "Improved outcomes", "Decreased motivation", "Skill development"],
 	"correctOptionIndex": 2
@@ -84,19 +49,5 @@
 	"options": ["Discourage participation", "Motivate and reinforce", "Confusion", "Simplify learning"],
 	"correctOptionIndex": 1
   },
-  {
-	"question": "What is key in 'conceptualizing' a game?",
-	"options": ["Ignore user experience", "Focus on finances", "Understand goals", "Create confusion"],
-	"correctOptionIndex": 2
-  },
-  {
-	"question": "What is the purpose of 'documentation'?",
-	"options": ["Create graphics", "Record progress", "Eliminate communication", "Focus on finances"],
-	"correctOptionIndex": 1
-  },
-  {
-	"question": "Which is an example of 'intrinsic motivation'?",
-	"options": ["Bonus for task", "Enjoying challenge", "Winning competition", "Avoiding punishment"],
-	"correctOptionIndex": 1
-  }
+
 ]
