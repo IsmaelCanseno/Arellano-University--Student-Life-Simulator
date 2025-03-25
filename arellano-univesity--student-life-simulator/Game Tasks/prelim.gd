@@ -120,3 +120,7 @@ func _on_answers_list_item_selected(index):
 		
 func _on_restart_button_pressed():
 	get_tree().reload_current_scene()
+
+
+func _on_reward_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://burger batch/prelim burger.tscn")

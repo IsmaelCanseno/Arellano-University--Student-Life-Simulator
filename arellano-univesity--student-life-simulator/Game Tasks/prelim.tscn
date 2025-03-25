@@ -184,6 +184,6 @@ text = "Congratulations! You're correct."
 
 [connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
-[connection signal="pressed" from="RewardButton" to="." method="_on_done_button_pressed"]
+[connection signal="pressed" from="RewardButton" to="." method="_on_reward_button_pressed"]
 [connection signal="pressed" from="OK" to="." method="_on_ok_pressed"]
 [connection signal="pressed" from="Correct" to="." method="_on_correct_pressed"]
