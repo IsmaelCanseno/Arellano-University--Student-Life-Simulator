@@ -2006,7 +2006,7 @@ layer_3/tile_data = PackedInt32Array(655375, 262146, 3, 655370, 262146, 3, 65537
 position = Vector2(441.68, 118.585)
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("11_k32hd")]
-position = Vector2(504.666, 115.474)
+position = Vector2(502.722, 118.974)
 scale = Vector2(0.993022, 1)
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("7_0hqbc")]
@@ -2033,8 +2033,11 @@ scale = Vector2(2.7489, 3.97139)
 destination_level_tag = "prelimRoom"
 destination_door_tag = "A"
 
+[node name="CollisionShape2D" parent="Door/Door_N" index="0"]
+position = Vector2(0.363782, -1.0072)
+
 [node name="Spawn" parent="Door/Door_N" index="1"]
-position = Vector2(-1.11018e-05, 12.3382)
+position = Vector2(0.363782, 8.81304)
 
 [node name="Door_N2" parent="Door" instance=ExtResource("8_v5lah")]
 position = Vector2(804, 228)
@@ -2042,8 +2045,11 @@ scale = Vector2(2.749, 3.971)
 destination_level_tag = "midtermRoom"
 destination_door_tag = "B"
 
+[node name="CollisionShape2D" parent="Door/Door_N2" index="0"]
+position = Vector2(0.363769, -2.77008)
+
 [node name="Spawn" parent="Door/Door_N2" index="1"]
-position = Vector2(0.727537, 8.56208)
+position = Vector2(0.363768, 7.30294)
 
 [node name="Door_N3" parent="Door" instance=ExtResource("8_v5lah")]
 position = Vector2(1299, 223)
@@ -2051,8 +2057,11 @@ scale = Vector2(2.749, 3.971)
 destination_level_tag = "semiRoom"
 destination_door_tag = "C"
 
+[node name="CollisionShape2D" parent="Door/Door_N3" index="0"]
+position = Vector2(-0.363769, -2.01461)
+
 [node name="Spawn" parent="Door/Door_N3" index="1"]
-position = Vector2(0.727537, 10.8285)
+position = Vector2(-0.363769, 8.05842)
 
 [node name="Door_N4" parent="Door" instance=ExtResource("8_v5lah")]
 position = Vector2(1668, 224)
@@ -2060,8 +2069,11 @@ scale = Vector2(2.749, 3.971)
 destination_level_tag = "finalsRoom"
 destination_door_tag = "D"
 
+[node name="CollisionShape2D" parent="Door/Door_N4" index="0"]
+position = Vector2(-0.363769, -2.51826)
+
 [node name="Spawn" parent="Door/Door_N4" index="1"]
-position = Vector2(0.363813, 10.3249)
+position = Vector2(-0.363769, 7.55477)
 
 [node name="Female Player" parent="." instance=ExtResource("9_332nc")]
 position = Vector2(493.39, 196.345)
