@@ -1,0 +1,13 @@
+join male_cutting 1
+hello.. um..
+I'm cutter..
+join "fucked up character" 3
+and I'm a fucked up person..
+not sure what the fuck should I do, you could fuck yourself!
+leave "fucked up character"
+could you?
+- yes.. of course
+	thanks! it means the world! I will see you when I return to the island!
+	[signal arg="game_over"]
+- no.. kill yourself
+	ah okay! I'll ask Superman! thanks for your time though!

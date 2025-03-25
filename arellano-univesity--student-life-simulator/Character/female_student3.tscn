@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3o4vupw11m4o"]
+[gd_scene load_steps=6 format=3 uid="uid://d3o4vupw11m4o"]
 
+[ext_resource type="Script" path="res://Dialogic/Script/female_student_3.gd" id="1_ofhs2"]
 [ext_resource type="Texture2D" uid="uid://ndlkrbq7mtpx" path="res://Character/UPDATED Characters.png" id="1_y63jy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7jwqm"]
@@ -17,13 +18,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5oira"]
-size = Vector2(12, 16)
+[sub_resource type="CircleShape2D" id="CircleShape2D_78i32"]
+radius = 11.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ofhs2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_2rjlv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
-shape = SubResource("RectangleShape2D_5oira")
+[node name="chatDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
+shape = SubResource("CircleShape2D_78i32")
+
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]
