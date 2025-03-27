@@ -1,5 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://dpeia0bcstydo"]
+[gd_scene load_steps=28 format=3 uid="uid://dpeia0bcstydo"]
 
+[ext_resource type="Script" path="res://Scenes/midterm_room.gd" id="1_olgbq"]
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_pxj8o"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_c2a60"]
 [ext_resource type="Texture2D" uid="uid://cbaf2x7pjqd38" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Walls.png" id="3_1rxcj"]
@@ -12,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="10_rwvdj"]
 [ext_resource type="PackedScene" uid="uid://ks8t6vjlfqxv" path="res://Character/female_prof1.tscn" id="11_cxean"]
 [ext_resource type="AudioStream" uid="uid://o1w2cusvo3e1" path="res://Sound Effects/midtermBackgrounMusic.mp3" id="11_qf1uv"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="13_ykh1j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b6fcv"]
 texture = ExtResource("1_pxj8o")
@@ -1015,8 +1017,48 @@ sources/31 = SubResource("TileSetAtlasSource_mv6dj")
 sources/35 = SubResource("TileSetAtlasSource_8kypt")
 sources/36 = SubResource("TileSetAtlasSource_cn275")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_70xoe"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_et2pa"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajdcx"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="Midterm" type="Node2D"]
 scale = Vector2(2.572, 2.572)
+script = ExtResource("1_olgbq")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_gl478")
@@ -1040,11 +1082,14 @@ position = Vector2(82, 676)
 scale = Vector2(4.5, 3)
 spawn_direction = ""
 
+[node name="CollisionShape2D" parent="Door/Door_B" index="0"]
+position = Vector2(-1.90735e-06, -14.9167)
+
 [node name="Spawn" parent="Door/Door_B" index="1"]
 position = Vector2(0.222222, -17.3333)
 
 [node name="Task" parent="Door" instance=ExtResource("9_p0jsm")]
-position = Vector2(572, 267)
+position = Vector2(576, 230)
 scale = Vector2(10.1429, 5.33333)
 destination_level_tag = "midterm"
 destination_door_tag = "M"
@@ -1063,6 +1108,22 @@ stream = ExtResource("11_qf1uv")
 volume_db = 10.0
 autoplay = true
 parameters/looping = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 69.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("13_ykh1j")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_70xoe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_et2pa")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ajdcx")
+text = "🡨"
+
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_B"]
 [editable path="Female Player"]

@@ -94,6 +94,7 @@ text = "THE DEVELOPERS"
 horizontal_alignment = 1
 
 [node name="Bacanto" type="Panel" parent="Developer"]
+layout_mode = 0
 offset_left = -126.0
 offset_top = 114.0
 offset_right = 210.0
@@ -101,6 +102,7 @@ offset_bottom = 281.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_grmcb")
 
 [node name="Boncales" type="Panel" parent="Developer"]
+layout_mode = 0
 offset_left = -124.0
 offset_top = 319.0
 offset_right = 212.0
@@ -108,6 +110,7 @@ offset_bottom = 488.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_68ja3")
 
 [node name="Caloing" type="Panel" parent="Developer"]
+layout_mode = 0
 offset_left = 229.0
 offset_top = 119.0
 offset_right = 568.0
@@ -115,6 +118,7 @@ offset_bottom = 292.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_rx7qm")
 
 [node name="Canseno" type="Panel" parent="Developer"]
+layout_mode = 0
 offset_left = 230.0
 offset_top = 321.0
 offset_right = 567.0
@@ -122,6 +126,7 @@ offset_bottom = 491.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_s47rn")
 
 [node name="Fernando" type="Panel" parent="Developer"]
+layout_mode = 0
 offset_left = 582.0
 offset_top = 208.0
 offset_right = 918.0
@@ -138,6 +143,7 @@ theme_override_font_sizes/font_size = 14
 text = "Developer 1"
 
 [node name="Developer 2" type="Label" parent="Developer 1"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 205.0
 offset_right = 190.0
@@ -147,6 +153,7 @@ theme_override_font_sizes/font_size = 14
 text = "Developer 2"
 
 [node name="Developer 3" type="Label" parent="Developer 1"]
+layout_mode = 0
 offset_left = 359.0
 offset_right = 545.0
 offset_bottom = 22.0
@@ -156,6 +163,7 @@ text = "Developer 3
 "
 
 [node name="Developer 4" type="Label" parent="Developer 1"]
+layout_mode = 0
 offset_left = 361.0
 offset_top = 205.0
 offset_right = 547.0
@@ -166,6 +174,7 @@ text = "Developer 4
 "
 
 [node name="Developer 5" type="Label" parent="Developer 1"]
+layout_mode = 0
 offset_left = 707.0
 offset_top = 96.0
 offset_right = 861.0
@@ -185,6 +194,7 @@ text = "Bacanto, Rachel
 3rd- BSIT"
 
 [node name="Description 2" type="Label" parent="Description 1"]
+layout_mode = 0
 offset_left = 5.0
 offset_top = 209.0
 offset_right = 173.0
@@ -194,6 +204,7 @@ text = "Boncales, Cherry
 3rd- BSIT"
 
 [node name="Description 3" type="Label" parent="Description 1"]
+layout_mode = 0
 offset_left = 360.0
 offset_top = 2.0
 offset_right = 528.0
@@ -203,6 +214,7 @@ text = "Caloing, Kristhel
 3rd- BSIT"
 
 [node name="Description 4" type="Label" parent="Description 1"]
+layout_mode = 0
 offset_left = 362.0
 offset_top = 209.0
 offset_right = 530.0
@@ -212,6 +224,7 @@ text = "Canseno, Ismael
 3rd- BSIT"
 
 [node name="Description 5" type="Label" parent="Description 1"]
+layout_mode = 0
 offset_left = 708.0
 offset_top = 99.0
 offset_right = 876.0

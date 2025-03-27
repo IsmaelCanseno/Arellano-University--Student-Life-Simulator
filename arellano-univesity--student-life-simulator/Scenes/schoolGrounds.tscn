@@ -1,5 +1,6 @@
-[gd_scene load_steps=27 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=32 format=3 uid="uid://c8xp8x13njwos"]
 
+[ext_resource type="Script" path="res://Scenes/school_grounds.gd" id="1_855yu"]
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="2_nvysa"]
 [ext_resource type="Texture2D" uid="uid://dvs33bq41g287" path="res://Tileset/Ismael/Arellano School Building/Ismael_ArellanoBuilding_Tileset_Highschool_1.png" id="3_kudk4"]
@@ -15,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="12_26i1t"]
 [ext_resource type="AudioStream" uid="uid://bh04fmbgt30h7" path="res://Sound Effects/schoolHallwayMusic.mp3" id="14_w3nkw"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="15_0k6ij"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="17_um6mk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4819,7 +4821,47 @@ _data = {
 "SHOW": SubResource("Animation_335w2")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mun4s"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ber6i"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3a56b"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="schoolGrounds" type="Node2D"]
+script = ExtResource("1_855yu")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-1, 1)
@@ -4852,6 +4894,9 @@ position = Vector2(130.249, 174.572)
 [node name="Door_W" parent="Door" instance=ExtResource("11_v1nj3")]
 position = Vector2(50, 570)
 scale = Vector2(2.74856, 3.40282)
+
+[node name="CollisionShape2D" parent="Door/Door_W" index="0"]
+position = Vector2(-5.09358, 1.98361)
 
 [node name="Spawn" parent="Door/Door_W" index="1"]
 position = Vector2(21.4658, 0)
@@ -4898,6 +4943,22 @@ libraries = {
 "": SubResource("AnimationLibrary_u7cbr")
 }
 autoplay = "SHOW"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 69.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("17_um6mk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_mun4s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ber6i")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3a56b")
+text = "🡨"
+
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_W"]
 [editable path="Door/Door_N"]

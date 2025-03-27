@@ -79,3 +79,7 @@ func _on_chat_detection_body_entered(body: Node2D) -> void:
 func _on_chat_detection_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_area = false
+
+
+func _on_back_pressed() -> void:
+	pass # Replace with function body.

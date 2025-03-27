@@ -1,6 +1,7 @@
-[gd_scene load_steps=54 format=3 uid="uid://b3kpdttvv5ltj"]
+[gd_scene load_steps=59 format=3 uid="uid://b3kpdttvv5ltj"]
 
 [ext_resource type="Texture2D" uid="uid://coj306wjlq0ee" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Boss.png" id="1_7wtk2"]
+[ext_resource type="Script" path="res://Scenes/finals_room.gd" id="1_126sb"]
 [ext_resource type="Texture2D" uid="uid://cvt016g518ii4" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_cabinet.png" id="2_mtnkf"]
 [ext_resource type="Texture2D" uid="uid://gv3tjmnmxiih" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_PC2.png" id="3_55pkq"]
 [ext_resource type="Texture2D" uid="uid://ml6pgh7gp5s2" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_plant.png" id="4_ky4aa"]
@@ -28,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://d25geip2mbp2j" path="res://Character/male_prof2.tscn" id="25_nu6nw"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="26_egj6x"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="27_kqmxb"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="29_mlnut"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1goeh"]
 texture = ExtResource("1_7wtk2")
@@ -1492,7 +1494,47 @@ sources/24 = SubResource("TileSetAtlasSource_cv5yd")
 sources/25 = SubResource("TileSetAtlasSource_2duuk")
 sources/21 = SubResource("TileSetAtlasSource_hs854")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlqsm"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0sceo"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65h3u"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="Finals" type="Node2D"]
+script = ExtResource("1_126sb")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(2.572, 2.572)
@@ -1525,11 +1567,14 @@ position = Vector2(1071, 633)
 scale = Vector2(4.57477, 3.92238)
 spawn_direction = ""
 
+[node name="CollisionShape2D" parent="Door/Door_D" index="0"]
+position = Vector2(-0.327881, 0)
+
 [node name="Spawn" parent="Door/Door_D" index="1"]
 position = Vector2(0.43718, -14.532)
 
 [node name="Task" parent="Door" instance=ExtResource("26_egj6x")]
-position = Vector2(571, 417)
+position = Vector2(945, 324)
 scale = Vector2(10.5455, 5.7)
 destination_level_tag = "finals"
 destination_door_tag = "F"
@@ -1546,6 +1591,22 @@ stream = ExtResource("25_mhag2")
 volume_db = 10.0
 autoplay = true
 parameters/looping = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 69.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("29_mlnut")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_jlqsm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0sceo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_65h3u")
+text = "🡨"
+
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_D"]
 [editable path="Female Player"]

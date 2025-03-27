@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c5et5ml8k7rck"]
+[gd_scene load_steps=26 format=3 uid="uid://c5et5ml8k7rck"]
 
 [ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://Tileset/Thea/House/Thea_House_Houses_png.png" id="1_fkvtn"]
 [ext_resource type="Script" path="res://Scripts/house.gd" id="1_i214v"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://Tileset/Thea/House/Thea_House_Walls_png.png" id="3_03q8p"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="6_13bv2"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="6_w06c2"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="7_mrhpi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66guk"]
 texture = ExtResource("1_fkvtn")
@@ -9437,6 +9438,45 @@ _data = {
 "SHOW": SubResource("Animation_8judk")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_10odf"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3tu4b"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hraeh"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="House" type="Node2D"]
 position = Vector2(50, 0)
 scale = Vector2(1.515, 1.528)
@@ -9531,5 +9571,21 @@ spawn_direction = "left"
 position = Vector2(-18.5769, 0.28571)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 69.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("7_mrhpi")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_10odf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3tu4b")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hraeh")
+text = "🡨"
+
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_E"]

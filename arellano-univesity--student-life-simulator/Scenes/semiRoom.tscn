@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://dj5r8mxxadp5h"]
+[gd_scene load_steps=25 format=3 uid="uid://dj5r8mxxadp5h"]
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_ppxto"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="1_staao"]
+[ext_resource type="Script" path="res://Scenes/semi_room.gd" id="1_wgqhv"]
 [ext_resource type="Texture2D" uid="uid://bgi8cjo2fuqce" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Floors.png" id="2_wtgcd"]
 [ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://Tileset/Thea/House/Thea_House_Walls_png.png" id="3_rgma1"]
 [ext_resource type="Texture2D" uid="uid://cbaf2x7pjqd38" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Walls.png" id="5_saf2r"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://btesygvp4rnc4" path="res://Character/female_prof2.tscn" id="8_e6rc8"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="9_p8abb"]
 [ext_resource type="AudioStream" uid="uid://cfp4s6jd7vvu6" path="res://Sound Effects/semiBackgroundMusic.mp3" id="10_d2v3c"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="12_he4v0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ya6x"]
 texture = ExtResource("1_staao")
@@ -826,8 +828,48 @@ sources/4 = SubResource("TileSetAtlasSource_l2p5j")
 sources/5 = SubResource("TileSetAtlasSource_mqyxp")
 sources/6 = SubResource("TileSetAtlasSource_6xrcm")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d647k"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymfhf"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1mdw"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="Semis" type="Node2D"]
 scale = Vector2(2.572, 2.572)
+script = ExtResource("1_wgqhv")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ah1dc")
@@ -852,11 +894,14 @@ position = Vector2(804, 1108)
 scale = Vector2(9.78125, 5.09524)
 spawn_direction = ""
 
+[node name="CollisionShape2D" parent="Door/Door_C" index="0"]
+position = Vector2(-0.153358, -5.49533)
+
 [node name="Spawn" parent="Door/Door_C" index="1"]
 position = Vector2(0.204473, -13.5421)
 
 [node name="Task" parent="Door" instance=ExtResource("8_583hf")]
-position = Vector2(807, 319)
+position = Vector2(620, 616)
 scale = Vector2(11.2, 6.55556)
 destination_level_tag = "semis"
 destination_door_tag = "S"
@@ -876,6 +921,22 @@ stream = ExtResource("10_d2v3c")
 volume_db = 10.0
 autoplay = true
 parameters/looping = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 69.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("12_he4v0")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_d647k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ymfhf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1mdw")
+text = "🡨"
+
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_C"]
 [editable path="Female Player"]

@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://bhv1s6o0lc44"]
+[gd_scene load_steps=23 format=3 uid="uid://bhv1s6o0lc44"]
 
+[ext_resource type="Script" path="res://Scenes/neighborhood.gd" id="1_8clge"]
 [ext_resource type="Texture2D" uid="uid://bcp2d1ix08q6u" path="res://Tileset/Cherry/Neighbor/BD001.png" id="1_8g0cq"]
 [ext_resource type="Texture2D" uid="uid://dons7o2s84pqy" path="res://Tileset/Cherry/Neighbor/BL001.png" id="2_bm3d1"]
 [ext_resource type="Texture2D" uid="uid://1seh13gsu2u4" path="res://Tileset/Cherry/Neighbor/Cherry_Neighbor_CP_V1.png" id="3_py3y3"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="7_k6jqh"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="8_ydinj"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="9_d7p5e"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="11_bkwdp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vf8nj"]
 texture = ExtResource("1_8g0cq")
@@ -2857,7 +2859,47 @@ _data = {
 "SHOW": SubResource("Animation_1gnkp")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pgu47"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pspee"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pl75x"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="neighborhood" type="Node2D"]
+script = ExtResource("1_8clge")
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(2.572, 2.572)
@@ -2885,6 +2927,9 @@ destination_level_tag = "house "
 destination_door_tag = "E"
 spawn_direction = "right"
 
+[node name="CollisionShape2D" parent="Door/Door_W" index="0"]
+position = Vector2(-0.598005, 0.993294)
+
 [node name="Spawn" parent="Door/Door_W" index="1"]
 position = Vector2(21.3692, 0)
 
@@ -2894,6 +2939,9 @@ scale = Vector2(3.8, 4.66667)
 destination_level_tag = "schoolGrounds"
 destination_door_tag = "W"
 spawn_direction = "left"
+
+[node name="CollisionShape2D" parent="Door/Door_E" index="0"]
+position = Vector2(-1.46948, -0.214287)
 
 [node name="Spawn" parent="Door/Door_E" index="1"]
 position = Vector2(-18.9474, -0.214299)
@@ -2926,6 +2974,22 @@ libraries = {
 "": SubResource("AnimationLibrary_xqt01")
 }
 autoplay = "SHOW"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 21.0
+offset_right = 69.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("11_bkwdp")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_pgu47")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pspee")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pl75x")
+text = "🡨"
+
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_W"]
 [editable path="Door/Door_E"]
