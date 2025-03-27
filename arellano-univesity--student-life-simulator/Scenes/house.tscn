@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://c5et5ml8k7rck"]
+[gd_scene load_steps=20 format=3 uid="uid://c5et5ml8k7rck"]
 
 [ext_resource type="Texture2D" uid="uid://bb23qgdtglv6e" path="res://Tileset/Thea/House/Thea_House_Houses_png.png" id="1_fkvtn"]
 [ext_resource type="Script" path="res://Scripts/house.gd" id="1_i214v"]
@@ -9366,78 +9366,6 @@ _data = {
 "SHOW": SubResource("Animation_nn2ty")
 }
 
-[sub_resource type="Animation" id="Animation_gukhk"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.049]
-}
-
-[sub_resource type="Animation" id="Animation_xfixk"]
-resource_name = "SHOW"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.049, 1.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_avsoc"]
-_data = {
-"RESET": SubResource("Animation_gukhk"),
-"SHOW": SubResource("Animation_xfixk")
-}
-
-[sub_resource type="Animation" id="Animation_utmuj"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D/Node2D2/Node2D2/Label:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="Animation_8judk"]
-resource_name = "SHOW"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D/Node2D2/Node2D2/Label:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.633333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_20i1b"]
-_data = {
-"RESET": SubResource("Animation_utmuj"),
-"SHOW": SubResource("Animation_8judk")
-}
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_10odf"]
 bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
 border_width_left = 2
@@ -9499,19 +9427,44 @@ position = Vector2(100.33, 106.675)
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="Node2D"]
-offset_left = 17.1617
-offset_top = 64.7906
-offset_right = 189.162
-offset_bottom = 95.7906
+offset_left = 27.0627
+offset_top = 77.8796
+offset_right = 199.063
+offset_bottom = 108.88
 theme_override_fonts/font = ExtResource("6_w06c2")
+theme_override_font_sizes/font_size = 29
 text = "To move around 
 use arrow Keys"
 label_settings = SubResource("LabelSettings_yb8gp")
 horizontal_alignment = 1
 visible_characters = 0
 visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
+libraries = {
+"": SubResource("AnimationLibrary_edot2")
+}
+autoplay = "SHOW"
+
+[node name="Node2D" type="Node2D" parent="Node2D"]
+
+[node name="Label" type="Label" parent="Node2D/Node2D"]
+offset_left = 295.71
+offset_top = 227.749
+offset_right = 467.71
+offset_bottom = 258.749
+theme_override_fonts/font = ExtResource("6_w06c2")
+theme_override_font_sizes/font_size = 29
+text = "Explore 
+the house"
+label_settings = SubResource("LabelSettings_yb8gp")
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Node2D/Label"]
 libraries = {
 "": SubResource("AnimationLibrary_edot2")
 }
@@ -9520,41 +9473,23 @@ autoplay = "SHOW"
 [node name="Node2D2" type="Node2D" parent="Node2D"]
 
 [node name="Label" type="Label" parent="Node2D/Node2D2"]
-offset_left = 171.617
-offset_top = 193.717
-offset_right = 298.617
-offset_bottom = 224.717
+offset_left = 508.911
+offset_top = 109.948
+offset_right = 680.911
+offset_bottom = 140.948
 theme_override_fonts/font = ExtResource("6_w06c2")
-text = "Explore the 
-house"
-horizontal_alignment = 1
-visible_characters = 0
-visible_ratio = 0.049
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Node2D2/Label"]
-libraries = {
-"": SubResource("AnimationLibrary_avsoc")
-}
-autoplay = "SHOW"
-
-[node name="Node2D2" type="Node2D" parent="Node2D/Node2D2"]
-
-[node name="Label" type="Label" parent="Node2D/Node2D2/Node2D2"]
-offset_left = 563.036
-offset_top = 116.492
-offset_right = 635.036
-offset_bottom = 147.492
-theme_override_fonts/font = ExtResource("6_w06c2")
-text = "gO TO 
-SCHOOL"
+theme_override_font_sizes/font_size = 29
+text = "Go to
+school"
+label_settings = SubResource("LabelSettings_yb8gp")
 horizontal_alignment = 1
 visible_characters = 0
 visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Node2D2/Node2D2/Label"]
-root_node = NodePath("../../../../..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Node2D2/Label"]
 libraries = {
-"": SubResource("AnimationLibrary_20i1b")
+"": SubResource("AnimationLibrary_edot2")
 }
 autoplay = "SHOW"
 

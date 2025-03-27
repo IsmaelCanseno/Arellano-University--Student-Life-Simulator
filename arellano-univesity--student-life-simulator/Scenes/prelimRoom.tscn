@@ -553,7 +553,14 @@ destination_door_tag = "P"
 [node name="Female Player" parent="." instance=ExtResource("4_y638s")]
 position = Vector2(239.891, 219.673)
 
+[node name="CollisionShape2D" parent="Female Player" index="0"]
+position = Vector2(0.388921, 26.0502)
+
+[node name="AnimatedSprite2D" parent="Female Player" index="1"]
+position = Vector2(0.777723, 23.7174)
+
 [node name="Camera2D" parent="Female Player" index="2"]
+position = Vector2(0.000118653, 23.7174)
 zoom = Vector2(1.5, 1.5)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

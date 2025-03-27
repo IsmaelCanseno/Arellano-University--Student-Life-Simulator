@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cv1doq74hmvw8"]
+[gd_scene load_steps=27 format=3 uid="uid://cv1doq74hmvw8"]
 
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="1_kxv4a"]
 [ext_resource type="Script" path="res://Scenes/school_hallway.gd" id="1_m3ibv"]
@@ -1950,42 +1950,6 @@ sources/2 = SubResource("TileSetAtlasSource_8hh8j")
 sources/6 = SubResource("TileSetAtlasSource_7odle")
 sources/5 = SubResource("TileSetAtlasSource_hi7xs")
 
-[sub_resource type="Animation" id="Animation_ff5hy"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.022]
-}
-
-[sub_resource type="Animation" id="Animation_klube"]
-resource_name = "show"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.022, 1.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4akjf"]
-_data = {
-"RESET": SubResource("Animation_ff5hy"),
-"show": SubResource("Animation_klube")
-}
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s1rc6"]
 bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
 border_width_left = 2
@@ -2024,6 +1988,44 @@ corner_radius_top_left = 14
 corner_radius_top_right = 14
 corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_pqr7y"]
+
+[sub_resource type="Animation" id="Animation_apy4j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_nn2ty"]
+resource_name = "SHOW"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_edot2"]
+_data = {
+"RESET": SubResource("Animation_apy4j"),
+"SHOW": SubResource("Animation_nn2ty")
+}
 
 [node name="School Hallway" type="Node2D"]
 position = Vector2(-1, 1)
@@ -2123,7 +2125,14 @@ position = Vector2(-0.363769, 7.55477)
 [node name="Female Player" parent="." instance=ExtResource("9_332nc")]
 position = Vector2(493.39, 196.345)
 
+[node name="CollisionShape2D" parent="Female Player" index="0"]
+position = Vector2(-2.72129, 31.8821)
+
+[node name="AnimatedSprite2D" parent="Female Player" index="1"]
+position = Vector2(-2.72129, 30.7156)
+
 [node name="Camera2D" parent="Female Player" index="2"]
+position = Vector2(-2.72129, 32.2709)
 zoom = Vector2(1.5, 1.5)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -2172,24 +2181,6 @@ theme_override_fonts/font = ExtResource("12_x4i62")
 theme_override_font_sizes/font_size = 8
 text = "final room"
 
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Label" type="Label" parent="Node2D"]
-offset_left = 372.862
-offset_top = 255.443
-offset_right = 616.862
-offset_bottom = 269.443
-theme_override_fonts/font = ExtResource("12_x4i62")
-text = "Go to preliminary room"
-visible_characters = 0
-visible_ratio = 0.022
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
-libraries = {
-"": SubResource("AnimationLibrary_4akjf")
-}
-autoplay = "show"
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="BACK" type="Button" parent="CanvasLayer"]
@@ -2203,6 +2194,28 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_s1rc6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uf6kp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_gl25t")
 text = "🡨"
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Node2D"]
+offset_left = 428.072
+offset_top = 108.476
+offset_right = 600.072
+offset_bottom = 139.476
+theme_override_fonts/font = ExtResource("12_x4i62")
+theme_override_font_sizes/font_size = 29
+text = "Go to your room level"
+label_settings = SubResource("LabelSettings_pqr7y")
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D/Label"]
+libraries = {
+"": SubResource("AnimationLibrary_edot2")
+}
+autoplay = "SHOW"
 
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
