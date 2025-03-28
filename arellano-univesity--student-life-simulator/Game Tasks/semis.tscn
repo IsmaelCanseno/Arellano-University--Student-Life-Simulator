@@ -46,7 +46,7 @@ item_1/text = "2000000000000000000000000000000000000"
 item_2/text = "30000000000000000000000000000000"
 item_3/text = "40000000000000000000000000000"
 
-[node name="DoneButton" type="Button" parent="."]
+[node name="RewardButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -60,8 +60,7 @@ offset_bottom = -134.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 50
-text = "Done
-"
+text = "GET YOUR REWARD HERE	"
 
 [node name="RestartButton" type="Button" parent="."]
 layout_mode = 1
@@ -185,7 +184,7 @@ theme_override_font_sizes/font_size = 30
 text = "Congratulations! You're correct."
 
 [connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
-[connection signal="pressed" from="DoneButton" to="." method="_on_done_button_pressed"]
+[connection signal="pressed" from="RewardButton" to="." method="_on_reward_button_pressed"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="OK" to="." method="_on_ok_pressed"]
 [connection signal="pressed" from="Correct" to="." method="_on_correct_pressed"]
