@@ -20,7 +20,7 @@
 	"correctOptionIndex": 1
   },
   {
-	"question": "What role does competition play in gamification?",
+	"question": "What role does competition\nplay in gamification?",
 	"options": ["Discourage participation", "Create challenge", "Simplify learning", "Reduce engagement"],
 	"correctOptionIndex": 1
   },

@@ -5,12 +5,12 @@
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "Which of the following is an example of a cloud computing platform?",
+		"question": "Which of the following is an\nexample of a cloud computing platform?",
 		"options": ["Microsoft Word", "Google Drive", "Notepad++", "VLC Media Player"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What is an example of an operating system platform?",
+		"question": "What is an example of an\noperating system platform?",
 		"options": ["Windows", "Google Chrome", "Microsoft Excel", "Adobe Photoshop"],
 		"correctOptionIndex": 0
 	},
@@ -25,27 +25,27 @@
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "Which of these is NOT a cloud computing service model?",
+		"question": "Which of these is NOT a \ncloud computing service model?",
 		"options": ["SaaS", "IaaS", "PaaS", "BIOS"],
 		"correctOptionIndex": 3
 	},
 	{
-		"question": "What is the main function of a hypervisor in virtualization?",
+		"question": "What is the main function of\na hypervisor in virtualization?",
 		"options": ["Managing web hosting", "Allowing multiple operating systems to run on a single physical machine", "Improving internet speed", "Creating databases"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What is the purpose of an API in platform technologies?",
+		"question": "What is the purpose of an API\nin platform technologies?",
 		"options": ["To clean a computer’s memory", "To create computer viruses", "To allow different software applications to communicate", "To store data in cloud storage"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "What is the main purpose of a database management system (DBMS)?",
+		"question": "What is the main purpose of a\ndatabase management system (DBMS)?",
 		"options": ["To browse the internet","To manage and organize data efficiently", "To edit images", "To write programming code"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What is the main advantage of using cloud platforms?",
+		"question": "What is the main advantage\nof using cloud platforms?",
 		"options": ["They always work offline","They require expensive hardware", "They allow access from anywhere with an internet connection", "They do not require internet access"],
 		"correctOptionIndex": 2
 	}

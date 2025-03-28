@@ -1,5 +1,4 @@
 extends Control
-
 @onready var QuestionItems = $VBoxContainer/QuestionTexts
 @onready var AnswersList = $AnswersList
 @onready var RestartButton = $RestartButton
