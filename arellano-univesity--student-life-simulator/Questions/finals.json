@@ -5,7 +5,7 @@
 		"correctOptionIndex": 0
 	},
 	{
-		"question": "A cross-platform, free, and open-source game engine released under the permissive MIT license.",
+		"question": "A cross-platform, free, and open-source game\nengine released under the permissive MIT license.",
 		"options": ["Blender", "Godot Engine", "Unity", "Godot Engines"],
 		"correctOptionIndex": 1
 	},
@@ -15,7 +15,7 @@
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "What is the right stretch mode in TextureRect to make the moving picture loop smoothly?",
+		"question": "What is the right stretch mode in\nTextureRect to make the moving picture loop smoothly?",
 		"options": ["Tile", "Scale", "Keep", "Keep Centered"],
 		"correctOptionIndex": 0
 	},
@@ -25,7 +25,7 @@
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "Which new function in Godot 4 simplifies JSON parsing?",
+		"question": "Which new function in Godot 4\nsimplifies JSON parsing?",
 		"options": ["JSON.get_data()", "JSON.decode()", "JSON.load_string()", "JSON.parse_string()"],
 		"correctOptionIndex": 3
 	},
@@ -45,7 +45,7 @@
 		"correctOptionIndex": 3
 	},
 	{
-		"question": "In the previous version of Godot, it was called tween node but later on replaced by ___",
+		"question": "Previous version of Godot, it was called\ntween node but later on replaced by?",
 		"options": ["create_tween()", "Tween.parse_string()", "insert.tween()", "Animation Player"],
 		"correctOptionIndex": 0
 	},

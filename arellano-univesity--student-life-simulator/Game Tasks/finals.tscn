@@ -1,7 +1,116 @@
-[gd_scene load_steps=3 format=3 uid="uid://ba4nk3sdgqrva"]
+[gd_scene load_steps=22 format=3 uid="uid://ba4nk3sdgqrva"]
 
 [ext_resource type="Script" path="res://Game Tasks/finals.gd" id="1_m1imw"]
 [ext_resource type="Texture2D" uid="uid://cq6e2dxyrmtrp" path="res://testBackground.jpg" id="2_efmms"]
+[ext_resource type="FontFile" uid="uid://f5becth2sowi" path="res://Font/michelle digital handwritten.ttf" id="3_hvxuw"]
+[ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="4_jrtmg"]
+[ext_resource type="FontFile" uid="uid://bodlaqubdsx17" path="res://Font/LovelexieHandwritten.ttf" id="5_ievn2"]
+[ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="6_vkqjx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_68yp1"]
+bg_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p0ptm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubd6c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_472ou"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1tec"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_70wta"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xub0x"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1b1k"]
+bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8iqae"]
+bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ipq4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_046s5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycvqy"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdvwi"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22uff"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ljhjg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,20 +131,27 @@ scale = Vector2(0.507011, 0.591173)
 texture = ExtResource("2_efmms")
 
 [node name="AnswersList" type="ItemList" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -453.0
-offset_top = -382.0
-offset_right = 453.0
-offset_bottom = -216.0
+offset_left = -529.0
+offset_top = -398.0
+offset_right = 500.0
+offset_bottom = -91.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0.241156, 0.241156, 0.241156, 1)
+theme_override_constants/line_separation = 38
+theme_override_fonts/font = ExtResource("3_hvxuw")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/panel = SubResource("StyleBoxFlat_68yp1")
+theme_override_styles/hovered = SubResource("StyleBoxFlat_p0ptm")
+theme_override_styles/selected = SubResource("StyleBoxFlat_ubd6c")
 allow_reselect = true
 item_count = 4
 same_column_width = true
@@ -52,13 +168,18 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -171.0
-offset_top = -308.0
-offset_right = 159.0
-offset_bottom = -231.0
+offset_left = -249.0
+offset_top = -368.0
+offset_right = 272.0
+offset_bottom = -297.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_jrtmg")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/hover = SubResource("StyleBoxFlat_472ou")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c1tec")
+theme_override_styles/normal = SubResource("StyleBoxFlat_70wta")
 text = "Restart"
 
 [node name="RewardButton" type="Button" parent="."]
@@ -68,14 +189,19 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -170.0
-offset_top = -211.0
-offset_right = 160.0
-offset_bottom = -134.0
+offset_left = -248.0
+offset_top = -261.0
+offset_right = 273.0
+offset_bottom = -191.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 50
-text = "GET YOUR REWARD HERE"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_jrtmg")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/hover = SubResource("StyleBoxFlat_xub0x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x1b1k")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8iqae")
+text = "Claim Your Reward"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(1280, 120)
@@ -94,7 +220,8 @@ alignment = 1
 [node name="QuestionTexts" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("5_ievn2")
+theme_override_font_sizes/font_size = 45
 text = "Questions"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -106,15 +233,16 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -234.0
-offset_top = -81.0
-offset_right = -32.0
-offset_bottom = -39.0
+offset_left = -360.0
+offset_top = -85.0
+offset_right = -158.0
+offset_bottom = -43.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.929412, 0, 0, 1)
-theme_override_font_sizes/font_size = 28
-text = "Wrong"
+theme_override_fonts/font = ExtResource("6_vkqjx")
+theme_override_font_sizes/font_size = 35
+text = "WRONG"
 
 [node name="ScoreNumber" type="Label" parent="."]
 layout_mode = 1
@@ -123,14 +251,15 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 94.0
-offset_top = -79.0
-offset_right = 283.0
-offset_bottom = -31.0
+offset_left = 166.0
+offset_top = -84.0
+offset_right = 355.0
+offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 28
+theme_override_fonts/font = ExtResource("6_vkqjx")
+theme_override_font_sizes/font_size = 35
 text = "Score"
 
 [node name="CorrectAnswer" type="Label" parent="."]
@@ -140,47 +269,63 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -308.0
-offset_top = -325.0
-offset_right = 307.0
-offset_bottom = -280.0
+offset_left = -539.0
+offset_top = -199.0
+offset_right = 538.0
+offset_bottom = -148.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.133333, 0.133333, 0.133333, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_fonts/font = ExtResource("5_ievn2")
+theme_override_font_sizes/font_size = 38
 text = "The correct answer is:"
-horizontal_alignment = 1
 
 [node name="OK" type="Button" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -84.0
-offset_top = -413.0
-offset_right = 92.0
-offset_bottom = -363.0
+offset_left = -173.0
+offset_top = -362.0
+offset_right = 243.0
+offset_bottom = -312.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 30
-text = "Okie, got it!"
+theme_override_colors/font_hover_color = Color(0.921984, 0.000475291, 0.161047, 1)
+theme_override_colors/font_pressed_color = Color(0.619608, 0, 0.0941176, 1)
+theme_override_colors/font_color = Color(0.619604, 0, 0.0942439, 1)
+theme_override_fonts/font = ExtResource("4_jrtmg")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_1ipq4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_046s5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ycvqy")
+text = "Okay, Got it!"
 
 [node name="Correct" type="Button" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -240.0
-offset_top = -411.0
-offset_right = 228.0
-offset_bottom = -361.0
+offset_left = -505.0
+offset_top = -362.0
+offset_right = 519.0
+offset_bottom = -312.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_hover_color = Color(0, 0.705882, 0.203922, 1)
+theme_override_colors/font_pressed_color = Color(2.4667e-07, 0.328031, 0.0749525, 1)
+theme_override_colors/font_color = Color(0, 0.396078, 0.0980392, 1)
+theme_override_fonts/font = ExtResource("4_jrtmg")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_vdvwi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22uff")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ljhjg")
 text = "Congratulations! You're correct."
 
 [connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
