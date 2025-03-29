@@ -1,72 +1,53 @@
 [
 	{
-		"question": "What is the name of the author?",
-		"options": ["Truong", "Troung", "Chau", "Trueng"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "What is the name of his big dog?",
-		"options": ["Lu", "Benzi", "Kiki", "Bush"],
+		"question": "What is the main workspace where you build game scenes in Godot?",
+		"options": ["Viewport", "Canvas", "Scene Editor", "Timeliine"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "His top favorite movie creature?",
-		"options": ["Alien", "Spider", "Shark", "Dragon"],
-		"correctOptionIndex": 3
+		"question": "What is the main advantage of using GDScript in Godot?",
+		"options": ["It runs faster than C++", "It is designed specifically for game development in Godot", "It is the only language supported by Godot", " It does not require coding knowledge"],
+		"correctOptionIndex": 1
 	},
 	{
-		"question": "What he's trying to be (now)?",
-		"options": ["Famous", "Loved", "Peaceful", "Happy"],
+		"question": "What is the parent class of all nodes in Godot?",
+		"options": ["Object", "Scene", "Node", "Game Object"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "What is his favourite topics to sculpt?",
-		"options": ["Nude women", "Animals/ Creatures", "Portraits", "All of above"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "His favourite singer?",
-		"options": ["Đen Vâu", "Lê Cát Trọng Lý", "tlinh", "Vũ Thanh Vân"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "Where he first learnt his anatomy knowledge (and truly understand it)?",
-		"options": ["Scott Eaton", "Dẫu Phải Giải Phẩu", "Ebooks", "By looking at Ecorches"],
+		"question": "Which node is commonly used to display images in a 2D game?",
+		"options": ["TextureRect", "Sprite2D", " AnimatedSprite3D", "KinematicBody2D"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What he use to SCULPT on his ipad mini?",
-		"options": ["Nomad", "Procreate", "Forger", "Sculptura"],
+		"question": "What is the purpose of the ‘Project Settings’ in Godot?",
+		"options": ["To change the appearance of the Godot editor", "To configure global game settings like resolution and input mapping", "To edit scene properties", "To create new scripts"],
+		"correctOptionIndex": 1
+	},
+	{
+		"question": " How do you detect keyboard input in GDScript?",
+		"options": ["Using the print() function", "Using the _input(event) function", "Using the _draw() function", "sing the set_position() function"],
+		"correctOptionIndex": 1
+	},
+	{
+		"question": "What is the role of a ‘Camera2D’ node in a 2D game?",
+		"options": ["To store textures", "To handle user inputs", " To follow or display a specific area of the game world", " To manage collisions"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "Why he draw a lot (the initial reason)?",
-		"options": ["To win the heart of someone","To improve his drawing skill", "To improve his observational skills", "To relax"],
-		"correctOptionIndex": 0
-	},
-	{
-		"question": "What he will do about AI wave?",
-		"options": ["Go traditional", "Do games/app", "Ignore it", "Give up"],
+		"question": "Which physics node allows an object to move while following physics rules?",
+		"options": [" KinematicBody2D", "RigidBody2D", "StaticBody2d", "Area2D"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What he think AI canNOT do?",
-		"options": ["Soul in art", "Customization", "Creativity", "Kill his passion for art"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "To him, how NOT to beat AI?",
-		"options": ["Make end products (comic, ip, app...)", "Build personal brand", "Find your niche, go deep", "Sue /complain AI companies for stealing art"],
-		"correctOptionIndex": 3
-	},
-	{
-		"question": "What he value the most (in theory)?",
-		"options": ["Health", "Wealth", "Happiness", "Love"],
+		"question": "What is the default unit of measurement for position and size in Godot?",
+		"options": [" Pixels","Inches", "Centimeters", "Points"],
 		"correctOptionIndex": 0
 	},
 	{
-		"question": "What should is he carrying?",
-		"options": ["What should have been", "The now", "Resentment", "Old relationships"],
-		"correctOptionIndex": 1
-	}
+		"question": "In Godot’s node hierarchy, what happens when a parent node is deleted?",
+		"options": [" Nothing happens to the child nodes", "Only the parent node is deleted", "All child nodes under the parent are also deleted", "The child nodes remain in the scene"],
+		"correctOptionIndex": 2
+	},
+	
 ]
