@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://doong72jixppd"]
+
+[ext_resource type="Script" path="res://example.gd" id="1_sfrkd"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sfrkd")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.407
+anchor_top = 0.405
+anchor_right = 0.596
+anchor_bottom = 0.469
+offset_left = -468.864
+offset_top = -262.44
+offset_right = -678.592
+offset_bottom = -295.912
+
+[node name="Submit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.643
+anchor_right = 0.5
+anchor_bottom = 0.643
+offset_left = -28.0
+offset_top = -10.664
+offset_right = 35.0
+offset_bottom = 20.336
+text = "Sumbit"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.5
+offset_top = -15.5
+offset_right = 110.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "ENTER NAME:"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Submit" to="." method="_on_submit_pressed"]

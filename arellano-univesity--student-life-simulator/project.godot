@@ -21,6 +21,8 @@ NavigationManager="*res://Scripts/navigation_manager.gd"
 Global="*res://Scripts/Global.gd"
 GlobalData="*res://Scripts/global_data.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Globalleaderboards="*res://Scripts/globalleaderboards.gd"
+SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
 
 [dialogic]
 
@@ -147,7 +149,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/silent_wolf/plugin.cfg")
 
 [input]
 
