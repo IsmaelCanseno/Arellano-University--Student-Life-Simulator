@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=3 uid="uid://bv3fn2q421g7r"]
+[gd_scene load_steps=111 format=3 uid="uid://bv3fn2q421g7r"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_bersc"]
 [ext_resource type="Texture2D" uid="uid://b417kryrk5m6w" path="res://Tileset/Rachel/galletcity/Rachel_GalletCity.png" id="2_7ord5"]
@@ -18,6 +18,9 @@
 [ext_resource type="Texture2D" uid="uid://uvggky7muwuv" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_desk.png" id="31_dyv4g"]
 [ext_resource type="AudioStream" uid="uid://cuxoug3c1q531" path="res://Sound Effects/8bit-music-for-game-68698.mp3" id="33_k4kyj"]
 [ext_resource type="Texture2D" uid="uid://dcnmpoqmwl81i" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Julia_PC.png" id="36_i5yi3"]
+[ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="37_xki6m"]
+[ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="38_2lkds"]
+[ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="39_2uuvk"]
 [ext_resource type="Texture2D" uid="uid://bfgdxfrqsnj0g" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-1.png" id="41_2nw6r"]
 [ext_resource type="Texture2D" uid="uid://hhd27wapt2gr" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_office-partitions-2.png" id="42_llh0c"]
 [ext_resource type="Texture2D" uid="uid://bhn6imhw7rnqd" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_PC1.png" id="43_fbc57"]
@@ -107,6 +110,45 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
 border_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iuhib"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_82wdy"]
+bg_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.0941176, 0.258824, 0.431373, 1)
+border_blend = true
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgfm5"]
+bg_color = Color(0.129412, 0.329412, 0.541176, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.129412, 0.329412, 0.541176, 1)
 border_blend = true
 corner_radius_top_left = 18
 corner_radius_top_right = 18
@@ -18362,6 +18404,9 @@ offset_top = 548.0
 offset_right = 723.0
 offset_bottom = 592.0
 theme_override_fonts/font = ExtResource("3_sje84")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iuhib")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_82wdy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lgfm5")
 text = "LEADERBOARDS"
 
 [node name="Thea_House_Houses_png" type="TileMapLayer" parent="."]
@@ -18458,11 +18503,25 @@ tile_set = SubResource("TileSet_xbv7r")
 stream = ExtResource("33_k4kyj")
 volume_db = 10.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="ToggleSound" type="TextureButton" parent="."]
+modulate = Color(0.192157, 0.0627451, 1, 1)
+offset_left = 26.0
+offset_top = 23.0
+offset_right = 538.0
+offset_bottom = 535.0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("37_xki6m")
+texture_pressed = ExtResource("38_2lkds")
+script = ExtResource("39_2uuvk")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="About" to="." method="_on_about_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="pressed" from="ToggleSound" to="ToggleSound" method="_on_toggle_sound_pressed"]

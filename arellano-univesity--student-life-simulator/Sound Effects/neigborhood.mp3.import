@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqfjrabk14tp8"
+path="res://.godot/imported/neigborhood.mp3-2231a003ad6c97f6fd9c220486a986c3.mp3str"
+
+[deps]
+
+source_file="res://Sound Effects/neigborhood.mp3"
+dest_files=["res://.godot/imported/neigborhood.mp3-2231a003ad6c97f6fd9c220486a986c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

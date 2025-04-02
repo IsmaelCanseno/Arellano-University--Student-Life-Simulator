@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://b3kpdttvv5ltj"]
+[gd_scene load_steps=62 format=3 uid="uid://b3kpdttvv5ltj"]
 
 [ext_resource type="Texture2D" uid="uid://coj306wjlq0ee" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Boss.png" id="1_7wtk2"]
 [ext_resource type="Script" path="res://Scenes/finals_room.gd" id="1_126sb"]
@@ -30,6 +30,9 @@
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="26_egj6x"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="27_kqmxb"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="29_mlnut"]
+[ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="31_1u0ce"]
+[ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="32_snwnx"]
+[ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="33_8iar8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1goeh"]
 texture = ExtResource("1_7wtk2")
@@ -1602,10 +1605,10 @@ parameters/looping = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="BACK" type="Button" parent="CanvasLayer"]
-offset_left = 22.0
-offset_top = 21.0
-offset_right = 69.0
-offset_bottom = 66.0
+offset_left = 48.0
+offset_top = 39.0
+offset_right = 95.0
+offset_bottom = 84.0
 theme_override_fonts/font = ExtResource("29_mlnut")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_jlqsm")
@@ -1613,7 +1616,19 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_0sceo")
 theme_override_styles/normal = SubResource("StyleBoxFlat_65h3u")
 text = "🡨"
 
+[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
+offset_left = 59.0
+offset_top = 89.0
+offset_right = 571.0
+offset_bottom = 601.0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("31_1u0ce")
+texture_pressed = ExtResource("32_snwnx")
+script = ExtResource("33_8iar8")
+
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
 
 [editable path="Door/Door_D"]
 [editable path="Female Player"]

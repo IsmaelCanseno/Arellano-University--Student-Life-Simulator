@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=35 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Script" path="res://Scenes/school_grounds.gd" id="1_855yu"]
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
@@ -17,6 +17,9 @@
 [ext_resource type="AudioStream" uid="uid://bh04fmbgt30h7" path="res://Sound Effects/schoolHallwayMusic.mp3" id="14_w3nkw"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="15_0k6ij"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="17_um6mk"]
+[ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="18_1jk04"]
+[ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="19_xeh7k"]
+[ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="20_7gilx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4956,10 +4959,10 @@ autoplay = "SHOW"
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="BACK" type="Button" parent="CanvasLayer"]
-offset_left = 22.0
-offset_top = 21.0
-offset_right = 69.0
-offset_bottom = 66.0
+offset_left = 50.0
+offset_top = 52.0
+offset_right = 97.0
+offset_bottom = 97.0
 theme_override_fonts/font = ExtResource("17_um6mk")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_mun4s")
@@ -4967,7 +4970,19 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ber6i")
 theme_override_styles/normal = SubResource("StyleBoxFlat_3a56b")
 text = "🡨"
 
+[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
+offset_left = 59.0
+offset_top = 107.0
+offset_right = 571.0
+offset_bottom = 619.0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("18_1jk04")
+texture_pressed = ExtResource("19_xeh7k")
+script = ExtResource("20_7gilx")
+
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
 
 [editable path="Door/Door_W"]
 [editable path="Door/Door_N"]

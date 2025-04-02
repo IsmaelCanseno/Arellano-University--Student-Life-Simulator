@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bhv1s6o0lc44"]
+[gd_scene load_steps=27 format=3 uid="uid://bhv1s6o0lc44"]
 
 [ext_resource type="Script" path="res://Scenes/neighborhood.gd" id="1_8clge"]
 [ext_resource type="Texture2D" uid="uid://bcp2d1ix08q6u" path="res://Tileset/Cherry/Neighbor/BD001.png" id="1_8g0cq"]
@@ -10,7 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="7_k6jqh"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="8_ydinj"]
 [ext_resource type="FontFile" uid="uid://ce05x1qvhueh6" path="res://Font/RasterForgeRegular-JpBgm.ttf" id="9_d7p5e"]
+[ext_resource type="AudioStream" uid="uid://dqfjrabk14tp8" path="res://Sound Effects/neigborhood.mp3" id="10_45xbs"]
+[ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="11_543ju"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="11_bkwdp"]
+[ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="12_yt4c6"]
+[ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="13_ywdgo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vf8nj"]
 texture = ExtResource("1_8g0cq")
@@ -2961,6 +2965,11 @@ zoom = Vector2(1.5, 1.5)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Female Player/Camera2D" index="0"]
 position = Vector2(-48.2115, 3.85623e-05)
+stream = ExtResource("10_45xbs")
+volume_db = 10.0
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -3004,6 +3013,17 @@ autoplay = "SHOW"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
+offset_left = 83.0
+offset_top = 27.0
+offset_right = 595.0
+offset_bottom = 539.0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("11_543ju")
+texture_pressed = ExtResource("12_yt4c6")
+script = ExtResource("13_ywdgo")
+
 [node name="BACK" type="Button" parent="CanvasLayer"]
 offset_left = 22.0
 offset_top = 21.0
@@ -3016,6 +3036,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_pspee")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pl75x")
 text = "🡨"
 
+[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_toggle_sound_pressed"]
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_W"]

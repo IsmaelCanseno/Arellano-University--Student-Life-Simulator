@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dj5r8mxxadp5h"]
+[gd_scene load_steps=28 format=3 uid="uid://dj5r8mxxadp5h"]
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_ppxto"]
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="1_staao"]
@@ -13,6 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="9_p8abb"]
 [ext_resource type="AudioStream" uid="uid://cfp4s6jd7vvu6" path="res://Sound Effects/semiBackgroundMusic.mp3" id="10_d2v3c"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="12_he4v0"]
+[ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="13_py5bq"]
+[ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="14_pq5cm"]
+[ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="15_21lu7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ya6x"]
 texture = ExtResource("1_staao")
@@ -829,7 +832,7 @@ sources/5 = SubResource("TileSetAtlasSource_mqyxp")
 sources/6 = SubResource("TileSetAtlasSource_6xrcm")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d647k"]
-bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -842,7 +845,7 @@ corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymfhf"]
-bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -855,7 +858,7 @@ corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1mdw"]
-bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -928,11 +931,22 @@ parameters/looping = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
+offset_left = 59.0
+offset_top = 107.0
+offset_right = 571.0
+offset_bottom = 619.0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("13_py5bq")
+texture_pressed = ExtResource("14_pq5cm")
+script = ExtResource("15_21lu7")
+
 [node name="BACK" type="Button" parent="CanvasLayer"]
-offset_left = 22.0
-offset_top = 21.0
-offset_right = 69.0
-offset_bottom = 66.0
+offset_left = 49.0
+offset_top = 51.0
+offset_right = 96.0
+offset_bottom = 96.0
 theme_override_fonts/font = ExtResource("12_he4v0")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_d647k")
@@ -940,6 +954,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ymfhf")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a1mdw")
 text = "🡨"
 
+[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_C"]

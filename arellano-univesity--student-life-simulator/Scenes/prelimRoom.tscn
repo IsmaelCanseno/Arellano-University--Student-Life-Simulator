@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c5limy4ieqms8"]
+[gd_scene load_steps=25 format=3 uid="uid://c5limy4ieqms8"]
 
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_3qgki"]
 [ext_resource type="Script" path="res://Scenes/prelim_room.gd" id="1_rd6e2"]
@@ -15,6 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="9_lrtm6"]
 [ext_resource type="PackedScene" uid="uid://tdx2vnr1h78i" path="res://Character/female_student2.tscn" id="13_a08cu"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="15_30a4m"]
+[ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="16_iivwi"]
+[ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="17_ln60i"]
+[ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="18_x6lor"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7eq3x"]
 texture = ExtResource("1_3qgki")
@@ -576,10 +579,10 @@ scale = Vector2(1.3, 1.3)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="BACK" type="Button" parent="CanvasLayer"]
-offset_left = 22.0
-offset_top = 21.0
-offset_right = 69.0
-offset_bottom = 66.0
+offset_left = 65.0
+offset_top = 53.0
+offset_right = 112.0
+offset_bottom = 98.0
 theme_override_fonts/font = ExtResource("15_30a4m")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_yt6kl")
@@ -587,7 +590,19 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_f6apb")
 theme_override_styles/normal = SubResource("StyleBoxFlat_wtp7b")
 text = "🡨"
 
+[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
+offset_left = 70.0
+offset_top = 104.0
+offset_right = 582.0
+offset_bottom = 616.0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("16_iivwi")
+texture_pressed = ExtResource("17_ln60i")
+script = ExtResource("18_x6lor")
+
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
 
 [editable path="Door/Door_A"]
 [editable path="Female Player"]
