@@ -18335,18 +18335,18 @@ expand_mode = 1
 stretch_mode = 1
 
 [node name="Building" type="TextureRect" parent="."]
-offset_left = 227.0
-offset_top = 156.0
-offset_right = 946.0
+offset_left = 235.0
+offset_top = 171.0
+offset_right = 940.0
 offset_bottom = 585.0
 texture = ExtResource("5_e04bh")
 expand_mode = 1
 
 [node name="Game Title" type="Label" parent="."]
 offset_left = 69.0
-offset_top = 56.0
+offset_top = 68.0
 offset_right = 1089.0
-offset_bottom = 196.0
+offset_bottom = 208.0
 theme_override_colors/font_color = Color(0.986752, 0.986752, 0.986752, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0.372549, 1)
 theme_override_constants/line_spacing = 20
@@ -18373,9 +18373,9 @@ text = "PLAY"
 
 [node name="About" type="Button" parent="."]
 offset_left = 1086.0
-offset_top = 6.0
+offset_top = 2.0
 offset_right = 1145.0
-offset_bottom = 71.0
+offset_bottom = 67.0
 theme_override_colors/font_hover_color = Color(0.0984615, 0.26829, 0.447688, 1)
 theme_override_colors/font_pressed_color = Color(0.22607, 0.483996, 0.762078, 1)
 theme_override_colors/font_color = Color(0.129412, 0.329412, 0.541176, 1)
@@ -18509,11 +18509,11 @@ parameters/looping = true
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
 [node name="ToggleSound" type="TextureButton" parent="."]
-modulate = Color(0.192157, 0.0627451, 1, 1)
-offset_left = 26.0
-offset_top = 23.0
-offset_right = 538.0
-offset_bottom = 535.0
+modulate = Color(0.129412, 0.329412, 0.541176, 1)
+offset_left = 1054.0
+offset_top = 22.0
+offset_right = 1566.0
+offset_bottom = 534.0
 scale = Vector2(0.0610425, 0.0622986)
 toggle_mode = true
 texture_normal = ExtResource("37_xki6m")

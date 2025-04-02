@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=36 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Script" path="res://Scenes/school_grounds.gd" id="1_855yu"]
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
@@ -4824,8 +4824,8 @@ _data = {
 "SHOW": SubResource("Animation_335w2")
 }
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mun4s"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyd7k"]
+bg_color = Color(3.94672e-06, 0.638607, 0.0407445, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -4837,26 +4837,39 @@ corner_radius_top_right = 14
 corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ber6i"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ver46"]
+bg_color = Color(8.78386e-07, 0.453594, 0.0193527, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
-border_color = Color(0.67451, 0.435294, 0.0156863, 1)
+border_color = Color(1.2514e-06, 0.382156, 0.0134577, 1)
 border_blend = true
 corner_radius_top_left = 14
 corner_radius_top_right = 14
 corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3a56b"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_438w2"]
 bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
-border_color = Color(0, 0.533333, 0.027451, 1)
+border_color = Color(1.45596e-06, 0.467151, 0.0206136, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow6bf"]
+bg_color = Color(0, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0, 0.466667, 0.0196078, 1)
 border_blend = true
 corner_radius_top_left = 14
 corner_radius_top_right = 14
@@ -4960,29 +4973,44 @@ autoplay = "SHOW"
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="BACK" type="Button" parent="CanvasLayer"]
-offset_left = 50.0
-offset_top = 52.0
-offset_right = 97.0
-offset_bottom = 97.0
+offset_left = 44.0
+offset_top = 39.0
+offset_right = 95.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("17_um6mk")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_mun4s")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ber6i")
-theme_override_styles/normal = SubResource("StyleBoxFlat_3a56b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wyd7k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ver46")
+theme_override_styles/normal = SubResource("StyleBoxFlat_438w2")
 text = "🡨"
 
+[node name="Panel2" type="Panel" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -97.0
+offset_top = 39.0
+offset_right = -43.0
+offset_bottom = 93.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ow6bf")
+
 [node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
-offset_left = 59.0
-offset_top = 107.0
-offset_right = 571.0
-offset_bottom = 619.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -86.0
+offset_top = 50.0
+offset_right = 426.0
+offset_bottom = 562.0
+grow_horizontal = 0
 scale = Vector2(0.0610425, 0.0622986)
 toggle_mode = true
 texture_normal = ExtResource("18_1jk04")
 texture_pressed = ExtResource("19_xeh7k")
 script = ExtResource("20_7gilx")
 
-[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
 
 [editable path="Door/Door_W"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dpeia0bcstydo"]
+[gd_scene load_steps=32 format=3 uid="uid://dpeia0bcstydo"]
 
 [ext_resource type="Script" path="res://Scenes/midterm_room.gd" id="1_olgbq"]
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_pxj8o"]
@@ -1020,8 +1020,8 @@ sources/31 = SubResource("TileSetAtlasSource_mv6dj")
 sources/35 = SubResource("TileSetAtlasSource_8kypt")
 sources/36 = SubResource("TileSetAtlasSource_cn275")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_70xoe"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gudcy"]
+bg_color = Color(3.94672e-06, 0.638607, 0.0407445, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -1033,26 +1033,39 @@ corner_radius_top_right = 14
 corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_et2pa"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1obt"]
+bg_color = Color(8.78386e-07, 0.453594, 0.0193527, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
-border_color = Color(0, 0.533333, 0.027451, 1)
+border_color = Color(1.2514e-06, 0.382156, 0.0134577, 1)
 border_blend = true
 corner_radius_top_left = 14
 corner_radius_top_right = 14
 corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajdcx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g6ctv"]
 bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
-border_color = Color(0, 0.533333, 0.027451, 1)
+border_color = Color(1.45596e-06, 0.467151, 0.0206136, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sawjn"]
+bg_color = Color(0, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0, 0.466667, 0.0196078, 1)
 border_blend = true
 corner_radius_top_left = 14
 corner_radius_top_right = 14
@@ -1117,28 +1130,43 @@ parameters/looping = true
 
 [node name="BACK" type="Button" parent="CanvasLayer"]
 offset_left = 44.0
-offset_top = 45.0
-offset_right = 91.0
-offset_bottom = 90.0
+offset_top = 39.0
+offset_right = 95.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("13_ykh1j")
 theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_70xoe")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_et2pa")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ajdcx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gudcy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p1obt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_g6ctv")
 text = "🡨"
 
+[node name="Panel2" type="Panel" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -97.0
+offset_top = 39.0
+offset_right = -43.0
+offset_bottom = 93.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sawjn")
+
 [node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
-offset_left = 54.0
-offset_top = 96.0
-offset_right = 566.0
-offset_bottom = 608.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -86.0
+offset_top = 50.0
+offset_right = 426.0
+offset_bottom = 562.0
+grow_horizontal = 0
 scale = Vector2(0.0610425, 0.0622986)
 toggle_mode = true
 texture_normal = ExtResource("15_rjs1v")
 texture_pressed = ExtResource("16_q5iou")
 script = ExtResource("17_heh7j")
 
-[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
 
 [editable path="Door/Door_B"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cv1doq74hmvw8"]
+[gd_scene load_steps=31 format=3 uid="uid://cv1doq74hmvw8"]
 
 [ext_resource type="Texture2D" uid="uid://yelogj0col3m" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Objects.png" id="1_kxv4a"]
 [ext_resource type="Script" path="res://Scenes/school_hallway.gd" id="1_m3ibv"]
@@ -1953,45 +1953,6 @@ sources/2 = SubResource("TileSetAtlasSource_8hh8j")
 sources/6 = SubResource("TileSetAtlasSource_7odle")
 sources/5 = SubResource("TileSetAtlasSource_hi7xs")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s1rc6"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
-border_width_left = 2
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 3
-border_color = Color(1, 1, 1, 1)
-border_blend = true
-corner_radius_top_left = 14
-corner_radius_top_right = 14
-corner_radius_bottom_right = 14
-corner_radius_bottom_left = 14
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uf6kp"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
-border_width_left = 2
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 3
-border_color = Color(0.67451, 0.435294, 0.0156863, 1)
-border_blend = true
-corner_radius_top_left = 14
-corner_radius_top_right = 14
-corner_radius_bottom_right = 14
-corner_radius_bottom_left = 14
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gl25t"]
-bg_color = Color(0, 0.533333, 0.027451, 1)
-border_width_left = 2
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 3
-border_color = Color(0, 0.533333, 0.027451, 1)
-border_blend = true
-corner_radius_top_left = 14
-corner_radius_top_right = 14
-corner_radius_bottom_right = 14
-corner_radius_bottom_left = 14
-
 [sub_resource type="LabelSettings" id="LabelSettings_pqr7y"]
 
 [sub_resource type="Animation" id="Animation_apy4j"]
@@ -2029,6 +1990,58 @@ _data = {
 "RESET": SubResource("Animation_apy4j"),
 "SHOW": SubResource("Animation_nn2ty")
 }
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ew25f"]
+bg_color = Color(3.94672e-06, 0.638607, 0.0407445, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7koy4"]
+bg_color = Color(8.78386e-07, 0.453594, 0.0193527, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1.2514e-06, 0.382156, 0.0134577, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xehf"]
+bg_color = Color(0, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(1.45596e-06, 0.467151, 0.0206136, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rfsq"]
+bg_color = Color(0, 0.533333, 0.027451, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0, 0.466667, 0.0196078, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
 
 [node name="School Hallway" type="Node2D"]
 position = Vector2(-1, 1)
@@ -2185,31 +2198,6 @@ theme_override_fonts/font = ExtResource("12_x4i62")
 theme_override_font_sizes/font_size = 8
 text = "final room"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
-offset_left = 56.0
-offset_top = 100.0
-offset_right = 568.0
-offset_bottom = 612.0
-scale = Vector2(0.0610425, 0.0622986)
-toggle_mode = true
-texture_normal = ExtResource("14_u6hwr")
-texture_pressed = ExtResource("15_66som")
-script = ExtResource("16_5n4bk")
-
-[node name="BACK" type="Button" parent="CanvasLayer"]
-offset_left = 48.0
-offset_top = 50.0
-offset_right = 95.0
-offset_bottom = 95.0
-theme_override_fonts/font = ExtResource("14_r681c")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/hover = SubResource("StyleBoxFlat_s1rc6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_uf6kp")
-theme_override_styles/normal = SubResource("StyleBoxFlat_gl25t")
-text = "🡨"
-
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="Node2D"]
@@ -2232,8 +2220,48 @@ libraries = {
 }
 autoplay = "SHOW"
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BACK" type="Button" parent="CanvasLayer"]
+offset_left = 44.0
+offset_top = 39.0
+offset_right = 95.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("14_r681c")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_ew25f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7koy4")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8xehf")
+text = "🡨"
+
+[node name="Panel2" type="Panel" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -97.0
+offset_top = 39.0
+offset_right = -43.0
+offset_bottom = 93.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5rfsq")
+
+[node name="ToggleSound" type="TextureButton" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -86.0
+offset_top = 50.0
+offset_right = 426.0
+offset_bottom = 562.0
+grow_horizontal = 0
+scale = Vector2(0.0610425, 0.0622986)
+toggle_mode = true
+texture_normal = ExtResource("14_u6hwr")
+texture_pressed = ExtResource("15_66som")
+script = ExtResource("16_5n4bk")
+
 [connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 
 [editable path="Door/Door_S"]
 [editable path="Door/Door_N"]

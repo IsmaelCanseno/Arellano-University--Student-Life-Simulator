@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bk7lpydnkjsnm"]
+[gd_scene load_steps=21 format=3 uid="uid://bk7lpydnkjsnm"]
 
 [ext_resource type="Script" path="res://Scenes/characterSelection.tres.gd" id="1_w60p8"]
 [ext_resource type="PackedScene" uid="uid://jo702td1q0uk" path="res://Scenes/characterSlot.tscn" id="2_hcspj"]
@@ -109,6 +109,19 @@ corner_radius_top_right = 18
 corner_radius_bottom_right = 18
 corner_radius_bottom_left = 18
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fowd8"]
+bg_color = Color(0.576471, 0.337255, 0.2, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0.507981, 0.292936, 0.169212, 1)
+border_blend = true
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
 [node name="SelectionScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -193,11 +206,12 @@ characterPath = "res://Character/female_player.tscn"
 characterTexture = ExtResource("4_si5by")
 
 [node name="LineEdit_Player1" type="LineEdit" parent="VBoxContainer/HBoxContainer/Character1"]
+modulate = Color(0.576471, 0.337255, 0.2, 1)
 layout_mode = 0
 offset_left = -12.6667
-offset_top = -33.6666
+offset_top = -37.6666
 offset_right = 54.3958
-offset_bottom = -2.66664
+offset_bottom = -6.6666
 scale = Vector2(2.11947, 0.979046)
 theme_override_fonts/font = ExtResource("6_4ovca")
 alignment = 1
@@ -208,11 +222,12 @@ characterPath = "res://Character/male_player.tscn"
 characterTexture = ExtResource("5_qqesj")
 
 [node name="LineEdit_Player2" type="LineEdit" parent="VBoxContainer/HBoxContainer/Character2"]
+modulate = Color(0.576471, 0.337255, 0.2, 1)
 layout_mode = 0
 offset_left = -12.6667
-offset_top = -35.0
+offset_top = -39.6666
 offset_right = 54.3958
-offset_bottom = -4.0
+offset_bottom = -8.6666
 scale = Vector2(2.13578, 1.02441)
 theme_override_fonts/font = ExtResource("6_4ovca")
 alignment = 1
@@ -225,12 +240,24 @@ autoplay = true
 bus = &"Music"
 parameters/looping = true
 
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -74.0
+offset_top = 19.0
+offset_right = -20.0
+offset_bottom = 73.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fowd8")
+
 [node name="ToggleSound" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 1106.0
-offset_top = 19.0
-offset_right = 1618.0
-offset_bottom = 531.0
+offset_left = 1090.0
+offset_top = 30.0
+offset_right = 1602.0
+offset_bottom = 542.0
 scale = Vector2(0.0610425, 0.0622986)
 toggle_mode = true
 texture_normal = ExtResource("9_vrota")
