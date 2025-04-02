@@ -927,6 +927,7 @@ zoom = Vector2(1.5, 1.5)
 stream = ExtResource("10_d2v3c")
 volume_db = 10.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

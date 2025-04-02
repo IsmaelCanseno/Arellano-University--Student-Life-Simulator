@@ -222,9 +222,11 @@ position = Vector2(-1, 0)
 stream = ExtResource("7_b0jih")
 volume_db = 10.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [node name="ToggleSound" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1106.0
 offset_top = 19.0
 offset_right = 1618.0

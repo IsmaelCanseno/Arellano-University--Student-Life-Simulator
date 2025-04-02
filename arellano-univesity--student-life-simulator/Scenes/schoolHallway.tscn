@@ -2142,6 +2142,7 @@ zoom = Vector2(1.5, 1.5)
 stream = ExtResource("11_unisv")
 volume_db = 10.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [node name="Label3" type="Label" parent="."]

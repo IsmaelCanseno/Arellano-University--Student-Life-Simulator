@@ -4825,7 +4825,7 @@ _data = {
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mun4s"]
-bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -4838,7 +4838,7 @@ corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ber6i"]
-bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -4851,12 +4851,12 @@ corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3a56b"]
-bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 3
-border_color = Color(0.756863, 0.494118, 0.0196078, 1)
+border_color = Color(0, 0.533333, 0.027451, 1)
 border_blend = true
 corner_radius_top_left = 14
 corner_radius_top_right = 14
@@ -4934,6 +4934,7 @@ zoom = Vector2(1.5, 1.5)
 stream = ExtResource("14_w3nkw")
 volume_db = 10.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [node name="Node2D" type="Node2D" parent="."]

@@ -1498,7 +1498,7 @@ sources/25 = SubResource("TileSetAtlasSource_2duuk")
 sources/21 = SubResource("TileSetAtlasSource_hs854")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlqsm"]
-bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -1511,7 +1511,7 @@ corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0sceo"]
-bg_color = Color(0.67451, 0.435294, 0.0156863, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -1524,7 +1524,7 @@ corner_radius_bottom_right = 14
 corner_radius_bottom_left = 14
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65h3u"]
-bg_color = Color(0.819608, 0.533333, 0.027451, 1)
+bg_color = Color(0, 0.533333, 0.027451, 1)
 border_width_left = 2
 border_width_top = 1
 border_width_right = 1
@@ -1561,6 +1561,7 @@ scale = Vector2(1.9, 1.9)
 stream = ExtResource("25_mhag2")
 volume_db = 5.0
 autoplay = true
+bus = &"Music"
 parameters/looping = true
 
 [node name="Door" type="Node" parent="."]
