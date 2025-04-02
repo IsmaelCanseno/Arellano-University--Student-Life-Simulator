@@ -984,7 +984,8 @@ texture_normal = ExtResource("13_py5bq")
 texture_pressed = ExtResource("14_pq5cm")
 script = ExtResource("15_21lu7")
 
-[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_toggle_sound_pressed"]
 
 [editable path="Door/Door_C"]
 [editable path="Female Player"]
