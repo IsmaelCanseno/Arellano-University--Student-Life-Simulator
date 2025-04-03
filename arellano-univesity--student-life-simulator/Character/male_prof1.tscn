@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://geunu4qbweuv"]
+[gd_scene load_steps=7 format=3 uid="uid://geunu4qbweuv"]
 
+[ext_resource type="Script" path="res://Character/male_prof_1.gd" id="1_ae4a4"]
 [ext_resource type="Texture2D" uid="uid://ndlkrbq7mtpx" path="res://Character/UPDATED Characters.png" id="1_t5kh1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_no47u"]
@@ -33,9 +34,17 @@ animations = [{
 size = Vector2(16, 16)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ae4a4")
+
+[node name="Timer" type="Timer" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jktin")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="chatDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
 shape = SubResource("RectangleShape2D_jvow4")
+
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]
