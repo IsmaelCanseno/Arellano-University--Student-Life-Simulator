@@ -7,4 +7,4 @@ func _ready():
 	tween.set_trans(Tween.TRANS_BOUNCE)  
 	tween.set_ease(Tween.EASE_OUT)  
 
-	tween.tween_property(self, "position:y", 40, 1.5) 
+	tween.tween_property(self, "position:y", 60, 1.5) 

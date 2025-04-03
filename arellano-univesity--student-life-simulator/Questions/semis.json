@@ -1,12 +1,12 @@
 [
 	{
-		"question": "What is the main workspace where you build game scenes in Godot?",
+		"question": "What is the main workspace where\nyou build game scenes in Godot?",
 		"options": ["Viewport", "Canvas", "Scene Editor", "Timeliine"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "What is the main advantage of using GDScript in Godot?",
-		"options": ["It runs faster than C++", "It is designed specifically for game development in Godot", "It is the only language supported by Godot", " It does not require coding knowledge"],
+		"question": "What is the main advantage of\nusing GDScript in Godot?",
+		"options": ["It runs faster than C++", "It is designed specifically for game development in Godot", "It is the only language supported by Godot", "It does not require coding knowledge"],
 		"correctOptionIndex": 1
 	},
 	{
@@ -15,38 +15,38 @@
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "Which node is commonly used to display images in a 2D game?",
-		"options": ["TextureRect", "Sprite2D", " AnimatedSprite3D", "KinematicBody2D"],
+		"question": "Which node is commonly used to display\nimages in a 2D game?",
+		"options": ["TextureRect", "Sprite2D", "AnimatedSprite3D", "KinematicBody2D"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What is the purpose of the ‘Project Settings’ in Godot?",
+		"question": "What is the purpose of the ‘Project Settings’\nin Godot?",
 		"options": ["To change the appearance of the Godot editor", "To configure global game settings like resolution and input mapping", "To edit scene properties", "To create new scripts"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": " How do you detect keyboard input in GDScript?",
+		"question": "How do you detect keyboard input in GDScript?",
 		"options": ["Using the print() function", "Using the _input(event) function", "Using the _draw() function", "sing the set_position() function"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What is the role of a ‘Camera2D’ node in a 2D game?",
-		"options": ["To store textures", "To handle user inputs", " To follow or display a specific area of the game world", " To manage collisions"],
+		"question": "What is the role of a ‘Camera2D’\nnode in a 2D game?",
+		"options": ["To store textures", "To handle user inputs", "To follow or display a specific area of the game world", "To manage collisions"],
 		"correctOptionIndex": 2
 	},
 	{
-		"question": "Which physics node allows an object to move while following physics rules?",
-		"options": [" KinematicBody2D", "RigidBody2D", "StaticBody2d", "Area2D"],
+		"question": "Which physics node allows an object to move\nwhile following physics rules?",
+		"options": ["KinematicBody2D", "RigidBody2D", "StaticBody2d", "Area2D"],
 		"correctOptionIndex": 1
 	},
 	{
-		"question": "What is the default unit of measurement for position and size in Godot?",
-		"options": [" Pixels","Inches", "Centimeters", "Points"],
+		"question": "What is the default unit of measurement\nfor position and size in Godot?",
+		"options": ["Pixels","Inches", "Centimeters", "Points"],
 		"correctOptionIndex": 0
 	},
 	{
-		"question": "In Godot’s node hierarchy, what happens when a parent node is deleted?",
-		"options": [" Nothing happens to the child nodes", "Only the parent node is deleted", "All child nodes under the parent are also deleted", "The child nodes remain in the scene"],
+		"question": "In Godot’s node hierarchy,\nwhat happens when a parent node is deleted?",
+		"options": ["Nothing happens to the child nodes", "Only the parent node is deleted", "All child nodes under the parent are also deleted", "The child nodes remain in the scene"],
 		"correctOptionIndex": 2
 	},
 	
