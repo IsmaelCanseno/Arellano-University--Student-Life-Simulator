@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dpeia0bcstydo"]
+[gd_scene load_steps=38 format=3 uid="uid://dpeia0bcstydo"]
 
 [ext_resource type="Script" path="res://Scenes/midterm_room.gd" id="1_olgbq"]
 [ext_resource type="Texture2D" uid="uid://bd8vonfepjykt" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Classroom.png" id="1_pxj8o"]
@@ -10,10 +10,16 @@
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="8_tmg1y"]
 [ext_resource type="Texture2D" uid="uid://dexop7bfn0cgo" path="res://Tileset/Thea/House/Thea_House_Walls_png.png" id="9_fagt7"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="9_p0jsm"]
+[ext_resource type="PackedScene" uid="uid://tdx2vnr1h78i" path="res://Character/female_student2.tscn" id="10_k483d"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="10_rwvdj"]
 [ext_resource type="PackedScene" uid="uid://ks8t6vjlfqxv" path="res://Character/female_prof1.tscn" id="11_cxean"]
+[ext_resource type="PackedScene" uid="uid://ds7w4gavv5675" path="res://Character/female_student4.tscn" id="11_nk073"]
 [ext_resource type="AudioStream" uid="uid://o1w2cusvo3e1" path="res://Sound Effects/midtermBackgrounMusic.mp3" id="11_qf1uv"]
+[ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="12_cyuiw"]
+[ext_resource type="PackedScene" uid="uid://cyv8h6c1eyelm" path="res://Character/male_student2.tscn" id="13_xof58"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="13_ykh1j"]
+[ext_resource type="PackedScene" uid="uid://b71cja3aiuysd" path="res://Character/male_student.tscn" id="14_q1qhm"]
+[ext_resource type="PackedScene" uid="uid://d3o4vupw11m4o" path="res://Character/female_student3.tscn" id="15_ag6vr"]
 [ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="15_rjs1v"]
 [ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="16_q5iou"]
 [ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="17_heh7j"]
@@ -1088,6 +1094,28 @@ layer_2/tile_data = PackedInt32Array(65546, 1769472, 2, 131082, 1769472, 3, 1966
 layer_3/name = "patong"
 layer_3/y_sort_enabled = true
 layer_3/tile_data = PackedInt32Array(851982, 1507328, 13, 851983, 1179648, 13)
+
+[node name="CharacterBody2D" parent="TileMap" instance=ExtResource("10_k483d")]
+position = Vector2(118.585, 212.675)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D4" parent="TileMap" instance=ExtResource("11_nk073")]
+position = Vector2(60.2644, 148.134)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D" parent="TileMap/CharacterBody2D4" instance=ExtResource("12_cyuiw")]
+position = Vector2(196.475, 42.5091)
+
+[node name="CharacterBody2D" parent="TileMap/CharacterBody2D4/CharacterBody2D" instance=ExtResource("13_xof58")]
+position = Vector2(1.29601, -41.7315)
+
+[node name="CharacterBody2D2" parent="TileMap" instance=ExtResource("14_q1qhm")]
+position = Vector2(71.5397, 212.286)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D3" parent="TileMap" instance=ExtResource("15_ag6vr")]
+position = Vector2(312.208, 150.467)
+scale = Vector2(1.5, 1.5)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 bus = &"Music"

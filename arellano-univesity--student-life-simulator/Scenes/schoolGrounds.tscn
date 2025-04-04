@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://c8xp8x13njwos"]
+[gd_scene load_steps=38 format=3 uid="uid://c8xp8x13njwos"]
 
 [ext_resource type="Script" path="res://Scenes/school_grounds.gd" id="1_855yu"]
 [ext_resource type="Texture2D" uid="uid://vvi3teynycu1" path="res://Tileset/Thea/Ocean's Nostalgia - School Time/Cafeteria.png" id="1_hypkq"]
@@ -20,6 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="18_1jk04"]
 [ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="19_xeh7k"]
 [ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="20_7gilx"]
+[ext_resource type="PackedScene" uid="uid://b71cja3aiuysd" path="res://Character/male_student.tscn" id="21_voec0"]
+[ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="22_x0q4n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3snif"]
 texture = ExtResource("1_hypkq")
@@ -4899,11 +4901,11 @@ position = Vector2(63.3748, 109.642)
 scale = Vector2(1.4, 1.4)
 
 [node name="CharacterBody2D3" parent="TileMap" instance=ExtResource("11_ibw8w")]
-position = Vector2(101.089, 115.086)
+position = Vector2(215.397, 119.751)
 scale = Vector2(1.3, 1.3)
 
 [node name="CharacterBody2D4" parent="TileMap" instance=ExtResource("10_w8o4e")]
-position = Vector2(130.249, 174.572)
+position = Vector2(313.375, 180.404)
 
 [node name="Door" type="Node" parent="."]
 
@@ -5010,6 +5012,14 @@ toggle_mode = true
 texture_normal = ExtResource("18_1jk04")
 texture_pressed = ExtResource("19_xeh7k")
 script = ExtResource("20_7gilx")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("21_voec0")]
+position = Vector2(1417, 485)
+scale = Vector2(2.5, 2.5)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("22_x0q4n")]
+position = Vector2(1824, 232)
+scale = Vector2(3, 3)
 
 [connection signal="pressed" from="CanvasLayer/BACK" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="CanvasLayer/ToggleSound" to="CanvasLayer/ToggleSound" method="_on_toggle_sound_pressed"]

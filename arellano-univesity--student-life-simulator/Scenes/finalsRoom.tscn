@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://b3kpdttvv5ltj"]
+[gd_scene load_steps=69 format=3 uid="uid://b3kpdttvv5ltj"]
 
 [ext_resource type="Texture2D" uid="uid://coj306wjlq0ee" path="res://Tileset/Cherry/Laboratory Room/Cherry_Room_Office_Boss.png" id="1_7wtk2"]
 [ext_resource type="Script" path="res://Scenes/finals_room.gd" id="1_126sb"]
@@ -28,9 +28,15 @@
 [ext_resource type="AudioStream" uid="uid://c453uv2e880a5" path="res://Sound Effects/finalsBackgroundMusic.mp3" id="25_mhag2"]
 [ext_resource type="PackedScene" uid="uid://d25geip2mbp2j" path="res://Character/male_prof2.tscn" id="25_nu6nw"]
 [ext_resource type="PackedScene" uid="uid://bnkf5xx37tmxl" path="res://Scenes/door.tscn" id="26_egj6x"]
+[ext_resource type="PackedScene" uid="uid://tdx2vnr1h78i" path="res://Character/female_student2.tscn" id="26_l1wvl"]
+[ext_resource type="PackedScene" uid="uid://d3o4vupw11m4o" path="res://Character/female_student3.tscn" id="27_df0j7"]
 [ext_resource type="PackedScene" uid="uid://c34ondc50m6r6" path="res://Character/female_player.tscn" id="27_kqmxb"]
+[ext_resource type="PackedScene" uid="uid://7ng8drhgif2b" path="res://Character/female_student.tscn" id="28_0mfi2"]
 [ext_resource type="FontFile" uid="uid://dpsafxnimo2rq" path="res://Font/PressStart2P.ttf" id="29_mlnut"]
+[ext_resource type="PackedScene" uid="uid://ds7w4gavv5675" path="res://Character/female_student4.tscn" id="29_r3ccj"]
+[ext_resource type="PackedScene" uid="uid://cyv8h6c1eyelm" path="res://Character/male_student2.tscn" id="30_l68h8"]
 [ext_resource type="Texture2D" uid="uid://bm851ao1nrkh2" path="res://Background/mute.png" id="31_1u0ce"]
+[ext_resource type="PackedScene" uid="uid://b71cja3aiuysd" path="res://Character/male_student.tscn" id="31_p7qjf"]
 [ext_resource type="Texture2D" uid="uid://cfpufo64y2l6b" path="res://Background/unmute.png" id="32_snwnx"]
 [ext_resource type="Script" path="res://Scenes/toggle_sound.gd" id="33_8iar8"]
 
@@ -1566,9 +1572,33 @@ layer_2/tile_data = PackedInt32Array(65537, 983065, 0, 131073, 983065, 1, 196609
 layer_3/name = "Objects"
 layer_3/tile_data = PackedInt32Array(65553, 1900569, 2, 131089, 1900569, 3, 196625, 1900569, 4, 65543, 1769497, 2, 131079, 1769497, 3, 196615, 1769497, 4, 65544, 1835033, 2, 131080, 1835033, 3, 196616, 1835033, 4, 65545, 1835033, 2, 131081, 1835033, 3, 196617, 1835033, 4, 65546, 1835033, 2, 131082, 1835033, 3, 196618, 1835033, 4, 65547, 1835033, 2, 131083, 1835033, 3, 196619, 1835033, 4, 65548, 1835033, 2, 131084, 1835033, 3, 196620, 1835033, 4, 65549, 1835033, 2, 131085, 1835033, 3, 196621, 1835033, 4, 65550, 1835033, 2, 131086, 1835033, 3, 196622, 1835033, 4, 65551, 1835033, 2, 131087, 1835033, 3, 196623, 1835033, 4, 65552, 1835033, 2, 131088, 1835033, 3, 196624, 1835033, 4, 65557, 1638425, 10, 131093, 1638425, 11, 65558, 1703961, 10, 131094, 1703961, 11, 65559, 1638425, 10, 131095, 1638425, 11, 65560, 1703961, 10, 131096, 1703961, 11, 65561, 1638425, 10, 131097, 1638425, 11, 65562, 1703961, 10, 131098, 1703961, 11, 65537, 655384, 9, 131073, 655384, 10, 65538, 720920, 9, 131074, 720920, 10, 65539, 655384, 9, 131075, 655384, 10, 65540, 720920, 9, 131076, 720920, 10, 65554, 655384, 7, 131090, 655384, 8, 65555, 655384, 7, 131091, 655384, 8, 65556, 655384, 7, 131092, 655384, 8, 196609, 65560, 0, 262145, 65560, 1, 196610, 65560, 0, 262146, 65560, 1, 196611, 65560, 0, 262147, 65560, 1, 196612, 65560, 0, 262148, 65560, 1, 196613, 65560, 0, 262149, 65560, 1, 393220, 65540, 1, 458756, 65540, 2, 327685, 131076, 0, 393221, 131076, 1, 458757, 131076, 2, 393222, 196612, 1, 458758, 196612, 2, 393219, 4, 1, 458755, 4, 2, 327684, 65540, 0, 524292, 1638421, 3, 393225, 4, 1, 458761, 4, 2, 327690, 65540, 0, 393226, 65540, 1, 458762, 65540, 2, 524298, 1638421, 3, 327691, 131076, 0, 393227, 131076, 1, 458763, 131076, 2, 393228, 196612, 1, 458764, 196612, 2, 393231, 4, 1, 458767, 4, 2, 327696, 65540, 0, 393232, 65540, 1, 458768, 65540, 2, 524304, 1638421, 3, 327697, 131076, 0, 393233, 131076, 1, 458769, 131076, 2, 393234, 196612, 1, 458770, 196612, 2, 393237, 4, 1, 458773, 4, 2, 327702, 65540, 0, 393238, 65540, 1, 458774, 65540, 2, 524310, 1638421, 3, 327703, 131076, 0, 393239, 131076, 1, 458775, 131076, 2, 393240, 196612, 1, 458776, 196612, 2, 786435, 4, 1, 720900, 65540, 0, 786436, 65540, 1, 851972, 65540, 2, 720901, 131076, 0, 786437, 131076, 1, 786438, 196612, 1, 786441, 4, 1, 720906, 65540, 0, 786442, 65540, 1, 851978, 65540, 2, 720907, 131076, 0, 786443, 131076, 1, 786444, 196612, 1, 786447, 4, 1, 720912, 65540, 0, 786448, 65540, 1, 851984, 65540, 2, 720913, 131076, 0, 786449, 131076, 1, 786450, 196612, 1, 786453, 4, 1, 720918, 65540, 0, 786454, 65540, 1, 851990, 65540, 2, 720919, 131076, 0, 786455, 131076, 1, 786456, 196612, 1, 851971, 4, 2, 917508, 1638421, 3, 851973, 131076, 2, 851974, 196612, 2, 851977, 4, 2, 917514, 1638421, 3, 851979, 131076, 2, 851980, 196612, 2, 851983, 4, 2, 917520, 1638421, 3, 851985, 131076, 2, 851986, 196612, 2, 851989, 4, 2, 917526, 1638421, 3, 851991, 131076, 2, 851992, 196612, 2)
 
+[node name="CharacterBody2D7" parent="TileMap" instance=ExtResource("31_p7qjf")]
+position = Vector2(375.972, 132.193)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D5" parent="TileMap" instance=ExtResource("28_0mfi2")]
+position = Vector2(279.938, 229.005)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D3" parent="TileMap" instance=ExtResource("27_df0j7")]
+position = Vector2(279.938, 132.193)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D2" parent="TileMap" instance=ExtResource("26_l1wvl")]
+position = Vector2(90.2022, 131.804)
+scale = Vector2(1.5, 1.5)
+
 [node name="CharacterBody2D" parent="TileMap" instance=ExtResource("25_nu6nw")]
 position = Vector2(135.303, 80.8709)
 scale = Vector2(1.9, 1.9)
+
+[node name="CharacterBody2D4" parent="TileMap" instance=ExtResource("29_r3ccj")]
+position = Vector2(185.459, 227.061)
+scale = Vector2(1.5, 1.5)
+
+[node name="CharacterBody2D6" parent="TileMap" instance=ExtResource("30_l68h8")]
+position = Vector2(89.8134, 227.061)
+scale = Vector2(1.5, 1.5)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("25_mhag2")
@@ -1591,7 +1621,7 @@ position = Vector2(-0.327881, 0)
 position = Vector2(0.43718, -14.532)
 
 [node name="Task" parent="Door" instance=ExtResource("26_egj6x")]
-position = Vector2(945, 324)
+position = Vector2(349, 230)
 scale = Vector2(10.5455, 5.7)
 destination_level_tag = "finals"
 destination_door_tag = "F"
