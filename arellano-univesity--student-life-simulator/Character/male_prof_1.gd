@@ -51,7 +51,7 @@ func run_rando_dialogue():
 	is_chatting = true
 	is_roaming = false
 	
-	Dialogic.start("prof1")
+	Dialogic.start("prof_prelim")
 
 func ended_dialogue():
 	Dialogic.timeline_ended.disconnect(ended_dialogue)  # Removed parentheses

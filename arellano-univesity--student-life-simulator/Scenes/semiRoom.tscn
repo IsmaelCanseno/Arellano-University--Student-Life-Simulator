@@ -1313,7 +1313,7 @@ position = Vector2(231.726, 260.109)
 scale = Vector2(1.5, 1.5)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("8_e6rc8")]
-position = Vector2(368.585, 387.636)
+position = Vector2(361.586, 396.19)
 scale = Vector2(1.7, 1.732)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -1332,7 +1332,7 @@ position = Vector2(-0.153358, -5.49533)
 position = Vector2(0.204473, -13.5421)
 
 [node name="Task" parent="Door" instance=ExtResource("8_583hf")]
-position = Vector2(812, 473)
+position = Vector2(834, 466)
 scale = Vector2(16.8308, 9.72259)
 destination_level_tag = "semis"
 destination_door_tag = "S"

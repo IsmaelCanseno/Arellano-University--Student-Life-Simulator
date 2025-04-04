@@ -1,13 +1,11 @@
 join male_cutting 1
-hello.. um..
-I'm cutter..
-join "fucked up character" 3
-and I'm a fucked up person..
-not sure what the fuck should I do, you could fuck yourself!
-leave "fucked up character"
-could you?
+Hey! How Are you? It's been 3 years since we met...
+- I'm good! I missed you! How are you?
+	I'm fine, I'm good! Still doing our thing like when we we're child
+	- I see that you're still doing our thing, but don't you have a class to attend to?
+Yeah, I have a class to attend to. But come on you know me... Don't you wanna cut class with me?
 - yes.. of course
-	thanks! it means the world! I will see you when I return to the island!
+	thanks! it means the world to me! Let's go!
 	[signal arg="game_over"]
-- no.. kill yourself
-	ah okay! I'll ask Superman! thanks for your time though!
+- no, I have class to attend to...
+	ah okay! good luck on your class! 

@@ -528,7 +528,7 @@ position = Vector2(152.799, 147.356)
 scale = Vector2(1.5, 1.5)
 
 [node name="CharacterBody2D3" parent="TileMap" instance=ExtResource("4_nalvh")]
-position = Vector2(267.107, 228.616)
+position = Vector2(268.662, 228.227)
 scale = Vector2(1.2, 1.2)
 
 [node name="CharacterBody2D" parent="TileMap" instance=ExtResource("6_prkrb")]
@@ -561,7 +561,7 @@ position = Vector2(0.282043, 1.16666)
 position = Vector2(-0.282051, -14)
 
 [node name="Task" parent="Door" instance=ExtResource("3_0k0sa")]
-position = Vector2(598, 238)
+position = Vector2(597, 250)
 scale = Vector2(16.548, 7.25)
 destination_level_tag = "prelim"
 destination_door_tag = "P"
