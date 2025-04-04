@@ -1589,7 +1589,7 @@ position = Vector2(90.2022, 131.804)
 scale = Vector2(1.5, 1.5)
 
 [node name="CharacterBody2D" parent="TileMap" instance=ExtResource("25_nu6nw")]
-position = Vector2(135.303, 80.8709)
+position = Vector2(420.295, 183.515)
 scale = Vector2(1.9, 1.9)
 
 [node name="CharacterBody2D4" parent="TileMap" instance=ExtResource("29_r3ccj")]
